@@ -34,6 +34,21 @@ body {
     color: #fff;
     box-sizing: border-box;
     padding: 40px 60px; }
+    html .swiper-slide .slide-bg,
+    body .swiper-slide .slide-bg {
+      z-index: -1;
+      max-width: 130%; }
+    html .swiper-slide .true-you,
+    body .swiper-slide .true-you {
+      position: absolute;
+      top: 20%;
+      left: 5%;
+      max-width: 90%;
+      z-index: 10; }
+  html .slide1,
+  body .slide1 {
+    background-image: url("../img/slider-background.png") !important;
+    background-size: 130%; }
   html .parallax-bg,
   body .parallax-bg {
     position: absolute;
@@ -43,23 +58,6 @@ body {
     height: 100%;
     background-size: cover;
     background-position: center; }
-  html .swiper-slide .title,
-  body .swiper-slide .title {
-    font-size: 41px;
-    font-weight: 300; }
-    html .swiper-slide .title img,
-    body .swiper-slide .title img {
-      vertical-align: top !important;
-      margin-top: -200px !important;
-      max-width: 90%; }
-    html .swiper-slide .title .swiper-slide .subtitle,
-    body .swiper-slide .title .swiper-slide .subtitle {
-      font-size: 21px; }
-    html .swiper-slide .title .swiper-slide .text,
-    body .swiper-slide .title .swiper-slide .text {
-      font-size: 14px;
-      max-width: 400px;
-      line-height: 1.3; }
   html .tightener,
   body .tightener {
     height: 100%;
