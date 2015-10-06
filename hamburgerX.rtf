@@ -1,0 +1,98 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl320
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+/*html*/\
+\
+<ul class="navigation">\
+<a id="nav-toggle" href="#"><li id="menu"><span></span></li></a>\
+<li></li>\
+<li>DLM</li>\
+<li>Orders</li>\
+<li>Stats</li>\
+<li>Logout</li>\
+</ul>\
+\
+\
+/*css*/\
+\
+#nav-toggle \{\
+\'a0 \'a0 position: relative;\
+\'a0 \'a0 cursor: pointer;\
+\}\
+\
+#nav-toggle span,\
+#nav-toggle span:before,\
+#nav-toggle span:after \{\
+\'a0 \'a0 cursor: pointer;\
+\'a0 \'a0 border-radius: 1px;\
+\'a0 \'a0 height: 5px;\
+\'a0 \'a0 width: 30px;\
+\'a0 \'a0 background: white;\
+\'a0 \'a0 position: absolute;\
+\'a0 \'a0 display: block;\
+\'a0 \'a0 content: '';\
+\}\
+\
+#nav-toggle span:before \{\
+\'a0 \'a0 top: -10px;\
+\}\
+\
+#nav-toggle span:after \{\
+\'a0 \'a0 bottom: 50px;\
+\}\
+\
+#nav-toggle span,\
+#nav-toggle span:before,\
+#nav-toggle span:after \{\
+\'a0 \'a0 transition: all 500ms ease-in-out;\
+\}\
+\
+#nav-toggle.active span \{\
+\'a0 \'a0 background-color: transparent;\
+\}\
+\
+#nav-toggle.active span:before,\
+#nav-toggle.active span:after \{\
+\'a0 \'a0 top: 0;\
+\}\
+\
+#nav-toggle.active span:before \{\
+\'a0 \'a0 transform: rotate(45deg);\
+\}\
+\
+#nav-toggle.active span:after \{\
+\'a0 \'a0 transform: rotate(-45deg);\
+\}\
+\
+/*JS*/\
+\
+var menu = document.getElementById('nav-toggle'),\
+body = document.getElementsByTagName('body')[0];\
+\
+\
+document.querySelector( "#nav-toggle" )\
+\'a0 .addEventListener( "click", function() \{\
+\'a0 \'a0 this.classList.toggle( "active" );\
+\'a0 \});\
+\
+menu.addEventListener('click', function () \{\
+\
+//this is to move the body of the page to the right on click\'85\
+\
+if (hasClass(body, 'moveBody')) \{\
+addClass(body, 'moveBodyBack');\
+removeClass(body, 'moveBody');\
+\'a0 \'a0\'a0\
+\}\
+else \{\
+\
+addClass(body, 'moveBody');\
+removeClass(body, 'moveBodyBack');\
+\}\
+\});\
+}
