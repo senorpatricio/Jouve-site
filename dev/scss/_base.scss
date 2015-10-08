@@ -1,310 +1,424 @@
 // Font classes
-.HelveticaNeueLTStd-Lt {
+.HelveticaNeueLTStd-Lt
+{
     font-family: HelveticaNeueLTStd-Lt;
     font-weight: 100;
     font-style: normal;
 }
 
-.HelveticaNeueLTStd-ThIt {
+.HelveticaNeueLTStd-ThIt
+{
     font-family: HelveticaNeueLTStd-ThIt;
     font-weight: 100;
     font-style: normal;
 }
 
 html,
-body {
-    position: relative;
-    height: 100%;
-    background: #fff;
+body
+{
     font-size: 14px;
-    color: #000;
+
+    position: relative;
+
+    height: 100%;
     margin: 0;
     padding: 0;
-    .container {
-        height: auto;
-        max-width: 950px;
-        margin: 20px auto;
-        background-color: #fff;
-    }
-    .swiper-container {
-        width: 100%;
-        height: 100%;
-        background: #000;
-    }
-    .swiper-slide {
-        font-size: 18px;
-        color: #fff;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        padding: 40px 60px;
-        .slide-bg {
-            z-index: -1;
-            max-width: 130%;
-        }
-        .true-you {
-            position: absolute;
-            top: 15%;
-            left: 11%;
-            max-width: 80%;
-            z-index: 1;
-        }
-    }
-    .slide1 {
-        background-image: url('../img/slider-background.png');
-        background-size: 120%;
-    }
-    .slide2 {
-        background-image: url('http://thesource.com/wp-content/uploads/2013/12/Sebastian-Mikael-Promo-1.jpg') !important;
-        background-size: 130%;
-    }
-    .parallax-bg {
+
+    color: #000;
+    background: #fff;
+}
+
+.container
+{
+    max-width: 950px;
+    height: auto;
+    margin: 20px auto;
+
+    background-color: #fff;
+}
+
+.swiper-container
+{
+    width: 100%;
+    height: 100%;
+
+    background: #000;
+}
+
+.swiper-slide
+{
+    font-size: 18px;
+
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 40px 60px;
+
+    color: #fff;
+    .true-you
+    {
         position: absolute;
-        left: 0;
-        top: 0;
-        width: 130%;
-        height: 100%;
-        -webkit-background-size: cover;
-        background-size: cover;
-        background-position: center;
+        top: 15%;
+        left: 11%;
+
+        max-width: 80%;
     }
-    // .swiper-slide .title {
-    //   font-size: 41px;
-    //   font-weight: 300;
-    //   img {
-    //     vertical-align: top !important;
-    //     margin-top: -200px !important;
-    //     max-width: 90%;
-    //   }
-    //   .swiper-slide .subtitle {
-    //       font-size: 21px;
-    //   }
-    //   .swiper-slide .text {
-    //       font-size: 14px;
-    //       max-width: 400px;
-    //       line-height: 1.3;
-    //   }
-    // }
-    .tightener {
-        height: 100%;
-        vertical-align: middle;
-        padding-top: 50px;
-        margin: 0 0 100px 0;
-        .product {
-            margin: 0 0 30px 0;
-            max-width: 95%;
-        }
-        #product-tag {
-            vertical-align: bottom;
-            font-family: HelveticaNeueLTStd-ThIt;
-            font-size: 28px;
-            color: #979797;
-            float: left;
-            margin-top: 70px;
-        }
-        .description {
-            border-top: 2px solid #979797;
-            font-family: HelveticaNeueLTStd-Lt;
-            color: #979797;
-            padding: 20px 0 0 0;
-            line-height: 14px;
-        }
-        .product-link {
+}
+
+.slide1
+{
+    background-image: url('../img/slider-background.png');
+    background-size: 120%;
+}
+
+.slide2
+{
+    background-image: url('http://thesource.com/wp-content/uploads/2013/12/Sebastian-Mikael-Promo-1.jpg') !important;
+    background-size: 120%;
+}
+
+.swiper-button-next
+{
+    z-index: 999 !important;
+}
+
+// .parallax-bg
+// {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 130%;
+//     height: 100%;
+//     background-position: center;
+//     -webkit-background-size: cover;
+//             background-size: cover;
+// }
+// .swiper-slide .title {
+//   font-size: 41px;
+//   font-weight: 300;
+//   img {
+//     vertical-align: top !important;
+//     margin-top: -200px !important;
+//     max-width: 90%;
+//   }
+//   .swiper-slide .subtitle {
+//       font-size: 21px;
+//   }
+//   .swiper-slide .text {
+//       font-size: 14px;
+//       max-width: 400px;
+//       line-height: 1.3;
+//   }
+// }
+.tightener
+{
+    height: 100%;
+    margin: 0 0 100px 0;
+    padding-top: 50px;
+
+    vertical-align: middle;
+    .product
+    {
+        max-width: 95%;
+        margin: 0 0 30px 0;
+    }
+    #product-tag
+    {
+        font-family: HelveticaNeueLTStd-ThIt;
+        font-size: 28px;
+
+        float: left;
+
+        margin-top: 70px;
+
+        vertical-align: bottom;
+
+        color: #979797;
+    }
+    .description
+    {
+        font-family: HelveticaNeueLTStd-Lt;
+        line-height: 14px;
+
+        padding: 20px 0 0 0;
+
+        color: #979797;
+        border-top: 2px solid #979797;
+    }
+    .product-link
+    {
+        color: #979797 !important;
+        a
+        {
+            text-decoration: none;
+
             color: #979797 !important;
-            a {
+            &:link
+            {
                 text-decoration: none;
+
                 color: #979797 !important;
-                &:link {
-                    color: #979797 !important;
-                    text-decoration: none;
-                }
-                &:hover {
-                    color: #937367
-                }
-                &:visited {
-                    color: #D6A385;
-                }
+            }
+            &:hover
+            {
+                color: #937367;
+            }
+            &:visited
+            {
+                color: #d6a385;
             }
         }
     }
-    .brightener {
-        height: 100%;
-        vertical-align: middle;
-        padding-top: 0px;
-        margin: 0 0 100px 0;
-        .product {
-            margin: 0 0 30px 0;
-            max-width: 95%;
-        }
-        #product-tag {
-            vertical-align: bottom;
-            font-family: HelveticaNeueLTStd-ThIt;
-            font-size: 28px;
-            color: #979797;
-            float: left;
-            margin-top: 70px;
-        }
-        .description {
-            border-top: 2px solid #979797;
-            font-family: HelveticaNeueLTStd-Lt;
-            color: #979797;
-            padding: 20px 0 0 0;
-            line-height: 14px;
-        }
-        .product-link {
+}
+
+.brightener
+{
+    height: 100%;
+    margin: 0 0 100px 0;
+    padding-top: 0;
+
+    vertical-align: middle;
+    .product
+    {
+        max-width: 95%;
+        margin: 0 0 30px 0;
+    }
+    #product-tag
+    {
+        font-family: HelveticaNeueLTStd-ThIt;
+        font-size: 28px;
+
+        float: left;
+
+        margin-top: 70px;
+
+        vertical-align: bottom;
+
+        color: #979797;
+    }
+    .description
+    {
+        font-family: HelveticaNeueLTStd-Lt;
+        line-height: 14px;
+
+        padding: 20px 0 0 0;
+
+        color: #979797;
+        border-top: 2px solid #979797;
+    }
+    .product-link
+    {
+        color: #979797 !important;
+        a
+        {
+            text-decoration: none;
+
             color: #979797 !important;
-            a {
+            &:link
+            {
                 text-decoration: none;
+
                 color: #979797 !important;
-                &:link {
-                    color: #979797 !important;
-                    text-decoration: none;
-                }
-                &:hover {
-                    color: #937367
-                }
-                &:visited {
-                    color: #D6A385;
-                }
+            }
+            &:hover
+            {
+                color: #937367;
+            }
+            &:visited
+            {
+                color: #d6a385;
             }
         }
     }
-    .pack {
-        height: 100%;
-        vertical-align: middle;
-        padding-top: 0px;
-        margin: 0;
-        .product {
-            margin: 0 0 30px 0;
-            max-width: 95%;
-        }
-        #product-tag {
-            vertical-align: bottom;
-            font-family: HelveticaNeueLTStd-ThIt;
-            font-size: 28px;
-            color: #979797;
-            float: left;
-            margin-top: 70px;
-        }
-        .description {
-            border-top: 2px solid #979797;
-            font-family: HelveticaNeueLTStd-Lt;
-            color: #979797;
-            padding: 20px 0 0 0;
-            line-height: 14px;
-        }
-        .product-link {
+}
+
+.pack
+{
+    height: 100%;
+    margin: 0;
+    padding-top: 0;
+
+    vertical-align: middle;
+    .product
+    {
+        max-width: 95%;
+        margin: 0 0 30px 0;
+    }
+    #product-tag
+    {
+        font-family: HelveticaNeueLTStd-ThIt;
+        font-size: 28px;
+
+        float: left;
+
+        margin-top: 70px;
+
+        vertical-align: bottom;
+
+        color: #979797;
+    }
+    .description
+    {
+        font-family: HelveticaNeueLTStd-Lt;
+        line-height: 14px;
+
+        padding: 20px 0 0 0;
+
+        color: #979797;
+        border-top: 2px solid #979797;
+    }
+    .product-link
+    {
+        color: #979797 !important;
+        a
+        {
+            text-decoration: none;
+
             color: #979797 !important;
-            a {
+            &:link
+            {
                 text-decoration: none;
+
                 color: #979797 !important;
-                &:link {
-                    color: #979797 !important;
+            }
+            &:hover
+            {
+                color: #937367;
+            }
+            &:visited
+            {
+                color: #d6a385;
+            }
+        }
+    }
+}
+
+.big-slider
+{
+    position: relative;
+
+    overflow: auto;
+
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    text-align: center;
+    color: #9b9b9b;
+    background: #f8f1ee;
+    .before-after
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        overflow: auto;
+
+        width: 80%;
+        height: 90%;
+        padding: 30px 10px 10px 10px;
+
+        transform: translate(-50%, -50%);
+
+        color: white;
+        background-color: #f8f1ee;
+        .swiper-wrapper
+        {
+          .swiper-slide {
+            padding: 0 !important;
+          }
+        }
+    }
+}
+
+footer
+{
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(-180deg, #937367 0%, #d6a385 100%);
+    #foot-menu
+    {
+        ul
+        {
+            margin: 40px 0;
+
+            list-style: none;
+
+            color: #d8d8d8;
+            li
+            {
+                a
+                {
                     text-decoration: none;
-                }
-                &:hover {
-                    color: #937367
-                }
-                &:visited {
-                    color: #D6A385;
-                }
-            }
-        }
-    }
-    .bigSlider {
-        width: 100%;
-        height: 600px;
-        background-color: #F8F1EE;
-        .beforeafter {
-            background-color: #F8F1EE;
-            width: 250px;
-            height: 600px;
-            position: relative;
-            h3 {
-                text-align: center;
-                margin: 20px auto;
-                color: #979797;
-            }
-            .swiper-wrapper {
-                background-color: #F8F1EE;
-                .slidey {
-                    position: relative;
-                    max-height: 80%;
-                    .imagebefore .imageafter {
-                        position: relative;
-                        margin: auto;
-                        img {
-                            max-width: 80% !important;
-                        }
-                    }
-                }
-            }
-            .slider-button-next .slider-button-prev {
-                color: #D6A385;
-            }
-        }
-    }
-    footer {
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(-180deg, #937367 0%, #D6A385 100%);
-        z-index: -1;
-        #foot-menu {
-            ul {
-                list-style: none;
-                margin: 40px 0;
-                color: #D8D8D8;
-                li {
-                    a {
+
+                    color: #d8d8d8 !important;
+                    &:link
+                    {
                         text-decoration: none;
-                        color: #D8D8D8 !important;
-                        &:link {
-                            color: #fff !important;
-                            text-decoration: none;
-                        }
-                        &:hover {
-                            color: #937367;
-                        }
-                        &:visited {
-                            color: #D6A385;
-                        }
+
+                        color: #fff !important;
+                    }
+                    &:hover
+                    {
+                        color: #937367;
+                    }
+                    &:visited
+                    {
+                        color: #d6a385;
                     }
                 }
             }
         }
-        #social-buttons {
-            ul {
-                list-style: none;
+    }
+    #social-buttons
+    {
+        ul
+        {
+            // color: #fff;
+            z-index: 10;
+
+            display: inline;
+
+            margin: 40px 0;
+
+            list-style: none;
+            li
+            {
                 display: inline;
-                margin: 40px 0;
-                // color: #fff;
-                z-index: 10;
-                li {
-                    display: inline;
-                    margin: 0 12px 0 0;
-                    a {
-                        img {
-                            max-width: 15%;
-                        }
+
+                margin: 0 12px 0 0;
+                a
+                {
+                    img
+                    {
+                        max-width: 15%;
                     }
                 }
             }
         }
-        #foot-logo {
-            float: none;
-            img {
-                margin: 50px auto;
-            }
+    }
+    #foot-logo
+    {
+        float: none;
+        img
+        {
+            margin: 50px auto;
         }
-        #contact {
-            h3 {
-                color: #D8D8D8;
-                // font-size: 36px;
-                margin: 30px 0 0 0;
-            }
-            address {
-                color: #D8D8D8;
-                // font-size: 28px;
-            }
+    }
+    #contact
+    {
+        h3
+        {
+            // font-size: 36px;
+            margin: 30px 0 0 0;
+
+            color: #d8d8d8;
+        }
+        address
+        {
+            color: #d8d8d8;
+            // font-size: 28px;
         }
     }
 }

@@ -23,33 +23,35 @@
 		-moz-animation: dash 3s linear forwards;
 		animation: dash 3s linear forwards;	
 	}	 -->
+
 	.bubble {
 		fill:none;
-		stroke:#D6A385;
-		stroke-width:2;
-		webkit-animation: dash 3s linear forwards;
-		-o-animation: dash 3s linear forwards;
-		-moz-animation: dash 3s linear forwards;
-		animation: dash 3s linear forwards;	
-		stroke-dasharray: 1500;
-		stroke-dashoffset: 0;
-		stroke-linejoin:round;
-		enable-background:new;
 
 	}
-	.bubble-animate {
-		fill:none;
-		
-	}
-	@-webkit-keyframes dash {		
-		from {
-			stroke-dashoffset: 2000;
+	
+	<!-- .bubble:hover {
+	    stroke:#D6A385;
+	    stroke-width:2;
+	    webkit-animation: dash 3s linear forwards;
+	    -o-animation: dash 3s linear forwards;
+	    -moz-animation: dash 3s linear forwards;
+	    animation: dash 3s linear forwards; 
+	    stroke-dasharray: 1500;
+	    stroke-dashoffset: 0;
+	    stroke-linejoin:round;
+	    enable-background:new;
+	    @-webkit-keyframes dash {		
+			from {
+				stroke-dashoffset: 2000;
+			}
+			
+			to {
+				stroke-dashoffset: 0;
+			}
 		}
-		
-		to {
-			stroke-dashoffset: 0;
-		}
-	}
+	
+	} -->
+
 	
 
 
@@ -77,7 +79,7 @@
 					<path id="Line-Copy-2" class="st2" d="M-277,398.6h34"/>
 					<path id="Line-Copy" class="st2" d="M-260,372.6v36"/>
 				</g>
-				<path id="Language-Active" class="bubble " d="M-274.1,407.1c-1.9-3.4-2.9-7.4-2.9-11.5c0-13.3,10.7-24,24-24s24,10.7,24,24
+				<path id="Language-Active" class="bubble" d="M-274.1,407.1c-1.9-3.4-2.9-7.4-2.9-11.5c0-13.3,10.7-24,24-24s24,10.7,24,24
 					s-10.7,24-24,24c-4.9,0-9.5-1.5-13.3-4l-12.7,6L-274.1,407.1z">
 				
 				</path>

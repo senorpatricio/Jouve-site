@@ -25,7 +25,7 @@ function removeClass(elem, className) {
 // Navigation toggle
 
 var menu = document.getElementById('nav-toggle'),
-	body = document.getElementsByTagName('body')[0];
+		body = document.getElementsByTagName('body')[0];
 
 
 document.querySelector( "#nav-toggle" )
@@ -57,15 +57,15 @@ var lMenu = document.getElementById('language-toggle'),
 
 document.querySelector( "#language-toggle" )
   .addEventListener( "click", function() {
-	if (hasClass(aTag, "st3")) {
-		removeClass(aTag, "st3");
+	if (hasClass(aTag, "bubble")) {
+		removeClass(aTag, "bubble");
 	}
 	else {
-		addClass(aTag, "st3")
+		addClass(aTag, "bubble")
 
 	}
 	console.log("hey man");
-	addClass(aTag, "st3");
+	addClass(aTag, "bubble");
     this.classList.toggle( "active" );
   });
 
@@ -82,12 +82,10 @@ if (hasClass(body, 'moveBody')) {
 	addClass(body, 'moveBody');
 	removeClass(body, 'moveBodyBack');
 	}
-// if (hasClass(aTag, "bubble")) {
-// 	removeClass(aTag, "bubble");
-// }
-// else {
-// 	addClass(aTag, "bubble")
+if (hasClass(aTag, "bubble")) {
+    removeClass(aTag, "bubble");
+} else {
+    addClass(aTag, "bubble")
 
-// }
-
+}
 });

@@ -10,268 +10,286 @@
 
 html,
 body {
+  font-size: 14px;
   position: relative;
   height: 100%;
-  background: #fff;
-  font-size: 14px;
-  color: #000;
   margin: 0;
-  padding: 0; }
-  html .container,
-  body .container {
-    height: auto;
-    max-width: 950px;
-    margin: 20px auto;
-    background-color: #fff; }
-  html .swiper-container,
-  body .swiper-container {
-    width: 100%;
-    height: 100%;
-    background: #000; }
-  html .swiper-slide,
-  body .swiper-slide {
-    font-size: 18px;
-    color: #fff;
-    box-sizing: border-box;
-    padding: 40px 60px; }
-    html .swiper-slide .slide-bg,
-    body .swiper-slide .slide-bg {
-      z-index: -1;
-      max-width: 130%; }
-    html .swiper-slide .true-you,
-    body .swiper-slide .true-you {
-      position: absolute;
-      top: 15%;
-      left: 11%;
-      max-width: 80%;
-      z-index: 1; }
-  html .slide1,
-  body .slide1 {
-    background-image: url("../img/slider-background.png");
-    background-size: 120%; }
-  html .slide2,
-  body .slide2 {
-    background-image: url("http://thesource.com/wp-content/uploads/2013/12/Sebastian-Mikael-Promo-1.jpg") !important;
-    background-size: 130%; }
-  html .parallax-bg,
-  body .parallax-bg {
+  padding: 0;
+  color: #000;
+  background: #fff; }
+
+.container {
+  max-width: 950px;
+  height: auto;
+  margin: 20px auto;
+  background-color: #fff; }
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  background: #000; }
+
+.swiper-slide {
+  font-size: 18px;
+  box-sizing: border-box;
+  padding: 40px 60px;
+  color: #fff; }
+  .swiper-slide
+.true-you {
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 130%;
-    height: 100%;
-    background-size: cover;
-    background-position: center; }
-  html .tightener,
-  body .tightener {
-    height: 100%;
-    vertical-align: middle;
-    padding-top: 50px;
-    margin: 0 0 100px 0; }
-    html .tightener .product,
-    body .tightener .product {
-      margin: 0 0 30px 0;
-      max-width: 95%; }
-    html .tightener #product-tag,
-    body .tightener #product-tag {
-      vertical-align: bottom;
-      font-family: HelveticaNeueLTStd-ThIt;
-      font-size: 28px;
-      color: #979797;
-      float: left;
-      margin-top: 70px; }
-    html .tightener .description,
-    body .tightener .description {
-      border-top: 2px solid #979797;
-      font-family: HelveticaNeueLTStd-Lt;
-      color: #979797;
-      padding: 20px 0 0 0;
-      line-height: 14px; }
-    html .tightener .product-link,
-    body .tightener .product-link {
+    top: 15%;
+    left: 11%;
+    max-width: 80%; }
+
+.slide1 {
+  background-image: url("../img/slider-background.png");
+  background-size: 120%; }
+
+.slide2 {
+  background-image: url("http://thesource.com/wp-content/uploads/2013/12/Sebastian-Mikael-Promo-1.jpg") !important;
+  background-size: 120%; }
+
+.swiper-button-next {
+  z-index: 999 !important; }
+
+.tightener {
+  height: 100%;
+  margin: 0 0 100px 0;
+  padding-top: 50px;
+  vertical-align: middle; }
+  .tightener
+.product {
+    max-width: 95%;
+    margin: 0 0 30px 0; }
+  .tightener
+#product-tag {
+    font-family: HelveticaNeueLTStd-ThIt;
+    font-size: 28px;
+    float: left;
+    margin-top: 70px;
+    vertical-align: bottom;
+    color: #979797; }
+  .tightener
+.description {
+    font-family: HelveticaNeueLTStd-Lt;
+    line-height: 14px;
+    padding: 20px 0 0 0;
+    color: #979797;
+    border-top: 2px solid #979797; }
+  .tightener
+.product-link {
+    color: #979797 !important; }
+    .tightener
+.product-link
+a {
+      text-decoration: none;
       color: #979797 !important; }
-      html .tightener .product-link a,
-      body .tightener .product-link a {
+      .tightener
+.product-link
+a:link {
         text-decoration: none;
         color: #979797 !important; }
-        html .tightener .product-link a:link,
-        body .tightener .product-link a:link {
-          color: #979797 !important;
-          text-decoration: none; }
-        html .tightener .product-link a:hover,
-        body .tightener .product-link a:hover {
-          color: #937367; }
-        html .tightener .product-link a:visited,
-        body .tightener .product-link a:visited {
-          color: #D6A385; }
-  html .brightener,
-  body .brightener {
-    height: 100%;
-    vertical-align: middle;
-    padding-top: 0px;
-    margin: 0 0 100px 0; }
-    html .brightener .product,
-    body .brightener .product {
-      margin: 0 0 30px 0;
-      max-width: 95%; }
-    html .brightener #product-tag,
-    body .brightener #product-tag {
-      vertical-align: bottom;
-      font-family: HelveticaNeueLTStd-ThIt;
-      font-size: 28px;
-      color: #979797;
-      float: left;
-      margin-top: 70px; }
-    html .brightener .description,
-    body .brightener .description {
-      border-top: 2px solid #979797;
-      font-family: HelveticaNeueLTStd-Lt;
-      color: #979797;
-      padding: 20px 0 0 0;
-      line-height: 14px; }
-    html .brightener .product-link,
-    body .brightener .product-link {
+      .tightener
+.product-link
+a:hover {
+        color: #937367; }
+      .tightener
+.product-link
+a:visited {
+        color: #d6a385; }
+
+.brightener {
+  height: 100%;
+  margin: 0 0 100px 0;
+  padding-top: 0;
+  vertical-align: middle; }
+  .brightener
+.product {
+    max-width: 95%;
+    margin: 0 0 30px 0; }
+  .brightener
+#product-tag {
+    font-family: HelveticaNeueLTStd-ThIt;
+    font-size: 28px;
+    float: left;
+    margin-top: 70px;
+    vertical-align: bottom;
+    color: #979797; }
+  .brightener
+.description {
+    font-family: HelveticaNeueLTStd-Lt;
+    line-height: 14px;
+    padding: 20px 0 0 0;
+    color: #979797;
+    border-top: 2px solid #979797; }
+  .brightener
+.product-link {
+    color: #979797 !important; }
+    .brightener
+.product-link
+a {
+      text-decoration: none;
       color: #979797 !important; }
-      html .brightener .product-link a,
-      body .brightener .product-link a {
+      .brightener
+.product-link
+a:link {
         text-decoration: none;
         color: #979797 !important; }
-        html .brightener .product-link a:link,
-        body .brightener .product-link a:link {
-          color: #979797 !important;
-          text-decoration: none; }
-        html .brightener .product-link a:hover,
-        body .brightener .product-link a:hover {
-          color: #937367; }
-        html .brightener .product-link a:visited,
-        body .brightener .product-link a:visited {
-          color: #D6A385; }
-  html .pack,
-  body .pack {
-    height: 100%;
-    vertical-align: middle;
-    padding-top: 0px;
-    margin: 0; }
-    html .pack .product,
-    body .pack .product {
-      margin: 0 0 30px 0;
-      max-width: 95%; }
-    html .pack #product-tag,
-    body .pack #product-tag {
-      vertical-align: bottom;
-      font-family: HelveticaNeueLTStd-ThIt;
-      font-size: 28px;
-      color: #979797;
-      float: left;
-      margin-top: 70px; }
-    html .pack .description,
-    body .pack .description {
-      border-top: 2px solid #979797;
-      font-family: HelveticaNeueLTStd-Lt;
-      color: #979797;
-      padding: 20px 0 0 0;
-      line-height: 14px; }
-    html .pack .product-link,
-    body .pack .product-link {
+      .brightener
+.product-link
+a:hover {
+        color: #937367; }
+      .brightener
+.product-link
+a:visited {
+        color: #d6a385; }
+
+.pack {
+  height: 100%;
+  margin: 0;
+  padding-top: 0;
+  vertical-align: middle; }
+  .pack
+.product {
+    max-width: 95%;
+    margin: 0 0 30px 0; }
+  .pack
+#product-tag {
+    font-family: HelveticaNeueLTStd-ThIt;
+    font-size: 28px;
+    float: left;
+    margin-top: 70px;
+    vertical-align: bottom;
+    color: #979797; }
+  .pack
+.description {
+    font-family: HelveticaNeueLTStd-Lt;
+    line-height: 14px;
+    padding: 20px 0 0 0;
+    color: #979797;
+    border-top: 2px solid #979797; }
+  .pack
+.product-link {
+    color: #979797 !important; }
+    .pack
+.product-link
+a {
+      text-decoration: none;
       color: #979797 !important; }
-      html .pack .product-link a,
-      body .pack .product-link a {
+      .pack
+.product-link
+a:link {
         text-decoration: none;
         color: #979797 !important; }
-        html .pack .product-link a:link,
-        body .pack .product-link a:link {
-          color: #979797 !important;
-          text-decoration: none; }
-        html .pack .product-link a:hover,
-        body .pack .product-link a:hover {
-          color: #937367; }
-        html .pack .product-link a:visited,
-        body .pack .product-link a:visited {
-          color: #D6A385; }
-  html .bigSlider,
-  body .bigSlider {
-    width: 100%;
-    height: 600px;
-    background-color: #F8F1EE; }
-    html .bigSlider .beforeafter,
-    body .bigSlider .beforeafter {
-      background-color: #F8F1EE;
-      width: 250px;
-      height: 600px;
-      position: relative; }
-      html .bigSlider .beforeafter h3,
-      body .bigSlider .beforeafter h3 {
-        text-align: center;
-        margin: 20px auto;
-        color: #979797; }
-      html .bigSlider .beforeafter .swiper-wrapper,
-      body .bigSlider .beforeafter .swiper-wrapper {
-        background-color: #F8F1EE; }
-        html .bigSlider .beforeafter .swiper-wrapper .slidey,
-        body .bigSlider .beforeafter .swiper-wrapper .slidey {
-          position: relative;
-          max-height: 80%; }
-          html .bigSlider .beforeafter .swiper-wrapper .slidey .imagebefore .imageafter,
-          body .bigSlider .beforeafter .swiper-wrapper .slidey .imagebefore .imageafter {
-            position: relative;
-            margin: auto; }
-            html .bigSlider .beforeafter .swiper-wrapper .slidey .imagebefore .imageafter img,
-            body .bigSlider .beforeafter .swiper-wrapper .slidey .imagebefore .imageafter img {
-              max-width: 80% !important; }
-      html .bigSlider .beforeafter .slider-button-next .slider-button-prev,
-      body .bigSlider .beforeafter .slider-button-next .slider-button-prev {
-        color: #D6A385; }
-  html footer,
-  body footer {
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(-180deg, #937367 0%, #D6A385 100%);
-    z-index: -1; }
-    html footer #foot-menu ul,
-    body footer #foot-menu ul {
-      list-style: none;
-      margin: 40px 0;
-      color: #D8D8D8; }
-      html footer #foot-menu ul li a,
-      body footer #foot-menu ul li a {
+      .pack
+.product-link
+a:hover {
+        color: #937367; }
+      .pack
+.product-link
+a:visited {
+        color: #d6a385; }
+
+.big-slider {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  text-align: center;
+  color: #9b9b9b;
+  background: #f8f1ee; }
+  .big-slider
+.before-after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: auto;
+    width: 80%;
+    height: 90%;
+    padding: 30px 10px 10px 10px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    background-color: #f8f1ee; }
+    .big-slider
+.before-after
+.swiper-wrapper .swiper-slide {
+      padding: 0 !important; }
+
+footer {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(-180deg, #937367 0%, #d6a385 100%); }
+  footer
+#foot-menu
+ul {
+    margin: 40px 0;
+    list-style: none;
+    color: #d8d8d8; }
+    footer
+#foot-menu
+ul
+li
+a {
+      text-decoration: none;
+      color: #d8d8d8 !important; }
+      footer
+#foot-menu
+ul
+li
+a:link {
         text-decoration: none;
-        color: #D8D8D8 !important; }
-        html footer #foot-menu ul li a:link,
-        body footer #foot-menu ul li a:link {
-          color: #fff !important;
-          text-decoration: none; }
-        html footer #foot-menu ul li a:hover,
-        body footer #foot-menu ul li a:hover {
-          color: #937367; }
-        html footer #foot-menu ul li a:visited,
-        body footer #foot-menu ul li a:visited {
-          color: #D6A385; }
-    html footer #social-buttons ul,
-    body footer #social-buttons ul {
-      list-style: none;
+        color: #fff !important; }
+      footer
+#foot-menu
+ul
+li
+a:hover {
+        color: #937367; }
+      footer
+#foot-menu
+ul
+li
+a:visited {
+        color: #d6a385; }
+  footer
+#social-buttons
+ul {
+    z-index: 10;
+    display: inline;
+    margin: 40px 0;
+    list-style: none; }
+    footer
+#social-buttons
+ul
+li {
       display: inline;
-      margin: 40px 0;
-      z-index: 10; }
-      html footer #social-buttons ul li,
-      body footer #social-buttons ul li {
-        display: inline;
-        margin: 0 12px 0 0; }
-        html footer #social-buttons ul li a img,
-        body footer #social-buttons ul li a img {
-          max-width: 15%; }
-    html footer #foot-logo,
-    body footer #foot-logo {
-      float: none; }
-      html footer #foot-logo img,
-      body footer #foot-logo img {
-        margin: 50px auto; }
-    html footer #contact h3,
-    body footer #contact h3 {
-      color: #D8D8D8;
-      margin: 30px 0 0 0; }
-    html footer #contact address,
-    body footer #contact address {
-      color: #D8D8D8; }
+      margin: 0 12px 0 0; }
+      footer
+#social-buttons
+ul
+li
+a
+img {
+        max-width: 15%; }
+  footer
+#foot-logo {
+    float: none; }
+    footer
+#foot-logo
+img {
+      margin: 50px auto; }
+  footer
+#contact
+h3 {
+    margin: 30px 0 0 0;
+    color: #d8d8d8; }
+  footer
+#contact
+address {
+    color: #d8d8d8; }
 
 /*HEADER*/
 nav {
@@ -387,7 +405,24 @@ nav {
   position: absolute;
   width: 350px;
   height: 500px;
-  z-index: 980; }
+  right: 0px; }
+
+.bubble:hover {
+  stroke: #D6A385;
+  stroke-width: 2;
+  webkit-animation: dash 3s linear forwards;
+  -webkit-animation: dash 3s linear forwards;
+          animation: dash 3s linear forwards;
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 0;
+  stroke-linejoin: round;
+  enable-background: new; }
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 2000; }
+  to {
+    stroke-dashoffset: 0; } }
 
 .lNavigation {
   position: absolute;
@@ -485,7 +520,8 @@ nav {
     line-height: 1;
     right: 1.2em;
     top: 50%;
-    margin-top: -.5em; }
+    margin-top: -.5em;
+    border: 1px solid #fff; }
   .custom-dropdown::before {
     /*  Custom dropdown arrow cover */
     width: 2em;
