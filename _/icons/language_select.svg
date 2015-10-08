@@ -1,11 +1,11 @@
 <svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-279 371 52 52"
 	 style="enable-background:new -279 371 52 52;" xml:space="preserve">
+
 <style type="text/css">
 	.st0{display:none;}
 	.st1{display:none;opacity:0.8;fill:none;enable-background:new    ;}
 	.st2{fill:none;stroke:#D6A385;stroke-width:2;}
-	.st3{fill:none;stroke:#D6A385;stroke-width:2;stroke-linejoin:round;}
 
 	.st1{fill:none;stroke:#D6A385;stroke-width:0.35;stroke-linecap:round;
 		stroke-dasharray: 1500;
@@ -23,13 +23,23 @@
 		-moz-animation: dash 3s linear forwards;
 		animation: dash 3s linear forwards;	
 	}	 -->
-	.st3{enable-background:new;
-		stroke-dasharray: 1500;
-		stroke-dashoffset: 0;
+	.bubble {
+		fill:none;
+		stroke:#D6A385;
+		stroke-width:2;
 		webkit-animation: dash 3s linear forwards;
 		-o-animation: dash 3s linear forwards;
 		-moz-animation: dash 3s linear forwards;
 		animation: dash 3s linear forwards;	
+		stroke-dasharray: 1500;
+		stroke-dashoffset: 0;
+		stroke-linejoin:round;
+		enable-background:new;
+
+	}
+	.bubble-animate {
+		fill:none;
+		
 	}
 	@-webkit-keyframes dash {		
 		from {
@@ -67,10 +77,13 @@
 					<path id="Line-Copy-2" class="st2" d="M-277,398.6h34"/>
 					<path id="Line-Copy" class="st2" d="M-260,372.6v36"/>
 				</g>
-				<path id="Language-Active" class="st3" d="M-274.1,407.1c-1.9-3.4-2.9-7.4-2.9-11.5c0-13.3,10.7-24,24-24s24,10.7,24,24
-					s-10.7,24-24,24c-4.9,0-9.5-1.5-13.3-4l-12.7,6L-274.1,407.1z"/>
+				<path id="Language-Active" class="bubble " d="M-274.1,407.1c-1.9-3.4-2.9-7.4-2.9-11.5c0-13.3,10.7-24,24-24s24,10.7,24,24
+					s-10.7,24-24,24c-4.9,0-9.5-1.5-13.3-4l-12.7,6L-274.1,407.1z">
+				
+				</path>
 			</g>
 		</g>
 	</g>
 </g>
+
 </svg>

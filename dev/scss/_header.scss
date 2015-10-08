@@ -5,13 +5,11 @@ nav {
     width: 100%;
     .row>.small-2 {
         margin: 11px 0 0 0;
-
         #nav-toggle {
             margin: 0 0 0 1px;
             position: relative;
         }
-
-        .language-icon {
+        #language-icon {
             padding-top: 7px;
         }
     }
@@ -22,35 +20,34 @@ nav {
     }
 }
 
-
-// #nav-toggle {
-//     position:relative;
-//     cursor: pointer;
-// }
-
 .menuWrapper {
     position: absolute;
     width: 350px;
     height: 500px;
 }
+
 .navigation {
     position: absolute;
     top: 5px;
     left: 10px;
     color: white;
+    overflow: hidden;
+    z-index: 999;
+    /* the container's height will determine the height of its slider  */
+    height: auto;
+    width: 70%;
 }
 
-.blurM{
-    height: 100%;
-    width: 100%;
-    background: url(../img/bg.jpg) repeat 0 0; 
-    -webkit-filter: blur(10px);
-     opacity: 0.2;
-     transition: 700ms 900ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
-     transition-property: filter, -webkit-filter, opacity, transform;
-     z-index: -1;
-}
-
+// .blurM{
+//     height: 100%;
+//     width: 100%;
+//     background: url(../img/bg.jpg) repeat 0 0; 
+//     -webkit-filter: blur(10px);
+//      opacity: 0.2;
+//      transition: 700ms 900ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+//      transition-property: filter, -webkit-filter, opacity, transform;
+//      z-index: 99;
+// }
 #nav-toggle span,
 #nav-toggle span:before,
 #nav-toggle span:after {
@@ -96,203 +93,264 @@ nav {
     transform: rotate(-45deg);
 }
 
-
-.navigation {
-    
-    overflow:hidden;
-    position:absolute;
-    z-index: 999;
-    /* the container's height will determine the height of its slider  */
-    height:auto;
-    width: 70%;
-}
 .navigation:before {
     filter: blur(10px);
-    }
+}
 
 .slider {
     overflow-y: scroll;
     /* complete liquid height based on the parent's height!! */
-    height:100%;
-
+    height: 100%;
     /* only transition on transform properties which are hardware accelerated = way better performances */
-    -webkit-transition:-webkit-transform .3s ease;
-       -moz-transition:   -moz-transform .3s ease;
-        -ms-transition:    -ms-transform .3s ease;
-            transition:        transform .3s ease;
+    -webkit-transition: -webkit-transform .3s ease;
+    -moz-transition: -moz-transform .3s ease;
+    -ms-transition: -ms-transform .3s ease;
+    transition: transform .3s ease;
     li {
         padding: 20px 15px 0px 15px;
         list-style: none;
         border-bottom: 1px solid white;
-    }        
+    }
 }
 
-.slider.opened { 
+.slider.opened {
     /* visible */
     -webkit-transform: translate(0, 0%);
-       -moz-transform: translate(0, 0%);
-        -ms-transform: translate(0, 0%);
-            transform: translate(0, 0%);
+    -moz-transform: translate(0, 0%);
+    -ms-transform: translate(0, 0%);
+    transform: translate(0, 0%);
     height: 100%;
     opacity: 0.8;
 }
 
-// .slider.opened:after{
-//     -webkit-filter: blur(10px);
-//      opacity: 0.5;
-//      transition: 700ms 900ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
-//      transition-property: filter, -webkit-filter, opacity, transform;
-//  }
+.slider.opened:after {
+    -webkit-filter: blur(10px);
+    opacity: 0.5;
+    transition: 700ms 900ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    transition-property: filter, -webkit-filter, opacity, transform;
+}
 
-.slider.closed { 
+.slider.closed {
     /* completely offscreen */
     -webkit-transform: translate(0, -100%);
-       -moz-transform: translate(0, -100%);
-        -ms-transform: translate(0, -100%);
-            transform: translate(0, -100%);       
+    -moz-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
+    transform: translate(0, -100%);
 }
 
 .slider {
-    -webkit-box-sizing:border-box;
-       -moz-box-sizing:border-box;
-        -ms-box-sizing:border-box;
-            box-sizing:border-box;
-
-    padding:20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
     background: #D6A385;
     // border:1px solid white;
     color: #fff;
-}
-
-
+} // end navigation styling
 // Language menu styling
-
-.languageWrapper {
+.lMenuWrapper {
     position: absolute;
     width: 350px;
     height: 500px;
+    z-index: 980;
 }
-.languageSelect {
+
+// .lBlurM{
+//     height: 100%;
+//     width: 100%;
+//     background: url(../img/bg.jpg) repeat 0 0; 
+//     -webkit-filter: blur(10px);
+//      opacity: 0.2;
+//      transition: 700ms 900ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+//      transition-property: filter, -webkit-filter, opacity, transform;
+//      z-index: 990;
+// }
+.lNavigation {
     position: absolute;
     top: 5px;
-    right: 5px;
+    right: 0px;
     color: white;
-}
-
-.blurM{
-    height: 100%;
-    width: 100%;
-    background: url(../img/bg.jpg) repeat 0 0; 
-    -webkit-filter: blur(10px);
-     opacity: 0.2;
-     transition: 700ms 900ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
-     transition-property: filter, -webkit-filter, opacity, transform;
-     z-index: -1;
-}
-
-.languageSelect {
-    
-    overflow:hidden;
-    position:absolute;
+    overflow: hidden;
     z-index: 999;
     /* the container's height will determine the height of its slider  */
-    height:auto;
+    height: auto;
     width: 70%;
 }
-.languageSelect:before {
-    filter: blur(10px);
-    }
 
-.lslider {
+.lNavigation:before {
+    filter: blur(10px);
+}
+
+.lSlider {
     overflow-y: scroll;
     /* complete liquid height based on the parent's height!! */
-    height:100%;
-
+    height: 100%;
     /* only transition on transform properties which are hardware accelerated = way better performances */
-    -webkit-transition:-webkit-transform .3s ease;
-       -moz-transition:   -moz-transform .3s ease;
-        -ms-transition:    -ms-transform .3s ease;
-            transition:        transform .3s ease;
+    -webkit-transition: -webkit-transform .3s ease;
+    -moz-transition: -moz-transform .3s ease;
+    -ms-transition: -ms-transform .3s ease;
+    transition: transform .3s ease;
     li {
         padding: 20px 15px 0px 15px;
         list-style: none;
         border-bottom: 1px solid white;
-    }        
+    }
 }
 
-.lslider.opened { 
+.lSlider.opened {
     /* visible */
     -webkit-transform: translate(0, 0%);
-       -moz-transform: translate(0, 0%);
-        -ms-transform: translate(0, 0%);
-            transform: translate(0, 0%);
+    -moz-transform: translate(0, 0%);
+    -ms-transform: translate(0, 0%);
+    transform: translate(0, 0%);
     height: 100%;
     opacity: 0.8;
 }
 
-// .slider.opened:after{
-//     -webkit-filter: blur(10px);
-//      opacity: 0.5;
-//      transition: 700ms 900ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
-//      transition-property: filter, -webkit-filter, opacity, transform;
-//  }
-
-.lslider.closed { 
-    /* completely offscreen */
-    -webkit-transform: translate(0, -100%);
-       -moz-transform: translate(0, -100%);
-        -ms-transform: translate(0, -100%);
-            transform: translate(0, -100%);       
+.lSlider.opened:after {
+    -webkit-filter: blur(10px);
+    opacity: 0.5;
+    transition: 700ms 900ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    transition-property: filter, -webkit-filter, opacity, transform;
 }
 
-.lslider {
-    -webkit-box-sizing:border-box;
-       -moz-box-sizing:border-box;
-        -ms-box-sizing:border-box;
-            box-sizing:border-box;
+.lSlider.closed {
+    /* completely offscreen */
+    -webkit-transform: translate(0, -100%);
+    -moz-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+}
 
-    padding:20px;
-    background: #D6A385;
+.lSlider {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #937367;
     // border:1px solid white;
     color: #fff;
 }
 
-#language-toggle span,
-#language-toggle span:before,
-#language-toggle span:after {
-    cursor: pointer;
-    border-radius: 1px;
-    height: 5px;
-    width: 30px;
-    background: #D6A385;
-    position: absolute;
-    display: block;
-    content: " ";
+// SVG styling
+// .bubble-animate {
+//     fill:none;
+//     stroke:#D6A385;
+//     stroke-width:2;
+//     webkit-animation: dash 3s linear forwards;
+//     -o-animation: dash 3s linear forwards;
+//     -moz-animation: dash 3s linear forwards;
+//     animation: dash 3s linear forwards; 
+//     stroke-dasharray: 1500;
+//     stroke-dashoffset: 0;
+//     stroke-linejoin:round;
+//     enable-background:new;
+// }
+
+// languages dropdown styling
+
+// select {
+//     -webkit-appearance: button;
+//     -moz-appearance: button;
+//     -webkit-user-select: none;
+//     -moz-user-select: none;
+//     appearance: none;
+//     background-color: #937367;
+//     background: transparent;
+//     border: 1px solid #fff;
+// }
+
+// select::-ms-expand {
+//     /* for IE 11 */
+//     display: none;
+// }
+
+
+.custom-dropdown--large {
+    font-size: 1.5em;
 }
 
-#language-toggle span:before {
-    top: -10px;
+.custom-dropdown--small {
+    font-size: .7em;
 }
 
-#language-toggle span:after {
-    bottom: 70px;
+.custom-dropdown__select{
+    font-size: inherit; /* inherit size from .custom-dropdown */
+    padding: .5em; /* add some space*/
+    margin: 0; /* remove default margins */
 }
 
-#language-toggle span,
-#language-toggle span:before,
-#language-toggle span:after {
-    transition: all 500ms ease-in-out;
-    color: $peach;
+.custom-dropdown__select--white {
+    background-color: #937367;
+    color: #444;    
 }
 
-#language-toggle.active span {
-    background-color: transparent;
+@supports (pointer-events: none) and
+      ((-webkit-appearance: none) or
+      (-moz-appearance: none) or
+      (appearance: none)) {
+
+    .custom-dropdown {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .custom-dropdown__select {
+        padding-right: 2.5em; /* accommodate with the pseudo elements for the dropdown arrow */
+        border: 0;
+        border-radius: 3px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;    
+    }
+
+    .custom-dropdown::before,
+    .custom-dropdown::after {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .custom-dropdown::after { /*  Custom dropdown arrow */
+        content: "\25BC";
+        height: 1em;
+        font-size: .625em;
+        line-height: 1;
+        right: 1.2em;
+        top: 50%; margin-top: -.5em;
+    }
+
+    .custom-dropdown::before { /*  Custom dropdown arrow cover */
+        width: 2em;
+        right: 0; top: 0; bottom: 0;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .custom-dropdown__select[disabled] {
+        color: rgba(0,0,0,.3);
+    }
+
+    .custom-dropdown.custom-dropdown--disabled::after {
+        color: rgba(0,0,0,.1);
+    }
+
+    /* White dropdown style */
+    .custom-dropdown--white::before {
+        background-color: #937367;
+        border-left: 1px solid rgba(0,0,0,.1);
+    }
+
+    .custom-dropdown--white::after {
+        color: rgba(0,0,0,.9);
+    }
+
+    /* FF only temp fix */
+    @-moz-document url-prefix() {
+        .custom-dropdown__select             { padding-right: .9em }
+        .custom-dropdown--large .custom-dropdown__select { padding-right: 1.3em }
+        .custom-dropdown--small .custom-dropdown__select { padding-right: .5em }
+    }
 }
-
-#language-toggle.active span:before,
-#language-toggle.active span:after {
-    top: 0;
-}
-
-
-
