@@ -73,7 +73,7 @@ body
 
 .slide2
 {
-    background-image: url('http://thesource.com/wp-content/uploads/2013/12/Sebastian-Mikael-Promo-1.jpg') !important;
+    background-image: url('../img/slider-background.png');
     background-size: 120%;
 } 
 // end swiper styling
@@ -283,6 +283,10 @@ body
 
     color: #9b9b9b;
     background: #f8f1ee;
+    h3 {
+      padding: 15px;
+      color: #9b9b9b; 
+    }
     .before-after
     {
         position: absolute;
@@ -290,7 +294,7 @@ body
         left: 50%;
 
         width: 80%;
-        height: 90%;
+        height: 88%;
         padding: 30px 10px 10px 10px;
 
         transform: translate(-50%, -50%);
@@ -301,18 +305,34 @@ body
         {
             .swiper-slide
             {
-                padding: 0 !important;
-                &:hover
-                {
-                    position: relative;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0;
-
-                    background: rgba(255,0,0,.2);
-                    
-                }
+              padding: 0 !important;
+              position: relative;
+              .picholder:hover .overlay{opacity:1;}
+              .picholder:hover .fancypics{opacity:0.7; }
+              .picholder{width:100%;position:relative;}
+              .overlay {
+                bottom: 30;left: 0; top: 0; right: 0;
+                height: 500px;
+                width: 250px;
+                margin: auto;
+                position: absolute;
+                background: rgba(214,163,133, 0.7);
+                // border-radius: 50%;
+                opacity:0;
+              }
+              .text_title {
+                color: white;
+                padding-top: 30%;
+              }
+              .text_box{
+                color:white;
+                // font-size:28px;
+                line-height: 20px;
+                padding:10px;
+                padding-bottom:50%;
+                text-align:center;
+              }
+              .fancypics{width:100%;}
             }
         }
     }

@@ -15,7 +15,7 @@
     }
     
     @else if $point==phonelandscape {
-        @media (max-width: 670px) {
+        @media (max-width: 600px) {
             @content;
         }
     }
@@ -27,3 +27,4 @@
     }
 }
 /*END MIXINS*/
+
