@@ -37,6 +37,7 @@ body
     background-color: #fff;
 }
 
+// begin true you swiper styling
 .swiper-container
 {
     width: 100%;
@@ -74,41 +75,12 @@ body
 {
     background-image: url('http://thesource.com/wp-content/uploads/2013/12/Sebastian-Mikael-Promo-1.jpg') !important;
     background-size: 120%;
-}
+} 
+// end swiper styling
 
-.swiper-button-next
-{
-    z-index: 999 !important;
-}
 
-// .parallax-bg
-// {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 130%;
-//     height: 100%;
-//     background-position: center;
-//     -webkit-background-size: cover;
-//             background-size: cover;
-// }
-// .swiper-slide .title {
-//   font-size: 41px;
-//   font-weight: 300;
-//   img {
-//     vertical-align: top !important;
-//     margin-top: -200px !important;
-//     max-width: 90%;
-//   }
-//   .swiper-slide .subtitle {
-//       font-size: 21px;
-//   }
-//   .swiper-slide .text {
-//       font-size: 14px;
-//       max-width: 400px;
-//       line-height: 1.3;
-//   }
-// }
+
+// begin tightener section styling
 .tightener
 {
     height: 100%;
@@ -169,7 +141,9 @@ body
         }
     }
 }
+// end tightener section styling
 
+// begin brightener section styling
 .brightener
 {
     height: 100%;
@@ -230,7 +204,9 @@ body
         }
     }
 }
+// end brightener section styling
 
+// begin pack section styling
 .pack
 {
     height: 100%;
@@ -291,17 +267,20 @@ body
         }
     }
 }
+// end pack section styling
 
+
+// begin before-after section styling
 .big-slider
 {
     position: relative;
 
-    overflow: auto;
-
     width: 100%;
     height: 600px;
     margin: 0 auto;
+
     text-align: center;
+
     color: #9b9b9b;
     background: #f8f1ee;
     .before-after
@@ -309,8 +288,6 @@ body
         position: absolute;
         top: 50%;
         left: 50%;
-
-        overflow: auto;
 
         width: 80%;
         height: 90%;
@@ -322,13 +299,27 @@ body
         background-color: #f8f1ee;
         .swiper-wrapper
         {
-          .swiper-slide {
-            padding: 0 !important;
-          }
+            .swiper-slide
+            {
+                padding: 0 !important;
+                &:hover
+                {
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+
+                    background: rgba(255,0,0,.2);
+                    
+                }
+            }
         }
     }
 }
+// end before-after section styling
 
+// begin footer section styling
 footer
 {
     z-index: -1;
@@ -422,3 +413,4 @@ footer
         }
     }
 }
+// end footer section styling
