@@ -8,27 +8,40 @@ nav {
         #nav-toggle {
             position: relative;
             margin: 0 0 0 1px;
+            @media #{$landscape} {
+                
+            }
         }
         #language-icon {
             padding-top: 7px;
+            @media #{$landscape} {
+                padding: 0;
+            }
         }
     }
     .row > .small-8 {
         .header-image {
             margin: 15px 0 0 0;
+            @media #{$landscape} {
+                margin: 11px 0 0 0;
+            }
         }
     }
 }
+
 
 .menuWrapper {
     position: absolute;
     width: 350px;
     height: 500px;
+    @media #{$landscape} {
+        top: 75px;
+    }
 }
 
 .navigation {
     position: absolute;
-    z-index: 999;
+    z-index: 9;
     top: 5px;
     left: 10px;
     overflow: hidden;
@@ -36,6 +49,10 @@ nav {
     /* the container's height will determine the height of its slider  */
     height: auto;
     color: white;
+    @media #{$landscape} {
+        top: 20px;
+        left: 4px;
+    }
 }
 
 // .blurM{
@@ -58,7 +75,7 @@ nav {
     content: ' ';
     cursor: pointer;
     border-radius: 1px;
-    background: #d6a385;
+    background: $peach;
 }
 
 #nav-toggle span:before {
@@ -121,6 +138,9 @@ nav {
     -ms-transform: translate(0, 0%);
     transform: translate(0, 0%);
     opacity: .8;
+    @media #{$medium-up} {
+        
+    }
 }
 
 .slider.opened:after {
@@ -144,8 +164,8 @@ nav {
     box-sizing: border-box;
     padding: 20px;
     // border:1px solid white;
-    color: #fff;
-    background: #d6a385;
+    color: $white;
+    background: $peach;
     -ms-box-sizing: border-box;
 } // end navigation styling
 // Language menu styling
@@ -155,13 +175,16 @@ nav {
     right: 0;
     width: 350px;
     height: 500px;
+    @media #{$landscape} {
+        top: 75px;
+    }
 }
 
 // .bubble {
 //     fill:none;
 // }
 // .bubble:hover {
-//     stroke: #D6A385;
+//     stroke: $peach;
 //     stroke-width: 2;
 //     webkit-animation: dash 3s linear forwards;
 //     -o-animation: dash 3s linear forwards;
@@ -192,7 +215,7 @@ nav {
 // }
 .lNavigation {
     position: absolute;
-    z-index: 999;
+    z-index: 10;
     top: 5px;
     right: 0;
     overflow: hidden;
@@ -200,6 +223,10 @@ nav {
     /* the container's height will determine the height of its slider  */
     height: auto;
     color: white;
+    @media #{$landscape} {
+        top: 20px;
+        right: 5px;
+    }
 }
 
 .lNavigation:before {
@@ -253,15 +280,15 @@ nav {
     box-sizing: border-box;
     padding: 20px;
     // border:1px solid white;
-    color: #fff;
-    background: #937367;
+    color: $white;
+    background: $jouvebrown;
     -ms-box-sizing: border-box;
 }
 
 // SVG styling
 // .bubble-animate {
 //     fill:none;
-//     stroke:#D6A385;
+//     stroke:$peach;
 //     stroke-width:2;
 //     webkit-animation: dash 3s linear forwards;
 //     -o-animation: dash 3s linear forwards;
@@ -279,9 +306,9 @@ nav {
 //     -webkit-user-select: none;
 //     -moz-user-select: none;
 //     appearance: none;
-//     background-color: #937367;
+//     background-color: $jouvebrown;
 //     background: transparent;
-//     border: 1px solid #fff;
+//     border: 1px solid $white;
 // }
 // select::-ms-expand {
 //     /* for IE 11 */
@@ -306,7 +333,7 @@ nav {
 
 .custom-dropdown__select--white {
     color: #444;
-    background-color: #937367;
+    background-color: $jouvebrown;
 }
 
 @supports (pointer-events: none) and ((-webkit-appearance: none) or (-moz-appearance: none) or (appearance: none)) {
@@ -339,7 +366,7 @@ nav {
         margin-top: -.5em;
         /*  Custom dropdown arrow */
         content: '\25BC';
-        border: 1px solid #fff;
+        border: 1px solid $white;
     }
     .custom-dropdown::before {
         top: 0;
@@ -358,7 +385,7 @@ nav {
     /* White dropdown style */
     .custom-dropdown--white::before {
         border-left: 1px solid rgba(0, 0, 0, .1);
-        background-color: #937367;
+        background-color: $jouvebrown;
     }
     .custom-dropdown--white::after {
         color: rgba(0, 0, 0, .9);
