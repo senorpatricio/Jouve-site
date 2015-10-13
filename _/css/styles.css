@@ -8,30 +8,62 @@
 /*HEADER*/
 nav {
   width: 100%;
-  height: 10%; }
+  height: 10%;
+  /* ----------- iPhone 4 and 4S ----------- */
+  /* Landscape */
+  /* ----------- iPhone 6+ ----------- */
+  /* Landscape */ }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    nav {
+      height: 20%; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    nav {
+      height: auto; } }
   nav .row > .small-2 {
-    margin: 11px 0 0 0; }
+    margin: 11px 0 0 0;
+    /* ----------- iPhone 6 ----------- */
+    /* Landscape */ }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      nav .row > .small-2 {
+        margin: 0; } }
     nav .row > .small-2 #nav-toggle {
       position: relative;
       margin: 0 0 0 1px; }
     nav .row > .small-2 #language-icon {
-      padding-top: 7px; }
-      @media only screen and (orientation: landscape) {
+      padding-top: 7px;
+      /* ----------- iPhone 6 ----------- */
+      /* Landscape */
+      /* ----------- iPhone 6+ ----------- */
+      /* Landscape */ }
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
         nav .row > .small-2 #language-icon {
-          padding: 0; } }
+          padding: 20px !important;
+          margin: 0 0 -10px 5px !important; } }
+      @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+        nav .row > .small-2 #language-icon {
+          padding: 20px !important;
+          margin: 0 0 -10px 5px !important; } }
+  nav .row > .small-8 img {
+    /* ----------- iPhone 6 ----------- */
+    /* Landscape */ }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      nav .row > .small-8 img {
+        margin: 20px 0 0 60px !important;
+        max-width: 60% !important; } }
   nav .row > .small-8 .header-image {
-    margin: 15px 0 0 0; }
-    @media only screen and (orientation: landscape) {
+    margin: 15px 0 0 0;
+    /* ----------- iPhone 6 ----------- */
+    /* Landscape */ }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
       nav .row > .small-8 .header-image {
         margin: 11px 0 0 0; } }
 
 .menuWrapper {
   position: absolute;
   width: 350px;
-  height: 500px; }
-  @media only screen and (orientation: landscape) {
-    .menuWrapper {
-      top: 75px; } }
+  height: 500px;
+  /* ----------- iPhone 6 ----------- */
+  /* Landscape */ }
 
 .navigation {
   position: absolute;
@@ -42,10 +74,14 @@ nav {
   width: 70%;
   /* the container's height will determine the height of its slider  */
   height: auto;
-  color: white; }
-  @media only screen and (orientation: landscape) {
+  color: white;
+  /* ----------- iPhone 6 ----------- */
+  /* Landscape */
+  /* ----------- iPhone 6+ ----------- */
+  /* Landscape */ }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .navigation {
-      top: 20px;
+      top: 5px;
       left: 4px; } }
 
 #nav-toggle span,
@@ -58,7 +94,7 @@ nav {
   content: ' ';
   cursor: pointer;
   border-radius: 1px;
-  background: #D6A385; }
+  background: #C59B96; }
 
 #nav-toggle span:before {
   top: -10px; }
@@ -70,7 +106,7 @@ nav {
 #nav-toggle span:before,
 #nav-toggle span:after {
   transition: all 500ms ease-in-out;
-  color: #D6A385; }
+  color: #C59B96; }
 
 #nav-toggle.active span {
   background-color: transparent; }
@@ -125,7 +161,7 @@ nav {
   box-sizing: border-box;
   padding: 20px;
   color: #fff;
-  background: #D6A385;
+  background: #C59B96;
   -ms-box-sizing: border-box; }
 
 .lMenuWrapper {
@@ -133,9 +169,6 @@ nav {
   right: 0;
   width: 350px;
   height: 500px; }
-  @media only screen and (orientation: landscape) {
-    .lMenuWrapper {
-      top: 75px; } }
 
 .lNavigation {
   position: absolute;
@@ -146,10 +179,11 @@ nav {
   width: 70%;
   /* the container's height will determine the height of its slider  */
   height: auto;
-  color: white; }
-  @media only screen and (orientation: landscape) {
+  color: white;
+  /* ----------- iPhone 6 ----------- */
+  /* Landscape */ }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .lNavigation {
-      top: 20px;
       right: 5px; } }
 
 .lNavigation:before {
@@ -190,7 +224,7 @@ nav {
   box-sizing: border-box;
   padding: 20px;
   color: #fff;
-  background: #937367;
+  background: #A47872;
   -ms-box-sizing: border-box; }
 
 .custom-dropdown--large {
@@ -209,7 +243,7 @@ nav {
 
 .custom-dropdown__select--white {
   color: #444;
-  background-color: #937367; }
+  background-color: #A47872; }
 
 @supports (pointer-events: none) and (-webkit-appearance: none) or (appearance: none) {
   .custom-dropdown {
@@ -253,7 +287,7 @@ nav {
   /* White dropdown style */
   .custom-dropdown--white::before {
     border-left: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #937367; }
+    background-color: #A47872; }
   .custom-dropdown--white::after {
     color: rgba(0, 0, 0, 0.9); }
   /* FF only temp fix */
@@ -293,415 +327,442 @@ body {
 
 .swiper-container {
   width: 100%;
-  height: 100%;
-  background: #000; }
+  height: 90%; }
+  .swiper-container .arrows {
+    top: 80% !important; }
 
 .swiper-slide {
   font-size: 18px;
   box-sizing: border-box;
   padding: 40px 60px;
-  color: #fff; }
-  .swiper-slide
-.true-you {
+  color: #fff;
+  position: relative; }
+  .swiper-slide .true-you {
     position: absolute;
-    top: 15%;
-    left: 11%;
-    max-width: 80%; }
-    @media only screen and (orientation: landscape) {
-      .swiper-slide
-.true-you {
-        max-width: 50%;
-        right: 10% !important; } }
+    top: 37%;
+    left: 0%;
+    /* ----------- iPhone 6 ----------- */
+    /* Landscape */
+    /* ----------- iPhone 6+ ----------- */
+    /* Landscape */ }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      .swiper-slide .true-you {
+        max-width: 75%;
+        left: 12% !important;
+        top: 5%; } }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+      .swiper-slide .true-you {
+        max-width: 75%;
+        left: 12% !important;
+        top: 5%; } }
 
 .slide1 {
-  background-image: url("../img/slider-background.png");
-  background-size: 120%; }
+  background-image: url("../img/jouve_home_slider.jpg");
+  background-size: 251%;
+  background-position: -290px;
+  /* ----------- iPhone 6 ----------- */
+  /* Landscape */
+  /* ----------- iPhone 6+ ----------- */
+  /* Landscape */ }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .slide1 {
+      background-image: url("../img/jouve_home_slider.jpg");
+      background-size: 100%;
+      background-position: 0; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .slide1 {
+      background-image: url("../img/jouve_home_slider.jpg");
+      background-size: 100%;
+      background-position: 0; } }
 
 .slide2 {
   background-image: url("../img/slider-background.png");
-  background-size: 120%; }
+  background-size: 115%;
+  /* ----------- iPhone 6 ----------- */
+  /* Landscape */
+  /* ----------- iPhone 6+ ----------- */
+  /* Landscape */ }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .slide2 {
+      background-image: url("../img/jouve_home_slider.jpg");
+      background-size: 100%;
+      background-position: 0; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .slide2 {
+      background-image: url("../img/jouve_home_slider.jpg");
+      background-size: 100%;
+      background-position: 0; } }
 
 .tightener {
-  height: auto;
-  margin: 0 0 100px 0;
+  height: 80%;
+  margin: 20px 0 50px 0;
   padding-top: 50px;
-  vertical-align: middle; }
-  @media only screen and (orientation: landscape) {
+  vertical-align: middle;
+  /* ----------- iPhone 6 ----------- */
+  /* Landscape */
+  /* ----------- iPhone 6+ ----------- */
+  /* Landscape */ }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .tightener {
-      margin: 0 0 0 0; } }
-  .tightener
-.product {
-    max-width: 95%;
-    margin: 0 0 30px 0; }
-    @media only screen and (orientation: landscape) {
-      .tightener
-.product {
-        max-width: 80%; } }
-  .tightener
-.product-tag {
+      height: 100%;
+      margin: 0 0 40px 0; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .tightener {
+      height: 100%;
+      margin: 0 0 40px 0; } }
+  .tightener .product {
+    max-width: 130%;
+    margin: 0 0 30px 0;
+    /* ----------- iPhone 6 ----------- */
+    /* Landscape */
+    /* ----------- iPhone 6+ ----------- */
+    /* Landscape */ }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      .tightener .product {
+        max-width: 100%; } }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+      .tightener .product {
+        max-width: 100%; } }
+  .tightener .product-tag {
     font-family: HelveticaNeueLTStd-ThIt;
-    font-size: 20px;
+    font-size: 16px;
     float: left;
-    margin-top: 70px;
+    margin-top: 127px;
     vertical-align: bottom;
     color: #979797; }
-    @media only screen and (orientation: landscape) {
-      .tightener
-.product-tag {
+    @media (min-width: 480px) and (max-width: 767px) {
+      .tightener .product-tag {
         margin-top: 30px; } }
   .tightener .row > .left-description {
     float: left !important; }
-  .tightener
-.description {
+  .tightener .description {
     font-family: HelveticaNeueLTStd-Lt;
     font-weight: 100;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 1px;
     padding: 30px 0 0 0;
     float: left;
     color: #979797;
     border-top: 1px solid #979797; }
-  .tightener
-.product-link {
-    color: #979797 !important; }
-    .tightener
-.product-link
-a {
+  .tightener .product-link {
+    color: #979797 !important;
+    /* ----------- iPhone 6 ----------- */
+    /* Landscape */
+    /* ----------- iPhone 6+ ----------- */
+    /* Landscape */ }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      .tightener .product-link {
+        margin: 20px; } }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+      .tightener .product-link {
+        margin: 30px;
+        padding-top: 0; } }
+    .tightener .product-link a {
       text-decoration: none;
       color: #979797 !important; }
-      .tightener
-.product-link
-a:link {
+      .tightener .product-link a:link {
         text-decoration: none;
         color: #979797 !important; }
-      .tightener
-.product-link
-a:hover {
-        color: #937367; }
-      .tightener
-.product-link
-a:visited {
-        color: #D6A385; }
+      .tightener .product-link a:hover {
+        color: #A47872; }
+      .tightener .product-link a:visited {
+        color: #C59B96; }
 
 .clear {
   clear: both; }
 
 .brightener {
-  height: auto;
+  height: 65%;
   margin: 0 0 100px 0;
   padding-top: 0;
-  vertical-align: middle; }
-  .brightener
-.product {
-    max-width: 95%;
-    margin: 0 0 30px 0; }
-    @media only screen and (orientation: landscape) {
-      .brightener
-.product {
-        max-width: 80%; } }
-  .brightener
-.product-tag {
+  vertical-align: middle;
+  /* ----------- iPhone 6 ----------- */
+  /* Landscape */ }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .brightener {
+      height: 100%;
+      margin: 0 0 10px 0; } }
+  .brightener .product {
+    max-width: 130%;
+    margin: 0 0 30px 0;
+    /* ----------- iPhone 6 ----------- */
+    /* Landscape */
+    /* ----------- iPhone 6+ ----------- */
+    /* Landscape */ }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      .brightener .product {
+        max-width: 100%; } }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+      .brightener .product {
+        max-width: 100%; } }
+  .brightener .product-tag {
     font-family: HelveticaNeueLTStd-ThIt;
-    font-size: 20px;
+    font-size: 16px;
     float: left;
-    margin-top: 70px;
+    margin-top: 127px;
     vertical-align: bottom;
     color: #979797; }
-    @media only screen and (orientation: landscape) {
-      .brightener
-.product-tag {
+    @media (min-width: 480px) and (max-width: 767px) {
+      .brightener .product-tag {
         margin-top: 30px; } }
-  .brightener
-.description {
+  .brightener .description {
     font-family: HelveticaNeueLTStd-Lt;
     font-weight: 100;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 1px;
     padding: 30px 0 0 0;
     float: left;
     color: #979797;
     border-top: 1px solid #979797; }
-  .brightener
-.product-link {
-    color: #979797 !important; }
-    @media only screen and (orientation: landscape) {
-      .brightener
-.product-link {
-        margin-bottom: 30px; } }
-    .brightener
-.product-link a {
+  .brightener .product-link {
+    color: #979797 !important;
+    /* ----------- iPhone 6 ----------- */
+    /* Landscape */
+    /* ----------- iPhone 6+ ----------- */
+    /* Landscape */ }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      .brightener .product-link {
+        margin: 20px; } }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+      .brightener .product-link {
+        margin: 30px;
+        padding-top: 0; } }
+    .brightener .product-link a {
       text-decoration: none;
       color: #979797 !important; }
-      .brightener
-.product-link a:link {
+      .brightener .product-link a:link {
         text-decoration: none;
         color: #979797 !important; }
-      .brightener
-.product-link a:hover {
-        color: #937367; }
-      .brightener
-.product-link a:visited {
-        color: #D6A385; }
-
-.pack {
-  height: auto;
-  margin: 0 0 100px 0;
-  padding-top: 0;
-  vertical-align: middle; }
-  .pack
-.product {
-    max-width: 95%;
-    margin: 0 0 30px 0; }
-    @media only screen and (orientation: landscape) {
-      .pack
-.product {
-        max-width: 80%;
-        margin: 25px 0 30px 0; } }
-  .pack
-.product-tag {
-    font-family: HelveticaNeueLTStd-ThIt;
-    font-size: 20px;
-    float: left;
-    margin-top: 70px;
-    vertical-align: bottom;
-    color: #979797; }
-    @media only screen and (orientation: landscape) {
-      .pack
-.product-tag {
-        margin-top: 30px; } }
-  .pack
-.description {
-    font-family: HelveticaNeueLTStd-Lt;
-    font-weight: 100;
-    line-height: 14px;
-    padding: 30px 0 0 0;
-    float: left;
-    color: #979797;
-    border-top: 1px solid #979797; }
-  .pack
-.product-link {
-    color: #979797 !important; }
-    @media only screen and (orientation: landscape) {
-      .pack
-.product-link {
-        margin-bottom: 30px; } }
-    .pack
-.product-link a {
-      text-decoration: none;
-      color: #979797 !important; }
-      .pack
-.product-link a:link {
-        text-decoration: none;
-        color: #979797 !important; }
-      .pack
-.product-link a:hover {
-        color: #937367; }
-      .pack
-.product-link a:visited {
-        color: #D6A385; }
+      .brightener .product-link a:hover {
+        color: #A47872; }
+      .brightener .product-link a:visited {
+        color: #C59B96; }
 
 .big-slider {
   position: relative;
   width: 100%;
-  height: 600px;
-  margin: 0 auto;
+  height: 105%;
+  margin: 30px auto 0 auto;
   text-align: center;
   color: #979797;
-  background: #f8f1ee; }
-  @media only screen and (orientation: landscape) {
+  background: #FCF4F3;
+  /* ----------- iPhone 6 ----------- */
+  /* Landscape */
+  /* ----------- iPhone 6+ ----------- */
+  /* Landscape */ }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .big-slider {
       height: 100%; } }
-  .big-slider h3 {
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .big-slider {
+      height: 100%; } }
+  .big-slider .before-title {
     padding: 15px;
-    color: #979797; }
-  .big-slider
-.before-after {
+    color: #979797;
+    /* ----------- iPhone 6 ----------- */
+    /* Landscape */
+    /* ----------- iPhone 6+ ----------- */
+    /* Landscape */ }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      .big-slider .before-title {
+        font-size: 18px; } }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+      .big-slider .before-title {
+        font-size: 18px; } }
+  .big-slider .before-after {
     position: absolute;
-    top: 56%;
+    top: 52%;
     left: 50%;
     width: 80%;
     height: 88%;
-    padding: 30px 10px 10px 10px;
+    padding: 10px;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     color: white;
-    background-color: #f8f1ee; }
-    .big-slider
-.before-after
-.swiper-wrapper
-.swiper-slide {
+    background-color: #FCF4F3;
+    /* ----------- iPhone 6 ----------- */
+    /* Landscape */
+    /* ----------- iPhone 6+ ----------- */
+    /* Landscape */ }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      .big-slider .before-after {
+        height: 82%; } }
+    @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+      .big-slider .before-after {
+        height: 82%; } }
+    .big-slider .before-after .swiper-wrapper .swiper-slide {
       padding: 0 !important;
       position: relative; }
-      .big-slider
-.before-after
-.swiper-wrapper
-.swiper-slide .picholder:hover .overlay {
+      .big-slider .before-after .swiper-wrapper .swiper-slide img {
+        padding: 0 !important; }
+      .big-slider .before-after .swiper-wrapper .swiper-slide .picholder:hover .overlay {
         opacity: 1; }
-      .big-slider
-.before-after
-.swiper-wrapper
-.swiper-slide .picholder:hover .fancypics {
+      .big-slider .before-after .swiper-wrapper .swiper-slide .picholder:hover .fancypics {
         opacity: 0.7; }
-      .big-slider
-.before-after
-.swiper-wrapper
-.swiper-slide .picholder {
+      .big-slider .before-after .swiper-wrapper .swiper-slide .picholder {
         width: 100%;
-        position: relative; }
-      .big-slider
-.before-after
-.swiper-wrapper
-.swiper-slide .overlay {
+        position: relative;
+        height: 100%; }
+      .big-slider .before-after .swiper-wrapper .swiper-slide .overlay {
         bottom: 30;
         left: 0;
         top: 0;
         right: 0;
-        height: 500px;
-        width: 250px;
+        height: 101%;
+        width: 100%;
         margin: auto;
         position: absolute;
-        background: rgba(214, 163, 133, 0.7);
-        opacity: 0; }
-        @media only screen and (orientation: landscape) {
-          .big-slider
-.before-after
-.swiper-wrapper
-.swiper-slide .overlay {
-            height: 250px;
+        background: rgba(196, 154, 149, 0.8);
+        opacity: 0;
+        /* ----------- iPhone 6 ----------- */
+        /* Landscape */
+        /* ----------- iPhone 6+ ----------- */
+        /* Landscape */ }
+        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+          .big-slider .before-after .swiper-wrapper .swiper-slide .overlay {
             width: 100%;
-            margin-top: -10px; } }
-      .big-slider
-.before-after
-.swiper-wrapper
-.swiper-slide .text_title {
+            height: 91%; } }
+        @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+          .big-slider .before-after .swiper-wrapper .swiper-slide .overlay {
+            width: 100%;
+            height: 91%; } }
+      .big-slider .before-after .swiper-wrapper .swiper-slide .text_title {
         color: white;
-        padding-top: 30%; }
-        @media only screen and (orientation: landscape) {
-          .big-slider
-.before-after
-.swiper-wrapper
-.swiper-slide .text_title {
-            padding-top: 5%; } }
-      .big-slider
-.before-after
-.swiper-wrapper
-.swiper-slide .text_box {
+        padding-top: 50%;
+        /* ----------- iPhone 6 ----------- */
+        /* Landscape */
+        /* ----------- iPhone 6+ ----------- */
+        /* Landscape */ }
+        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+          .big-slider .before-after .swiper-wrapper .swiper-slide .text_title {
+            padding-top: 8%;
+            padding-bottom: 0; } }
+        @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+          .big-slider .before-after .swiper-wrapper .swiper-slide .text_title {
+            padding-top: 8%;
+            padding-bottom: 0; } }
+      .big-slider .before-after .swiper-wrapper .swiper-slide .text_box {
         color: white;
         line-height: 20px;
         padding: 10px;
         padding-bottom: 50%;
-        text-align: center; }
-      .big-slider
-.before-after
-.swiper-wrapper
-.swiper-slide .fancypics {
-        width: 100%; }
-        @media only screen and (orientation: landscape) {
-          .big-slider
-.before-after
-.swiper-wrapper
-.swiper-slide .fancypics {
+        text-align: center;
+        /* ----------- iPhone 6 ----------- */
+        /* Landscape */
+        /* ----------- iPhone 6+ ----------- */
+        /* Landscape */ }
+        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+          .big-slider .before-after .swiper-wrapper .swiper-slide .text_box {
+            font-size: 14px;
+            padding-bottom: 0; } }
+        @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+          .big-slider .before-after .swiper-wrapper .swiper-slide .text_box {
+            font-size: 14px;
+            padding-bottom: 0; } }
+      .big-slider .before-after .swiper-wrapper .swiper-slide .fancypics {
+        width: 100%;
+        /* ----------- iPhone 6 ----------- */
+        /* Landscape */
+        /* ----------- iPhone 6+ ----------- */
+        /* Landscape */ }
+        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+          .big-slider .before-after .swiper-wrapper .swiper-slide .fancypics {
             width: 50%; } }
+        @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+          .big-slider .before-after .swiper-wrapper .swiper-slide .fancypics {
+            width: 50%; } }
+
+.scroll-top-wrapper {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  text-align: center;
+  z-index: 99999999;
+  background-color: #777777;
+  color: #eeeeee;
+  width: 50px;
+  height: 48px;
+  line-height: 48px;
+  right: 30px;
+  bottom: 30px;
+  padding-top: 2px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 0.5s ease-in-out; }
+
+.scroll-top-wrapper:hover {
+  background-color: #888888; }
+
+.scroll-top-wrapper.show {
+  visibility: visible;
+  cursor: pointer;
+  opacity: 1.0; }
+
+.scroll-top-wrapper i.fa {
+  line-height: inherit; }
 
 footer {
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(-180deg, #937367 0%, #D6A385 100%); }
-  @media only screen and (orientation: landscape) {
+  background-image: linear-gradient(-180deg, #A47972 4%, #EFCBC5 100%);
+  /* ----------- iPhone 6 ----------- */
+  /* Landscape */ }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     footer {
-      height: auto; } }
-  footer
-#foot-menu
-ul {
+      height: 100%; } }
+  footer #foot-menu ul {
     margin: 40px 0;
     list-style: none;
     color: #fff;
     font-weight: 100; }
-    footer
-#foot-menu
-ul
-li
-a {
+    footer #foot-menu ul li a {
       text-decoration: none;
       color: #fff !important; }
-      footer
-#foot-menu
-ul
-li
-a:link {
+      footer #foot-menu ul li a:link {
         text-decoration: none;
         color: #fff !important; }
-      footer
-#foot-menu
-ul
-li
-a:hover {
-        color: #937367; }
-      footer
-#foot-menu
-ul
-li
-a:visited {
-        color: #D6A385; }
-  @media only screen and (orientation: landscape) {
-    footer
-#social-buttons {
+      footer #foot-menu ul li a:hover {
+        color: #A47872; }
+      footer #foot-menu ul li a:visited {
+        color: #C59B96; }
+  @media (min-width: 480px) and (max-width: 767px) {
+    footer #social-buttons {
       margin: 40px 0; } }
-  footer
-#social-buttons
-ul {
+  footer #social-buttons ul {
     z-index: 10;
     display: inline;
     margin: 40px 0;
     list-style: none; }
-    footer
-#social-buttons
-ul
-li {
+    footer #social-buttons ul li {
       display: inline;
       margin: 0 12px 0 0; }
-      footer
-#social-buttons
-ul
-li
-a
-img {
+      footer #social-buttons ul li a img {
         max-width: 15%; }
-  footer
-#foot-logo {
+  footer #foot-logo {
     float: none; }
-    @media only screen and (orientation: landscape) {
-      footer
-#foot-logo {
+    @media (min-width: 480px) and (max-width: 767px) {
+      footer #foot-logo {
         float: left;
         margin: 24px auto; } }
-    footer
-#foot-logo
-img {
+    footer #foot-logo img {
       margin: 50px auto; }
-      @media only screen and (orientation: landscape) {
-        footer
-#foot-logo
-img {
+      @media (min-width: 480px) and (max-width: 767px) {
+        footer #foot-logo img {
           margin: auto; } }
-  @media only screen and (orientation: landscape) {
-    footer
-#contact {
+  @media (min-width: 480px) and (max-width: 767px) {
+    footer #contact {
       float: left;
       margin: 10px 0 0 0; } }
-  footer
-#contact
-h3 {
+  footer #contact h3 {
     margin: 30px 0 0 0;
     color: #fff;
     font-weight: 100; }
-  footer
-#contact
-address {
+  footer #contact address {
     color: #fff;
     font-weight: 100; }
-
-body {
-  background: #444;
-  color: #ff00ff;
-  font-size: 2em;
-  border: 1px solid blue; }

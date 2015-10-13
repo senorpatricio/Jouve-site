@@ -3,6 +3,7 @@
 <html>
 
 <head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="_/css/styles.css">
     <link rel="stylesheet" href="_/css/foundation.min.css">
     <link rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css">
@@ -66,13 +67,13 @@
             <div class="swiper-slide slide2">
                 <img src="_/img/the_true_you.svg" class="true-you" alt="">
             </div>
-            <div class="swiper-slide">Slide 3</div>
+            
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
         <!-- Add Arrows -->
-        <div class="swiper-button-next swiper-button-white"></div>
-        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="arrows swiper-button-next swiper-button-white"></div>
+        <div class="arrows swiper-button-prev swiper-button-white"></div>
     </div>
     <!-- Tightener section -->
     <div class="tightener">
@@ -80,11 +81,11 @@
             <div class="small-offset-1 small-5 medium-4 columns">
                 <img src="_/img/tightener.png" alt="tightener" class="product">
             </div>
-            <div class="small-5 medium-6 columns">
+            <div class="small-5 medium-5 columns">
                 <p class="product-tag">INSTANT TIGHTENING & RESTORING SERUM</p>
             </div>
-            <div class="small-offset-1 small-10 medium-offset-0 medium-7 columns">
-                <p class="description">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought.</p>
+            <div class="small-offset-1 small-10 medium-offset-0 medium-6 columns">
+                <p class="description">Visibly lifts, firms, minimizes, and restores for immediate time-shattering radiance.</p>
             </div>
             <div class="small-offset-8 small-4 medium-offset-0 medium-3 columns">
                 <div class="product-link">
@@ -102,11 +103,11 @@
         <div class="small-offset-1 small-5 medium-4 columns">
             <img src="_/img/brightener.png" alt="cardiel" class="product">
         </div>
-        <div class="small-5 medium-6 columns">
+        <div class="small-5 medium-5 columns">
             <p class="product-tag">DARKSPOT CORRECTOR & BRIGHTENING CREAM</p>
         </div>
-        <div class="small-offset-1 small-10 medium-offset-0 medium-7 columns">
-            <p class="description">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought.</p>
+        <div class="small-offset-1 small-10 medium-offset-0 medium-6 columns">
+            <p class="description">Corrects, evens, hydrates, and nourishes for beautifully youthful looking skin.</p>
         </div>
         <div class="small-offset-8 small-4 medium-offset-0 medium-3 columns">
             <div class="product-link">
@@ -117,29 +118,10 @@
     </div>
     <!-- end brightener div -->
     <div class="clear"></div>
-    <!-- Pack Section -->
-    <div class="pack">
-        <div class="small-offset-1 small-6 medium-offset-0 medium-5 columns">
-            <img src="_/img/Product Image.jpg" alt="cardiel" class="product">
-        </div>
-        <div class="small-5 medium-6 columns">
-            <p class="product-tag">DARKSPOT CORRECTOR & BRIGHTENING CREAM</p>
-        </div>
-        <div class="small-offset-1 small-10 medium-offset-0 medium-7 columns">
-            <p class="description">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought.</p>
-        </div>
-        <div class="small-offset-8 small-4 medium-offset-0 medium-3 columns">
-            <div class="product-link">
-                <a href="#"><img src="_/img/MORE.png" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- end Pack div -->
-    <div class="clear"></div>
-    <!-- Swiper -->
+    
+      <!-- Swiper -->
     <div class="big-slider">
-        <h3 class="HelveticaNeueLTStd-ThIt">BEFORE & AFTER</h3>
+        <p class="HelveticaNeueLTStd-ThIt before-title">BEFORE & AFTER</p>
         <div class="swiper-container before-after">
             <div class="swiper-wrapper">
                 <div class="swiper-slide row">
@@ -187,6 +169,13 @@
         <div class="swiper-button-prev swiper-button-black"></div>
     </div>
     <!-- end Swiper -->
+    <div class="clear"></div>
+    <!-- scroll to top button -->
+    <div class="scroll-top-wrapper ">
+			<span class="scroll-top-inner">
+				<i class="fa fa-2x fa-angle-up"></i>
+			</span>
+		</div>
     <!-- begin Footer -->
     <footer>
         <div class="row HelveticaNeueLTStd-Lt">
@@ -275,6 +264,41 @@
     var lSlider = document.querySelector('.lSlider');
 
     language.addEventListener('click', languageSlider, false);
+
+    // scroll-to-top button
+    $(function(){
+ 
+			$(document).on( 'scroll', function(){
+		 
+				if ($(window).scrollTop() > 100) {
+					$('.scroll-top-wrapper').addClass('show');
+				} else {
+					$('.scroll-top-wrapper').removeClass('show');
+				}
+			});
+		});
+
+		$(function(){
+ 
+			$(document).on( 'scroll', function(){
+		 
+				if ($(window).scrollTop() > 100) {
+					$('.scroll-top-wrapper').addClass('show');
+				} else {
+					$('.scroll-top-wrapper').removeClass('show');
+				}
+			});
+		 
+			$('.scroll-top-wrapper').on('click', scrollToTop);
+		});
+		 
+		function scrollToTop() {
+			verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+			element = $('body');
+			offset = element.offset();
+			offsetTop = offset.top;
+			$('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+		}
     </script>
 </body>
 
