@@ -64,7 +64,7 @@ document.querySelector( "#language-toggle" )
 		addClass(aTag, "bubble")
 
 	}
-	console.log("hey man");
+	// console.log("hey man");
 	addClass(aTag, "bubble");
     this.classList.toggle( "active" );
   });
