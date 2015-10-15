@@ -32,12 +32,27 @@ footer {
       and (-webkit-min-device-pixel-ratio: 1) {
         height: 80%;
       }
+  /* ----------- Non-Retina laptop/desktop Screens ----------- */
+    @media screen 
+      and (min-device-width: 1025px) 
+      and (max-device-width: 1600px) 
+      and (-webkit-min-device-pixel-ratio: 1) {
+        height: 50%;
+      }
     #foot-menu {
         ul {
             margin: 40px 0;
             list-style: none;
+            font-family: HelveticaNeueLTStd-Lt;
             color: $white;
             font-weight: 100;
+            /* ----------- Non-Retina laptop/desktop Screens ----------- */
+            @media screen 
+              and (min-device-width: 1025px) 
+              and (max-device-width: 1600px) 
+              and (-webkit-min-device-pixel-ratio: 1) {
+               margin: 40px 25px; 
+              }
             li {
                 a {
                     text-decoration: none;
@@ -77,6 +92,13 @@ footer {
             and (orientation: landscape) 
             and (-webkit-min-device-pixel-ratio: 1) {
               margin: 40px 0;
+            }
+          /* ----------- Non-Retina laptop/desktop Screens ----------- */
+          @media screen 
+            and (min-device-width: 1025px) 
+            and (max-device-width: 1600px) 
+            and (-webkit-min-device-pixel-ratio: 1) {
+              margin: 40px 0 20px 0;
             }
         ul {
             // color: $white;
@@ -121,6 +143,14 @@ footer {
               float: left;
               margin: 24px auto;
             }
+          /* ----------- Non-Retina laptop/desktop Screens ----------- */
+          @media screen 
+            and (min-device-width: 1025px) 
+            and (max-device-width: 1600px) 
+            and (-webkit-min-device-pixel-ratio: 1) {
+              float: left;
+              margin: 24px auto;
+            }
         img {
             margin: 50px auto;
             @media (min-width: 480px) and (max-width: 767px) {
@@ -144,11 +174,20 @@ footer {
               and (-webkit-min-device-pixel-ratio: 1) {
                 margin: auto;
               }
+            /* ----------- Non-Retina laptop/desktop Screens ----------- */
+            @media screen 
+              and (min-device-width: 1025px) 
+              and (max-device-width: 1600px) 
+              and (-webkit-min-device-pixel-ratio: 1) {
+                margin: auto;
+                max-width: 85%;
+              } 
         }
     }
     #contact {
         @media (min-width: 480px) and (max-width: 767px) {
             float: left;
+            font-family: HelveticaNeueLTStd-Lt;
             margin: 10px 0 0 0;
         }
         /* ----------- iPad mini ----------- */
@@ -170,7 +209,7 @@ footer {
             and (-webkit-min-device-pixel-ratio: 1) {            
               margin: 20px 87px 0px 0;
             }
-        h3 {
+        h4 {
             // font-size: 36px;
             margin: 30px 0 0 0;
             color: $white;

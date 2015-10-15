@@ -191,17 +191,40 @@ nav {
 
 // large-only nav styling
 .large-nav {
-
-
-    .large-right-nav {
-
-        ul {
-            display: inline;
-            li {
-                display: inline;
+    .row {
+        margin: 0 !important;
+        max-width: 100% !important;
+        opacity: .8;
+        position: fixed;
+        z-index: 10;
+        background-color: $white;
+        height: 75px;
+        .header-image {
+            margin: 11px;
+            padding: 5px;
+            max-width: 35%        
+        }
+        .large-right-nav {
+            display: inline-block;
+            text-align: right;
+            ul {
+                margin: 10px 0 0 0;
+                li {
+                    display: inline;
+                    font-size: 14px;
+                    color: $peach;
+                    margin-right: 15px;
+                    #language-icon {
+                        max-width: 15%;
+                        margin: -15px;
+                        padding: 21px;
+                    }
+                }
             }
         }
     }
+
+    
 }
 
 .menuWrapper {
