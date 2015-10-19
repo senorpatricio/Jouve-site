@@ -14,7 +14,8 @@ nav {
       and (min-device-width: 375px) 
       and (max-device-width: 667px) 
       and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: landscape)  {
+      // and (orientation: landscape)  
+      {
         height: 20%;
     }
     /* ----------- iPhone 6+ ----------- */
@@ -23,7 +24,8 @@ nav {
       and (min-device-width: 414px) 
       and (max-device-width: 736px) 
       and (-webkit-min-device-pixel-ratio: 3)
-      and (orientation: landscape) { 
+      and (orientation: landscape) 
+      { 
         height: auto;
     }
     /* ----------- iPad mini ----------- */
@@ -52,7 +54,8 @@ nav {
           and (min-device-width: 375px) 
           and (max-device-width: 667px) 
           and (-webkit-min-device-pixel-ratio: 2)
-          and (orientation: landscape)  {
+          and (orientation: landscape)  
+          {
             margin: 0;
         }
         /* ----------- iPad mini ----------- */
@@ -80,7 +83,8 @@ nav {
               and (min-device-width: 375px) 
               and (max-device-width: 667px) 
               and (-webkit-min-device-pixel-ratio: 2)
-              and (orientation: landscape)  {
+              and (orientation: landscape)  
+              {
                 padding: 20px !important;
                 margin: 0 0 -10px 5px !important;
             }
@@ -90,7 +94,8 @@ nav {
               and (min-device-width: 414px) 
               and (max-device-width: 736px) 
               and (-webkit-min-device-pixel-ratio: 3)
-              and (orientation: landscape) { 
+              and (orientation: landscape) 
+              { 
                 padding: 20px !important;
                 margin: 0 0 -10px 5px !important;
             }
@@ -133,7 +138,8 @@ nav {
               and (min-device-width: 375px) 
               and (max-device-width: 667px) 
               and (-webkit-min-device-pixel-ratio: 2)
-              and (orientation: landscape) {
+              and (orientation: landscape) 
+              {
                 margin: 20px 0 0 60px !important;
                 max-width: 60% !important;
             }
@@ -175,7 +181,8 @@ nav {
               and (min-device-width: 375px) 
               and (max-device-width: 667px) 
               and (-webkit-min-device-pixel-ratio: 2)
-              and (orientation: landscape)  {
+              and (orientation: landscape)  
+              {
                 margin: 11px 0 0 0;
             }
             /* ----------- Non-Retina laptop/desktop Screens ----------- */
@@ -238,7 +245,8 @@ nav {
       and (min-device-width: 375px) 
       and (max-device-width: 667px) 
       and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: landscape)  {
+      and (orientation: landscape)  
+      {
         // top: 15%;
     }
 }
@@ -259,7 +267,8 @@ nav {
       and (min-device-width: 375px) 
       and (max-device-width: 667px) 
       and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: landscape) {
+      and (orientation: landscape) 
+      {
         top: 5px;
         left: 4px;
     }
@@ -269,7 +278,8 @@ nav {
       and (min-device-width: 414px) 
       and (max-device-width: 736px) 
       and (-webkit-min-device-pixel-ratio: 3)
-      and (orientation: landscape) { 
+      and (orientation: landscape) 
+      { 
     
     }
     /* ----------- iPad mini ----------- */
@@ -375,9 +385,7 @@ nav {
     -ms-transform: translate(0, 0%);
     transform: translate(0, 0%);
     opacity: .8;
-    @media #{$medium-up} {
-        
-    }
+    
 }
 
 .slider.opened:after {
@@ -466,7 +474,8 @@ nav {
       and (min-device-width: 375px) 
       and (max-device-width: 667px) 
       and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: landscape) {
+      and (orientation: landscape) 
+      {
         
         right: 5px;
     }

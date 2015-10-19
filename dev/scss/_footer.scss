@@ -39,6 +39,10 @@ footer {
       and (-webkit-min-device-pixel-ratio: 1) {
         height: 50%;
       }
+    @media screen 
+      and (min-device-width: 1025px) {
+        height: 50%;
+      } 
     #foot-menu {
         ul {
             margin: 40px 0;
@@ -53,6 +57,10 @@ footer {
               and (-webkit-min-device-pixel-ratio: 1) {
                margin: 40px 25px; 
               }
+            @media screen 
+              and (min-device-width: 1025px)  {
+                margin: 40px 25px; 
+            }
             li {
                 a {
                     text-decoration: none;
@@ -100,6 +108,10 @@ footer {
             and (-webkit-min-device-pixel-ratio: 1) {
               margin: 40px 0 20px 0;
             }
+          @media screen 
+            and (min-device-width: 1025px) {
+              margin: 40px 0 20px 0;
+            } 
         ul {
             // color: $white;
             z-index: 10;
@@ -151,6 +163,11 @@ footer {
               float: left;
               margin: 24px auto;
             }
+            @media screen 
+            and (min-device-width: 1025px) {
+              float: left;
+              margin: 24px auto;
+            } 
         img {
             margin: 50px auto;
             @media (min-width: 480px) and (max-width: 767px) {
@@ -176,9 +193,7 @@ footer {
               }
             /* ----------- Non-Retina laptop/desktop Screens ----------- */
             @media screen 
-              and (min-device-width: 1025px) 
-              and (max-device-width: 1600px) 
-              and (-webkit-min-device-pixel-ratio: 1) {
+            and (min-device-width: 1025px) {
                 margin: auto;
                 max-width: 85%;
               } 
@@ -208,6 +223,11 @@ footer {
             and (orientation: landscape) 
             and (-webkit-min-device-pixel-ratio: 1) {            
               margin: 20px 87px 0px 0;
+            }
+
+          @media screen 
+            and (min-device-width: 1025px)  {
+              margin: 20px 0 0 0;
             }
         h4 {
             // font-size: 36px;

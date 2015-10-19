@@ -19,7 +19,7 @@ body {
     margin: 0;
     padding: 0;
     color: $black;
-    background: $white;
+    // background: $white;
 
 }
 
@@ -27,18 +27,29 @@ body {
     max-width: 950px;
     height: auto;
     margin: 20px auto;
-    background-color: $white;
+    // background-color: $white;
 }
 
 .gradient-container {
+  height: inherit;
+  background-image: linear-gradient(-180deg, #C59B96 0%, #FFFFFF 100%);
   /* ----------- Non-Retina laptop/desktop Screens ----------- */
   @media screen 
     and (min-device-width: 1025px) 
     and (max-device-width: 1600px) 
     and (-webkit-min-device-pixel-ratio: 1) {
       height: 700px;
-        background-image: linear-gradient(-180deg, #C59B96 0%, #FFFFFF 100%);
+      background-image: linear-gradient(-180deg, #C59B96 0%, #FFFFFF 100%);
   }
+   /* ----------- Retina Screens ----------- */
+  @media screen 
+    and (min-device-width: 1025px) 
+    and (max-device-width: 1600px) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (min-resolution: 192dpi) {
+      background-image: linear-gradient(-180deg, #C59B96 0%, #FFFFFF 100%);
+      height: inherit;
+    }
 }
 
 // begin true you swiper styling
@@ -72,10 +83,41 @@ body {
           and (min-device-width: 1025px) 
           and (max-device-width: 1600px) 
           and (-webkit-min-device-pixel-ratio: 1) {
-            height: 90%;
+            height: auto;
             top: 0; 
-          }   
-         
+          } 
+          /* ----------- Retina Screens ----------- */
+        @media screen 
+          and (min-device-width: 1025px) 
+          and (max-device-width: 1600px) 
+          and (-webkit-min-device-pixel-ratio: 2)
+          and (min-resolution: 192dpi) { 
+            height: 86%;
+            top: 0;
+        }     
+        
+    .angle_arrow_left {
+      height: 70px;
+      width: 70px;
+      background-color: none;
+      border-top: 2px solid $white;
+      border-left: 2px solid $white;
+      transform: rotate(-45deg);
+      margin-left: 15px;
+      position: absolute;
+      background-image: none;
+    } 
+    .angle_arrow_right {
+      height: 70px;
+      width: 70px;
+      background-color: none;
+      border-top: 2px solid $white;
+      border-right: 2px solid $white;
+      transform: rotate(45deg);
+      margin-right: 15px;
+      position: absolute;
+      background-image: none;
+    }    
     .arrows {
       top: 80% !important;
       /* ----------- Non-Retina laptop/desktop Screens ----------- */
@@ -274,7 +316,7 @@ body {
 .tightener {
     height: 80%;
     background-color: $white;
-    margin: 20px 0 50px 0;
+    margin: 0 0 50px 0;
     padding-top: 50px;
     vertical-align: middle;
     /* ----------- iPhone 6 ----------- */
@@ -394,6 +436,14 @@ body {
             margin-top: 15px;  
             font-size: 20px;
           }
+        /* ----------- Non-Retina laptop/desktop Screens ----------- */
+        @media screen 
+          and (min-device-width: 1025px) 
+          and (max-device-width: 1600px) 
+          and (-webkit-min-device-pixel-ratio: 1) {
+            font-size: 20px;
+            margin-top: 0;
+          }  
     }
     .row>.left-description {
         float: left !important;
@@ -425,7 +475,14 @@ body {
           and (orientation: landscape) 
           and (-webkit-min-device-pixel-ratio: 1) {
             font-size: 14px;
-          }  
+          } 
+        /* ----------- Non-Retina laptop/desktop Screens ----------- */
+        @media screen 
+          and (min-device-width: 1025px) 
+          and (max-device-width: 1600px) 
+          and (-webkit-min-device-pixel-ratio: 1) {
+            font-size: 16px;
+          }   
     }
     .product-link {
         color: $darkgray !important;
@@ -468,6 +525,13 @@ body {
             margin: 40px;
             padding-top: 60px;
           }
+        /* ----------- Non-Retina laptop/desktop Screens ----------- */
+        @media screen 
+          and (min-device-width: 1025px) 
+          and (max-device-width: 1600px) 
+          and (-webkit-min-device-pixel-ratio: 1) {
+            padding: 50px;    
+          }
         a {
             text-decoration: none;
             color: $darkgray !important;
@@ -485,8 +549,12 @@ body {
     }
 }
 
-.clear {
-    clear: both;
+.clear:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
 }
 
 // end tightener section styling
@@ -602,6 +670,14 @@ body {
             margin-top: 15px;  
             font-size: 20px;
           }
+        /* ----------- Non-Retina laptop/desktop Screens ----------- */
+        @media screen 
+          and (min-device-width: 1025px) 
+          and (max-device-width: 1600px) 
+          and (-webkit-min-device-pixel-ratio: 1) {
+            font-size: 20px;
+            margin-top: 0;
+          }
     }
     .description {
         font-family: HelveticaNeueLTStd-Lt;
@@ -672,6 +748,13 @@ body {
             and (-webkit-min-device-pixel-ratio: 1) {
               margin: 40px;
               padding-top: 60px;
+            }
+          /* ----------- Non-Retina laptop/desktop Screens ----------- */
+          @media screen 
+            and (min-device-width: 1025px) 
+            and (max-device-width: 1600px) 
+            and (-webkit-min-device-pixel-ratio: 1) {
+              padding: 50px;    
             }
 
         a {
@@ -895,6 +978,15 @@ body {
                         height: 98%;
                         padding: 30px;
                       }
+                    /* ----------- Non-Retina laptop/desktop Screens ----------- */
+                    @media screen 
+                      and (min-device-width: 1025px) 
+                      and (max-device-width: 1600px) 
+                      and (-webkit-min-device-pixel-ratio: 1) {
+                        width: 100%;
+                        height: 98%;
+                        padding: 30px;
+                      }  
 
                 }
                 .text_title {
@@ -1026,33 +1118,107 @@ body {
                       and (-webkit-min-device-pixel-ratio: 1) {
                         width: 50%;    
                       }
+                      /* ----------- Non-Retina laptop/desktop Screens ----------- */
+                    @media screen 
+                      and (min-device-width: 1025px) 
+                      and (max-device-width: 1600px) 
+                      and (-webkit-min-device-pixel-ratio: 1) {
+                        width: 50%;
+                      }
                 }
 
             }
         }
     }
+    .before_arrow_left {
+      height: 40px;
+      width: 40px;
+      background-color: none;
+      border-top: 2px solid $peach;
+      border-left: 2px solid $peach;
+      transform: rotate(-45deg);
+      margin-left: 15px;
+      position: absolute;
+      background-image: none;
+    } 
+    .before_arrow_right {
+      height: 40px;
+      width: 40px;
+      background-color: none;
+      border-top: 2px solid $peach;
+      border-right: 2px solid $peach;
+      transform: rotate(45deg);
+      margin-right: 15px;
+      position: absolute;
+      background-image: none;
+    }   
 }
 
 .before-after-grid {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  width: 80%;
+  height: 88%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  color: white;
   background-color: $seashell;
-  padding-top: 10px;
 
   h3 {
     color: $darkgray;
     font-family: HelveticaNeueLTStd-ThIt;
     text-align: center;
   }
-  .grid-photo-before {
-    max-width: 49%;
-    margin: 0;
+  .photo-grid {
+    padding: 0 !important;
+    position: relative;
+    img {
+        padding: 0 !important;
+    }
+    .picholder:hover .overlay {
+        opacity: 1;
+      }
+      .picholder:hover .fancypics {
+        opacity: 0.7;
+      }
+      .picholder {
+        // width: 100%;
+        position: relative;
+        // height: 100%;
+      }
+      .overlay {
+        /* ----------- Non-Retina laptop/desktop Screens ----------- */
+        @media screen 
+          and (min-device-width: 1025px) 
+          and (max-device-width: 1600px) 
+          and (-webkit-min-device-pixel-ratio: 1) {
+            bottom: 30;
+            left: 0;
+            top: 0;
+            right: 0;
+            height: 101%;
+            width: 100%;
+            margin: auto;
+            position: absolute;
+            background: rgba(196,154,149,0.80);
+        }
+      }
+
+      .fancypics {
+
+        /* ----------- Non-Retina laptop/desktop Screens ----------- */
+        @media screen 
+          and (min-device-width: 1025px) 
+          and (max-device-width: 1600px) 
+          and (-webkit-min-device-pixel-ratio: 1) {
+            width: 49%;
+        }
+      }
+
+    }
   }
-  .grid-photo-after {
-    max-width: 49%;
-    margin: 0;
-  }
-}
+
 // end before-after section styling
 // scroll-to-top button styling
 .scroll-top-wrapper {
