@@ -1,7 +1,12 @@
 @import "mixins";
 @import "variables";
 @import "../../node_modules/foundation/docs/css/settings";
+
+// partials
 @import "header";
+@import "tightener";
+@import "brightener";
+
 @import "base";
 @import "footer";
-
+@import "photogrid";

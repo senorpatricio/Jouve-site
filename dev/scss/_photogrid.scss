@@ -1,0 +1,65 @@
+.before-after-grid {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  width: 80%;
+  height: 88%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: $seashell;
+
+  h3 {
+    color: $darkgray;
+    font-family: HelveticaNeueLTStd-ThIt;
+    text-align: center;
+  }
+  .photo-grid {
+    padding: 0 !important;
+    position: relative;
+    img {
+        padding: 0 !important;
+    }
+    .picholder:hover .overlay {
+        opacity: 1;
+      }
+      .picholder:hover .fancypics {
+        opacity: 0.7;
+      }
+      .picholder {
+        // width: 100%;
+        position: relative;
+        // height: 100%;
+      }
+      .overlay {
+        /* ----------- Non-Retina laptop/desktop Screens ----------- */
+        @media screen 
+          and (min-device-width: 1025px) 
+          and (max-device-width: 1600px) 
+          and (-webkit-min-device-pixel-ratio: 1) {
+            bottom: 30;
+            left: 0;
+            top: 0;
+            right: 0;
+            height: 101%;
+            width: 100%;
+            margin: auto;
+            position: absolute;
+            background: rgba(196,154,149,0.80);
+        }
+      }
+
+
+      .fancypics {
+
+        /* ----------- Non-Retina laptop/desktop Screens ----------- */
+        @media screen 
+          and (min-device-width: 1025px) 
+          and (max-device-width: 1600px) 
+          and (-webkit-min-device-pixel-ratio: 1) {
+            width: 49%;
+        }
+      }
+
+    }
+  }
