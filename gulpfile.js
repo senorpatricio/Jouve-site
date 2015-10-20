@@ -26,7 +26,7 @@ var gulp = require('gulp'),
 //watcher task
 gulp.task('watch', function() {
    // Watch .scss files
-  gulp.watch('dev/scss/*.scss', ['sass']);
+  gulp.watch('dev/scss/**/*.scss', ['sass']);
    // Watch .js files
   gulp.watch('dev/js/**/*.js', ['scripts']);
  });

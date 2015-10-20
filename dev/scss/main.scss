@@ -1,12 +1,45 @@
-@import "mixins";
-@import "variables";
+
+// helpers
+@import "helpers/mixins";
+@import "helpers/variables";
 @import "../../node_modules/foundation/docs/css/settings";
 
-// partials
-@import "header";
-@import "tightener";
-@import "brightener";
-
+// layouts
+@import "layout/header";
+@import "layout/home-tightener";
+@import "layout/home-brightener";
+@import "layout/photogrid";
+@import "layout/footer";
 @import "base";
-@import "footer";
-@import "photogrid";
+
+// pages
+@import "pages/results";
+
+// components
+@import "components/scroll-to-top-button";
+
+
+
+#Layer_1:hover {
+    .st3 {
+        enable-background: new;
+        stroke-dasharray: 1500;
+        stroke-dashoffset: 0;
+        animation: dash 5s linear alternate infinite;
+        // stroke-dasharray: 1500;
+        // stroke-dashoffset: 0;
+        // webkit-animation: dash 3s linear forwards;
+        // -o-animation: dash 3s linear forwards;
+        // -moz-animation: dash 3s linear forwards;
+        // animation: dash 3s linear forwards;	
+    }
+}
+ 
+@-webkit-keyframes dash {
+    from {
+        stroke-dashoffset: 1500;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}

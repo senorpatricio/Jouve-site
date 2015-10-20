@@ -1,7 +1,0 @@
-/* @import must be at top of file, otherwise CSS will not work */
-
-@import url("//hello.myfonts.net/count/2f44cb");
-@font-face {font-family: 'lightFont';src: url('webfonts/2F44CB_0_0.eot');src: url('webfonts/2F44CB_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F44CB_0_0.woff2') format('woff2'),url('webfonts/2F44CB_0_0.woff') format('woff'),url('webfonts/2F44CB_0_0.ttf') format('truetype');}
-@font-face {font-family: 'otherFont';src: url('webfonts/2F44CB_1_0.eot');src: url('webfonts/2F44CB_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2F44CB_1_0.woff2') format('woff2'),url('webfonts/2F44CB_1_0.woff') format('woff'),url('webfonts/2F44CB_1_0.ttf') format('truetype');}
-
-$light-font: 'lightFont'; $regular-font: 'otherFont';
