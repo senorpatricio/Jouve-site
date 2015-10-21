@@ -36,8 +36,7 @@ footer {
     @media screen 
       and (min-device-width: 1025px) 
       and (-webkit-min-device-pixel-ratio: 1) {
-        height: 50%;
-        max-height: 400px;
+        height: 40%;
       }
     /* ----------- Retina Screens ----------- */
     @media screen 
@@ -46,6 +45,14 @@ footer {
       and (min-resolution: 192dpi) {
         height: 50%;     
       } 
+    .footer-padding {
+      /* ----------- Non-Retina laptop/desktop Screens ----------- */
+    @media screen 
+      and (min-device-width: 1025px) 
+      and (-webkit-min-device-pixel-ratio: 1) {
+        padding-top: 60px;
+      }
+    }  
     #foot-menu {
         ul {
             margin: 40px 0;
