@@ -2303,6 +2303,66 @@ body {
           margin: 10px;
           font-size: 14px; }
 
+.difference-banner {
+  height: 40%;
+  background-image: url(../../_/img/difference_banner.jpg);
+  background-size: cover;
+  background-position-y: -20px;
+  /* ----------- iPhone 6 ----------- */
+  /* Landscape */
+  /* ----------- iPhone 6+ ----------- */
+  /* Landscape */
+  /* ----------- iPad mini ----------- */
+  /* Portrait */
+  /* ----------- iPad mini ----------- */
+  /* Landscape */
+  /* ----------- Non-Retina laptop/desktop Screens ----------- */ }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .difference-banner {
+      height: 60%; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .difference-banner {
+      height: 60%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .difference-banner {
+      height: 45%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .difference-banner {
+      height: 60%; } }
+  .difference-banner .difference-type {
+    max-width: 70%;
+    left: 15%;
+    position: absolute;
+    top: 14%; }
+
+.difference-products .product-image {
+  margin: 50px auto; }
+  .difference-products .product-image img {
+    max-width: 100%; }
+
+.difference-products .both-product-description {
+  font-family: HelveticaNeueLTStd-Lt;
+  color: #979797;
+  margin: 20px auto;
+  float: left; }
+  .difference-products .both-product-description p {
+    font-size: 14px; }
+
+.clean-commitment .clean-title {
+  border-top: 1px solid #C59B96;
+  border-bottom: 1px solid #C59B96;
+  margin-bottom: 20px; }
+  .clean-commitment .clean-title h3 {
+    font-family: HelveticaNeueLTStd-ThIt;
+    color: #C59B96;
+    margin: 15px 0; }
+
+.clean-commitment .clean-description {
+  margin: 10px 0 20px 0; }
+  .clean-commitment .clean-description p {
+    font-family: HelveticaNeueLTStd-Lt;
+    color: #979797; }
+
 .scroll-top-wrapper {
   position: fixed;
   opacity: 0;
