@@ -14,7 +14,7 @@ nav {
       and (min-device-width: 375px) 
       and (max-device-width: 667px) 
       and (-webkit-min-device-pixel-ratio: 2)
-      // and (orientation: landscape)  
+      and (orientation: landscape)  
       {
         height: 20%;
     }
@@ -55,7 +55,7 @@ nav {
         height: auto;
       }
     .row > .small-2 {
-        margin: 11px 0 0 0;
+        margin: 36px 0 0 0;
         /* ----------- iPhone 6 ----------- */
             /* Landscape */
         @media only screen 
@@ -64,8 +64,17 @@ nav {
           and (-webkit-min-device-pixel-ratio: 2)
           and (orientation: landscape)  
           {
-            margin: 0;
+            margin: 36px 0 0 0;
         }
+        /* ----------- iPhone 6+ ----------- */
+        /* Landscape */
+        @media only screen 
+          and (min-device-width: 414px) 
+          and (max-device-width: 736px) 
+          and (-webkit-min-device-pixel-ratio: 3)
+          and (orientation: landscape) {
+            margin: 40px 0 0 0;
+          }
         /* ----------- iPad mini ----------- */
         /* Landscape */
         @media only screen 
@@ -85,6 +94,7 @@ nav {
         }
         #language-icon {
             padding: 7px;
+            margin:-24px 0 0 0;
 
             /* ----------- iPhone 6 ----------- */
             /* Landscape */
@@ -94,8 +104,8 @@ nav {
               and (-webkit-min-device-pixel-ratio: 2)
               and (orientation: landscape)  
               {
-                padding: 20px !important;
-                margin: 0 0 -10px 5px !important;
+                margin:-40px 0 0 0;
+                max-width: 25%;
             }
             /* ----------- iPhone 6+ ----------- */
             /* Landscape */
@@ -105,8 +115,8 @@ nav {
               and (-webkit-min-device-pixel-ratio: 3)
               and (orientation: landscape) 
               { 
-                padding: 20px !important;
-                margin: 0 0 -10px 5px !important;
+                margin:-40px 0 0 0;
+                max-width: 15%;
             }
             /* ----------- iPad mini ----------- */
             /* Portrait */
@@ -142,16 +152,16 @@ nav {
         img {
 
         /* ----------- iPhone 6 ----------- */
-            /* Landscape */
-           @media only screen 
-              and (min-device-width: 375px) 
-              and (max-device-width: 667px) 
-              and (-webkit-min-device-pixel-ratio: 2)
-              and (orientation: landscape) 
-              {
-                margin: 20px 0 0 60px !important;
-                max-width: 60% !important;
-            }
+        /* Landscape */
+        @media only screen 
+          and (min-device-width: 375px) 
+          and (max-device-width: 667px) 
+          and (-webkit-min-device-pixel-ratio: 2)
+          and (orientation: landscape) 
+          {
+            margin: 20px 0 0 60px !important;
+            max-width: 60% !important;
+        }
         /* ----------- iPhone 6+ ----------- */
         /* Landscape */
         @media only screen 

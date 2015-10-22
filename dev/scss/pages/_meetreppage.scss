@@ -1,0 +1,107 @@
+.rep-title {
+	p {
+		font-size: 18px;
+		font-family: HelveticaNeueLTStd-ThIt;
+		color: $darkgray;
+		padding: 20px 10%;
+		letter-spacing: 2px;
+	}
+}
+
+.rep-photo {
+	width: 80%;
+	margin: 10% auto;
+	/* ----------- iPhone 6 ----------- */
+    /* Landscape */
+    @media only screen 
+      and (min-device-width: 375px) 
+      and (max-device-width: 667px) 
+      and (-webkit-min-device-pixel-ratio: 2)
+      and (orientation: landscape) {
+      	width: 40%;
+      	float: left;
+      	margin: 0 2% 0 5%;
+      }
+    /* ----------- iPhone 6+ ----------- */
+    /* Landscape */
+    @media only screen 
+      and (min-device-width: 414px) 
+      and (max-device-width: 736px) 
+      and (-webkit-min-device-pixel-ratio: 3)
+      and (orientation: landscape) {
+		width: 40%;
+      	float: left;
+      	margin: 0 2% 0 5%;
+      }
+}
+
+.rep-info {
+	width: 100%;
+	background-color: $seashell;
+	/* ----------- iPhone 6 ----------- */
+    /* Landscape */
+    @media only screen 
+      and (min-device-width: 375px) 
+      and (max-device-width: 667px) 
+      and (-webkit-min-device-pixel-ratio: 2)
+      and (orientation: landscape) {
+		width: 50%;
+      	float: left;
+      }
+	/* ----------- iPhone 6+ ----------- */
+    /* Landscape */
+    @media only screen 
+      and (min-device-width: 414px) 
+      and (max-device-width: 736px) 
+      and (-webkit-min-device-pixel-ratio: 3)
+      and (orientation: landscape) {
+		width: 50%;
+      	float: left;
+      }
+	p {
+		font-size: 18px;
+		font-family: HelveticaNeueLTStd-ThIt;
+		color: $darkgray;
+		padding: 20px 10%;
+		letter-spacing: 2px;
+		/* ----------- iPhone 6 ----------- */
+        /* Landscape */
+	    @media only screen 
+	      and (min-device-width: 375px) 
+	      and (max-device-width: 667px) 
+	      and (-webkit-min-device-pixel-ratio: 2)
+	      and (orientation: landscape) {
+	      	padding: 24.5% 10%;
+	      }
+	    /* ----------- iPhone 6+ ----------- */
+	    /* Landscape */
+	    @media only screen 
+	      and (min-device-width: 414px) 
+	      and (max-device-width: 736px) 
+	      and (-webkit-min-device-pixel-ratio: 3)
+	      and (orientation: landscape) {
+	      	padding: 26% 10%;
+	      }
+	}
+}
+
+.rep-description {
+	width: 85%;
+	margin: 10% auto;
+	/* ----------- iPhone 6+ ----------- */
+    /* Landscape */
+    @media only screen 
+      and (min-device-width: 414px) 
+      and (max-device-width: 736px) 
+      and (-webkit-min-device-pixel-ratio: 3)
+      and (orientation: landscape) {
+      	width: 90%;
+      }
+
+	p {
+		font-family: HelveticaNeueLTStd-Lt;
+		font-size: 14px;
+		color: $darkgray;
+		letter-spacing: 1.2px;
+	}
+}
