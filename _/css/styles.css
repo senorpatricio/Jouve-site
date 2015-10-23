@@ -15,7 +15,7 @@ nav {
   /* ----------- iPhone 6+ ----------- */
   /* Landscape */
   /* ----------- iPad mini ----------- */
-  /* Portrait and Landscape */
+  /* Portrait*/
   /* ----------- iPad mini ----------- */
   /* Landscape */
   /* ----------- Retina Screens ----------- */ }
@@ -38,6 +38,8 @@ nav {
     /* ----------- iPhone 6+ ----------- */
     /* Landscape */
     /* ----------- iPad mini ----------- */
+    /* Portrait*/
+    /* ----------- iPad mini ----------- */
     /* Landscape */ }
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
       nav .row > .small-2 {
@@ -45,12 +47,14 @@ nav {
     @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
       nav .row > .small-2 {
         margin: 40px 0 0 0; } }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+      nav .row > .small-2 {
+        margin: 40px 0 0 0; } }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
       nav .row > .small-2 {
-        margin: 11px 0 -15px 0;
-        padding-top: 17px; } }
+        margin: 40px 0 0 0; } }
     nav .row > .small-2 #nav-toggle {
-      position: relative;
+      position: absolute;
       margin: 0 0 0 1px; }
     nav .row > .small-2 #language-icon {
       padding: 7px;
@@ -74,8 +78,8 @@ nav {
           max-width: 15%; } }
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
         nav .row > .small-2 #language-icon {
-          padding: 0 20px 20px 20px !important;
-          margin: 0 0 -10px 5px !important; } }
+          margin: -40px 0 0 0;
+          max-width: 5%; } }
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
         nav .row > .small-2 #language-icon {
           padding: 10px 30px !important;
@@ -237,10 +241,13 @@ nav {
   /* only transition on transform properties which are hardware accelerated = way better performances */
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease; }
-  .slider li {
-    padding: 20px 15px 0 15px;
-    list-style: none;
-    border-bottom: 1px solid white; }
+  .slider a {
+    text-decoration: none;
+    color: #fff; }
+    .slider a li {
+      padding: 20px 15px 0 15px;
+      list-style: none;
+      border-bottom: 1px solid white; }
 
 .slider.opened {
   height: 100%;
@@ -2988,6 +2995,10 @@ body {
   /* ----------- iPhone 6 ----------- */
   /* Landscape */
   /* ----------- iPhone 6+ ----------- */
+  /* Landscape */
+  /* ----------- iPad mini ----------- */
+  /* Portrait */
+  /* ----------- iPad mini ----------- */
   /* Landscape */ }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .rep-photo {
@@ -2999,6 +3010,9 @@ body {
       width: 40%;
       float: left;
       margin: 0 2% 0 5%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .rep-photo {
+      width: 62%; } }
 
 .rep-info {
   width: 100%;
@@ -3036,15 +3050,25 @@ body {
   width: 85%;
   margin: 10% auto;
   /* ----------- iPhone 6+ ----------- */
-  /* Landscape */ }
+  /* Landscape */
+  /* ----------- iPad mini ----------- */
+  /* Portrait */ }
   @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
     .rep-description {
       width: 90%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .rep-description {
+      width: 80%; } }
   .rep-description p {
     font-family: HelveticaNeueLTStd-Lt;
     font-size: 14px;
     color: #979797;
-    letter-spacing: 1.2px; }
+    letter-spacing: 1.2px;
+    /* ----------- iPad mini ----------- */
+    /* Portrait */ }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+      .rep-description p {
+        font-size: 18px; } }
 
 .scroll-top-wrapper {
   position: fixed;

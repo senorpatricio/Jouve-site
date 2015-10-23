@@ -33,6 +33,24 @@
       	float: left;
       	margin: 0 2% 0 5%;
       }
+    /* ----------- iPad mini ----------- */
+    /* Portrait */
+    @media only screen 
+      and (min-device-width: 768px) 
+      and (max-device-width: 1024px)
+      and (orientation: portrait) 
+      and (-webkit-min-device-pixel-ratio: 1) {
+      	width: 62%;
+      }
+    /* ----------- iPad mini ----------- */
+    /* Landscape */
+    @media only screen 
+      and (min-device-width: 768px) 
+      and (max-device-width: 1024px) 
+      and (orientation: landscape) 
+      and (-webkit-min-device-pixel-ratio: 1) {
+  	    // width: 62%;
+      }
 }
 
 .rep-info {
@@ -97,11 +115,29 @@
       and (orientation: landscape) {
       	width: 90%;
       }
+    /* ----------- iPad mini ----------- */
+    /* Portrait */
+    @media only screen 
+      and (min-device-width: 768px) 
+      and (max-device-width: 1024px)
+      and (orientation: portrait) 
+      and (-webkit-min-device-pixel-ratio: 1) {
+      	width: 80%;
+      }
 
 	p {
 		font-family: HelveticaNeueLTStd-Lt;
 		font-size: 14px;
 		color: $darkgray;
 		letter-spacing: 1.2px;
+		/* ----------- iPad mini ----------- */
+    /* Portrait */
+    @media only screen 
+      and (min-device-width: 768px) 
+      and (max-device-width: 1024px)
+      and (orientation: portrait) 
+      and (-webkit-min-device-pixel-ratio: 1) {
+      	font-size: 18px;
+      }
 	}
 }
