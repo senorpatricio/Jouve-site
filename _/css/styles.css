@@ -152,9 +152,8 @@ nav {
         margin: -15px;
         padding: 21px; }
         .large-nav .row .large-right-nav ul #language-icon svg {
-          max-width: 5%;
-          margin-bottom: inherit;
-          z-index: 1500; }
+          max-width: 7%;
+          margin-bottom: inherit; }
 
 .menuWrapper {
   position: absolute;
@@ -276,15 +275,15 @@ nav {
   -ms-box-sizing: border-box; }
 
 .lMenuWrapper {
-  position: fixed;
+  position: absolute;
   right: 0;
   width: 350px;
   height: 500px; }
 
 .lNavigation {
   position: absolute;
-  z-index: 3;
-  top: 77px;
+  z-index: 10;
+  top: 5px;
   right: 0;
   overflow: hidden;
   width: 70%;
@@ -426,7 +425,6 @@ nav {
   margin: 0 0 50px 0;
   padding-top: 150px;
   vertical-align: middle;
-  margin-top: 2%;
   /* ----------- iPhone 6 ----------- */
   /* Landscape */
   /* ----------- iPhone 6+ ----------- */
@@ -572,7 +570,7 @@ nav {
         color: #C59B96; }
 
 .brightener {
-  height: 30%;
+  height: 65%;
   margin: 100px 0 100px 0;
   padding-top: 0;
   vertical-align: middle;
@@ -712,14 +710,6 @@ nav {
       .brightener .product-link a:visited {
         color: #C59B96; }
 
-.grid-title {
-  color: white;
-  background-color: #FCF4F3; }
-  .grid-title h3 {
-    color: #979797;
-    font-family: HelveticaNeueLTStd-ThIt;
-    text-align: center; }
-
 .before-after-grid {
   position: absolute;
   top: 30%;
@@ -823,7 +813,7 @@ nav {
     top: 12%;
     left: 43%; }
   .before-after-results .fancypics {
-    width: 48%;
+    width: 100%;
     /* ----------- Non-Retina laptop/desktop Screens ----------- */ }
     @media screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
       .before-after-results .fancypics {
@@ -858,11 +848,7 @@ nav {
 footer {
   z-index: -1;
   width: 100%;
-<<<<<<< Updated upstream
   height: 115%;
-=======
-  height: 30%;
->>>>>>> Stashed changes
   background-image: linear-gradient(-180deg, #A47972 4%, #EFCBC5 100%);
   /* ----------- iPhone 6 ----------- */
   /* Landscape */
@@ -1064,10 +1050,8 @@ body {
 
 .swiper-container {
   width: 100%;
-  height: 100%;
+  height: 90%;
   position: absolute;
-  height: 540px;
-  width: 1000px;
   z-index: 10;
   /* ----------- iPad mini ----------- */
   /* Portrait */
@@ -1083,6 +1067,7 @@ body {
       height: 87%; } }
   @media screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
     .swiper-container {
+      height: 90%;
       max-height: 600px;
       top: 0; } }
   @media screen and (min-device-width: 1025px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-width: 1025px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
@@ -1128,8 +1113,7 @@ body {
   .swiper-slide .true-you {
     position: absolute;
     top: 37%;
-    left: 4%;
-    width: 33%;
+    left: 0%;
     /* ----------- iPhone 6 ----------- */
     /* Landscape */
     /* ----------- iPhone 6+ ----------- */
@@ -1169,9 +1153,7 @@ body {
 .slide1 {
   background-image: url("../img/jouve_home_slider.jpg");
   background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0px;
+  background-position: -250px;
   /* ----------- iPhone 6 ----------- */
   /* Landscape */
   /* ----------- iPhone 6+ ----------- */
@@ -1205,9 +1187,7 @@ body {
 
 .slide2 {
   background-image: url("../img/slider-background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0px -215px;
+  background-size: 115%;
   /* ----------- iPhone 6 ----------- */
   /* Landscape */
   /* ----------- iPhone 6+ ----------- */
@@ -1868,16 +1848,6 @@ body {
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
     .banner {
       height: 60%; } }
-  @media screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
-    .banner {
-      margin: 0 auto;
-      width: 1440px;
-      height: 641px; } }
-  @media screen and (min-width: 1025px) {
-    .banner {
-      margin: 0 auto;
-      width: 1440px;
-      height: 641px; } }
 
 .tightener-page {
   height: 55%;
@@ -1931,9 +1901,6 @@ body {
       .tightener-page .product-section img {
         max-width: 20%;
         top: -190px; } }
-    @media screen and (min-width: 1025px) {
-      .tightener-page .product-section img {
-        top: -162%; } }
   .tightener-page .product-section h4 {
     font-family: HelveticaNeueLTStd-ThIt;
     color: #979797;
@@ -1964,13 +1931,11 @@ body {
         max-width: 40%;
         float: right;
         margin: 25px; } }
-  @media screen and (min-width: 1025px) {
-    .tightener-page {
-      height: 25%; } }
 
 .product-description {
   background-color: #FCF4F3;
   width: 100%;
+  height: 100%;
   font-family: HelveticaNeueLTStd-Lt;
   font-size: 14px;
   color: #979797;
@@ -3137,7 +3102,7 @@ body {
 .scroll-top-wrapper i.fa {
   line-height: inherit; }
 
-#Layer_2:hover .st3 {
+#Layer_1:hover .st3 {
   enable-background: new;
   stroke-dasharray: 1500;
   stroke-dashoffset: 0;
@@ -3149,7 +3114,3 @@ body {
     stroke-dashoffset: 1500; }
   to {
     stroke-dashoffset: 0; } }
-
-.large-wrapper {
-  position: relative;
-  z-index: -1; }

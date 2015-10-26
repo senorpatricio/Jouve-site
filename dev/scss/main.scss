@@ -26,7 +26,9 @@
 // components
 @import "components/scroll-to-top-button";
 
-#Layer_2:hover {
+
+
+#Layer_1:hover {
     .st3 {
         enable-background: new;
         stroke-dasharray: 1500;
@@ -48,8 +50,4 @@
     to {
         stroke-dashoffset: 0;
     }
-}
-.large-wrapper {
-    position: relative;
-    z-index: -1;
 }

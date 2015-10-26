@@ -267,9 +267,8 @@ nav {
           margin: -15px;
           padding: 21px;
           svg {
-            max-width: 5%;
+            max-width: 7%;
             margin-bottom: inherit;
-            z-index: 1500;
           }
         }
       }
@@ -463,7 +462,7 @@ nav {
 } // end navigation styling
 // Language menu styling
 .lMenuWrapper {
-    position: fixed;
+    position: absolute;
     // z-index: 980;
     right: 0;
     width: 350px;
@@ -475,8 +474,8 @@ nav {
 
 .lNavigation {
     position: absolute;
-    z-index: 3;
-    top: 77px;
+    z-index: 10;
+    top: 5px;
     right: 0;
     overflow: hidden;
     width: 70%;

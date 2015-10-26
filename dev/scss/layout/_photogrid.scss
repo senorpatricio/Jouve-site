@@ -1,14 +1,3 @@
-.grid-title {
-  color: white;
-  background-color: $seashell;
-  h3 {
-    color: $darkgray;
-    font-family: HelveticaNeueLTStd-ThIt;
-    text-align: center;
-
-  }
-}
-
 .before-after-grid {
   position: absolute;
   top: 30%;
@@ -151,7 +140,7 @@
     left: 43%;
   }
   .fancypics {
-      width: 48%;
+      width: 100%;
       
         /* ----------- Non-Retina laptop/desktop Screens ----------- */
       @media screen 
