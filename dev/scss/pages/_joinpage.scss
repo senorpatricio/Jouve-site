@@ -34,6 +34,11 @@
       and (-webkit-min-device-pixel-ratio: 1) {
 		height: 65%;
       }
+      @media screen and (min-width:1025px) {
+      	height: 40%;
+      	max-width: 1440px;
+      	margin: 0 auto;
+      }
 	img {
 	    max-width: 95%;
 	    position: absolute;
@@ -85,6 +90,11 @@
 		    top: 62%;
 		    left: 21%;    	
 	      }
+	    @media screen and (min-width:1025px) {
+    	    position: relative;
+		    top: 65%;
+		    left: 25%;
+	    }  
 	}
 		
 }
@@ -97,6 +107,10 @@
 	color: $darkgray;
 	padding: 30px 12%;
 	letter-spacing: 2px;
+	@media screen and (min-width:1025px) {
+	    max-width: 1440px;
+    	margin: 0 auto 5% auto;
+	}
 	p {
 		/* ----------- iPad mini ----------- */
 	    /* Portrait */
@@ -318,11 +332,3 @@
 }
 
 
-// /* Rectangle 20: */
-// border: 2px solid #F0CBC5;
-// /* EXPERIENCE REAL TRAN: */
-// font-family: HelveticaNeue-Light;
-// font-size: 28px;
-// color: #979797;
-// letter-spacing: 1.2px;
-// line-height: 40px;

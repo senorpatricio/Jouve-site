@@ -4,7 +4,15 @@ footer {
     width: 100%;
     height: 115%;
     background-image: linear-gradient(-180deg, #A47972 4%, #EFCBC5 100%);
-    
+    /* ----------- iPhone 5 and 5S ----------- */
+    /* Landscape */
+    @media only screen 
+      and (min-device-width: 320px) 
+      and (max-device-width: 568px)
+      and (-webkit-min-device-pixel-ratio: 2)
+      and (orientation: landscape) {
+        height: 200%;
+      }
     /* ----------- iPhone 6 ----------- */
         /* Landscape */
     @media only screen 
@@ -34,8 +42,7 @@ footer {
       }
   /* ----------- Non-Retina laptop/desktop Screens ----------- */
     @media screen 
-      and (min-device-width: 1025px) 
-      and (-webkit-min-device-pixel-ratio: 1) {
+      and (min-width: 1025px) {
         height: 40%;
       }
     /* ----------- Retina Screens ----------- */
@@ -114,7 +121,6 @@ footer {
           /* ----------- Non-Retina laptop/desktop Screens ----------- */
           @media screen 
             and (min-device-width: 1025px) 
-            and (max-device-width: 1600px) 
             and (-webkit-min-device-pixel-ratio: 1) {
               margin: 40px 0 20px 0;
             }
@@ -168,7 +174,6 @@ footer {
           /* ----------- Non-Retina laptop/desktop Screens ----------- */
           @media screen 
             and (min-device-width: 1025px) 
-            and (max-device-width: 1600px) 
             and (-webkit-min-device-pixel-ratio: 1) {
               float: left;
               margin: 24px auto;
