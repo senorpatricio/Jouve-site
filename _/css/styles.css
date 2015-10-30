@@ -80,8 +80,8 @@ nav {
       /* ----------- Non-Retina laptop/desktop Screens ----------- */ }
       @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
         nav .row > .small-2 .language-icon {
-          margin: -40px 0 0 0;
-          max-width: 10%; } }
+          margin: -30px 0 0 0;
+          width: 90%; } }
       @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
         nav .row > .small-2 .language-icon {
           margin: -40px 0 0 0;
@@ -92,15 +92,22 @@ nav {
           max-width: 15%; } }
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
         nav .row > .small-2 .language-icon {
-          margin: -40px 0 0 0;
-          max-width: 5%; } }
+          margin: -40px 0 0 20px;
+          width: 70%; } }
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
         nav .row > .small-2 .language-icon {
           padding: 10px 30px !important;
-          margin: -25px 0 -20px 30px !important; } }
+          margin: -30px 0 -20px 30px !important;
+          width: 80%; } }
       @media screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
         nav .row > .small-2 .language-icon {
           margin: 0; } }
+  nav .row > .medium-8 {
+    /* ----------- iPad mini ----------- */
+    /* Portrait */ }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+      nav .row > .medium-8 {
+        margin-top: -20px; } }
   nav .row > .small-8 img {
     /* ----------- iPhone 5 and 5S ----------- */
     /* Landscape */
@@ -1040,6 +1047,8 @@ footer {
   /* ----------- iPhone 5 and 5S ----------- */
   /* Landscape */
   /* ----------- iPhone 6 ----------- */
+  /* Portrait */
+  /* ----------- iPhone 6 ----------- */
   /* Landscape */
   /* ----------- iPad mini ----------- */
   /* Portrait */
@@ -1050,6 +1059,9 @@ footer {
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     footer {
       height: 200%; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    footer {
+      height: 80%; } }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     footer {
       height: 100%; } }
@@ -1094,11 +1106,21 @@ footer {
       footer #foot-menu ul li a:visited {
         color: #C59B96; }
   footer #social-buttons {
+    /* ----------- iPhone 5 and 5S ----------- */
+    /* Portrait */
+    /* ----------- iPhone 6 ----------- */
+    /* Portrait */
     /* ----------- iPad mini ----------- */
     /* Portrait */
     /* ----------- iPad mini ----------- */
     /* Landscape */
     /* ----------- Non-Retina laptop/desktop Screens ----------- */ }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+      footer #social-buttons {
+        margin-top: 60px; } }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+      footer #social-buttons {
+        margin-top: 60px; } }
     @media (min-width: 480px) and (max-width: 767px) {
       footer #social-buttons {
         margin: 40px 0; } }
@@ -1213,7 +1235,7 @@ html,
 body {
   font-size: 14px;
   position: relative;
-  height: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   color: #000; }
@@ -1380,7 +1402,8 @@ body {
       background-position: 0; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
     .slide1 {
-      background-size: cover; } }
+      background-size: cover;
+      background-position: 0; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
     .slide1 {
       background-size: cover;
@@ -1531,15 +1554,19 @@ body {
       position: relative; }
       .big-slider .before-after .swiper-wrapper .swiper-slide img {
         padding: 0 !important; }
-      .big-slider .before-after .swiper-wrapper .swiper-slide .picholder:hover .overlay {
-        opacity: 1; }
-      .big-slider .before-after .swiper-wrapper .swiper-slide .picholder:hover .fancypics {
-        opacity: 0.7; }
       .big-slider .before-after .swiper-wrapper .swiper-slide .picholder {
         width: 100%;
         position: relative;
         height: 100%; }
+        .big-slider .before-after .swiper-wrapper .swiper-slide .picholder a {
+          position: absolute;
+          z-index: 9;
+          right: 5px;
+          top: 5px;
+          height: 40px;
+          width: 40px; }
       .big-slider .before-after .swiper-wrapper .swiper-slide .overlay {
+        display: none;
         bottom: 30;
         left: 0;
         top: 0;
@@ -1549,7 +1576,6 @@ body {
         margin: auto;
         position: absolute;
         background: rgba(196, 154, 149, 0.8);
-        opacity: 0;
         /* ----------- iPhone 5 and 5S ----------- */
         /* Landscape */
         /* ----------- iPhone 6 ----------- */
@@ -1586,7 +1612,7 @@ body {
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
           .big-slider .before-after .swiper-wrapper .swiper-slide .overlay {
             width: 100%;
-            height: 98%;
+            height: 103%;
             padding: 30px; } }
         @media screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
           .big-slider .before-after .swiper-wrapper .swiper-slide .overlay {
@@ -2002,24 +2028,30 @@ body {
         height: 82%; } }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
       .big-slider2 .before-after {
-        height: 60%; } }
+        height: 60%;
+        top: 57%; } }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
       .big-slider2 .before-after {
-        height: 80%; } }
+        height: 85%;
+        top: 57%; } }
     .big-slider2 .before-after .swiper-wrapper .swiper-slide {
       padding: 0 !important;
       position: relative; }
       .big-slider2 .before-after .swiper-wrapper .swiper-slide img {
         padding: 0 !important; }
-      .big-slider2 .before-after .swiper-wrapper .swiper-slide .picholder:hover .overlay {
-        opacity: 1; }
-      .big-slider2 .before-after .swiper-wrapper .swiper-slide .picholder:hover .fancypics {
-        opacity: 0.7; }
       .big-slider2 .before-after .swiper-wrapper .swiper-slide .picholder {
         width: 100%;
         position: relative;
         height: 100%; }
+        .big-slider2 .before-after .swiper-wrapper .swiper-slide .picholder a {
+          position: absolute;
+          z-index: 9;
+          right: 5px;
+          top: 5px;
+          height: 40px;
+          width: 40px; }
       .big-slider2 .before-after .swiper-wrapper .swiper-slide .overlay {
+        display: none;
         bottom: 30;
         left: 0;
         top: 0;
@@ -2029,7 +2061,6 @@ body {
         margin: auto;
         position: absolute;
         background: rgba(196, 154, 149, 0.8);
-        opacity: 0;
         /* ----------- iPhone 5 and 5S ----------- */
         /* Landscape */
         /* ----------- iPhone 6 ----------- */
@@ -2069,7 +2100,7 @@ body {
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
           .big-slider2 .before-after .swiper-wrapper .swiper-slide .overlay {
             width: 100%;
-            height: 98%;
+            height: 103%;
             padding: 30px; } }
         @media screen and (min-device-width: 1025px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
           .big-slider2 .before-after .swiper-wrapper .swiper-slide .overlay {

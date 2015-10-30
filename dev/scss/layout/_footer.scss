@@ -14,6 +14,15 @@ footer {
         height: 200%;
       }
     /* ----------- iPhone 6 ----------- */
+    /* Portrait */
+    @media only screen 
+      and (min-device-width: 375px) 
+      and (max-device-width: 667px) 
+      and (-webkit-min-device-pixel-ratio: 2)
+      and (orientation: portrait) {
+        height: 80%;
+      }  
+    /* ----------- iPhone 6 ----------- */
         /* Landscape */
     @media only screen 
       and (min-device-width: 375px) 
@@ -97,6 +106,25 @@ footer {
         }
     }
     #social-buttons {
+      /* ----------- iPhone 5 and 5S ----------- */
+      /* Portrait */
+      @media only screen 
+        and (min-device-width: 320px) 
+        and (max-device-width: 568px)
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (orientation: portrait) {
+          margin-top: 60px; 
+      }
+      /* ----------- iPhone 6 ----------- */
+      /* Portrait */
+      @media only screen 
+        and (min-device-width: 375px) 
+        and (max-device-width: 667px) 
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (orientation: portrait) {
+          margin-top: 60px; 
+
+      }
         @media (min-width: 480px) and (max-width: 767px) {
             margin: 40px 0;
         }
