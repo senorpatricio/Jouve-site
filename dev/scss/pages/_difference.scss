@@ -3,6 +3,23 @@
 	background-image: url(../../_/img/difference_banner.jpg);
 	background-size: cover;
     background-position-y: -20px;
+    @media (max-width: 480px) {
+    	height: 25%;
+		background-position: 0;
+    }
+    @media (min-width: 481px) and (max-width: 767px) {
+    	height: 25%;
+    	background-position: 0;
+    }
+    /* ----------- iPhone 5 and 5S ----------- */
+    /* Portrait */
+    @media only screen 
+      and (min-device-width: 320px) 
+      and (max-device-width: 568px)
+      and (-webkit-min-device-pixel-ratio: 2)
+      and (orientation: portrait) {
+      	height: 40%;
+      }
 	/* ----------- iPhone 5 and 5S ----------- */
     /* Landscape */
 	@media only screen 
@@ -51,7 +68,7 @@
 		
       /* ----------- Non-Retina laptop/desktop Screens ----------- */
         @media screen and (min-width:1025px) { 
-            max-width: 1440px !important;
+            max-width: 1025px !important;
     		margin: auto;
     		height: 47%;
         }
@@ -60,6 +77,26 @@
 		left: 15%;
 	    position: absolute;
 	    top: 14%;
+	    @media (max-width: 480px) {
+	    	top: 10%;
+	    }
+	    @media (min-width: 481px) and (max-width: 767px) {
+	    	top: 5%;
+	    	left: 20%;
+	    	width: 60%;
+	    }
+	    /* ----------- iPhone 5 and 5S ----------- */
+	    /* Portrait */
+	    @media only screen 
+	      and (min-device-width: 320px) 
+	      and (max-device-width: 568px)
+	      and (-webkit-min-device-pixel-ratio: 2)
+	      and (orientation: portrait) {
+	      	max-width: 70%;
+			left: 15%;
+		    position: absolute;
+		    top: 14%;
+	      }
 	    /* ----------- iPhone 5 and 5S ----------- */
 	    /* Landscape */
 		@media only screen 
@@ -148,6 +185,7 @@
 		color: $darkgray;
 		margin: 20px auto;
 		float: left !important;
+
 		/* ----------- iPhone 5 and 5S ----------- */
 	    /* Landscape */
 		@media only screen 
@@ -181,6 +219,20 @@
         } 
 		p {
 			font-size: 14px;
+			@media (min-width: 481px) and (max-width: 767px) {
+				font-size: 18px;
+				margin: 30px 5% 10px -40px;
+				
+			}
+			/* ----------- iPhone 5 and 5S ----------- */
+		    /* Portrait */
+		    @media only screen 
+		      and (min-device-width: 320px) 
+		      and (max-device-width: 568px)
+		      and (-webkit-min-device-pixel-ratio: 2)
+		      and (orientation: portrait) {
+		      	font-size: 14px;
+		      }
 			/* ----------- iPad mini ----------- */
 	      	/* Portrait */
 			@media only screen 
@@ -205,7 +257,7 @@
 		border-bottom: 1px solid $peach;
 		margin-bottom: 20px;
 		@media screen and (min-width:1025px) {
-			max-width: 1440px;
+			max-width: 1025px;
 			margin: auto;
 		}
 		h3 {
@@ -235,7 +287,7 @@
 	      	margin: 15px 0 35px 0;
 	      }
 	    @media screen and (min-width:1025px) {
-	    	max-width: 1440px;
+	    	max-width: 1025px;
     		margin: 30px auto 40px auto;
 	    }
 		p {

@@ -7,6 +7,18 @@
 	height: 50%;
 	background-image: url('../img/resultsbg.png');
 	background-size: cover;
+  @media (max-width: 480px) {
+    height: 25%;
+    background-position: 0;
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+    height: 25%;
+    background-position: 0;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    height: 25%;
+    background-position: 0;
+  } 
   /* ----------- iPhone 5 and 5S ----------- */
   /* Portrait */
   @media only screen 
@@ -57,8 +69,8 @@
     /* ----------- iPad mini ----------- */
       /* Landscape */
     @media only screen 
-      and (min-device-width: 768px) 
-      and (max-device-width: 1024px) 
+      and (min-width: 768px) 
+      and (max-width: 1024px) 
       and (orientation: landscape) 
       and (-webkit-min-device-pixel-ratio: 1) {
         height: 70%;
@@ -67,13 +79,12 @@
 	@media screen and (min-width: 1025px) {
 	  	height: 65%;
 	  	max-height: 500px;	
-      max-width: 1440px;
+      max-width: 1025px;
       margin: auto;
 	  }
       /* ----------- Retina Screens ----------- */
 	@media screen 
-	  and (min-device-width: 1025px) 
-	//  and (max-device-width: 1600px) 
+	  and (min-width: 1025px) 
 	  and (-webkit-min-device-pixel-ratio: 2)
 	  and (min-resolution: 192dpi) {
 		height: 65%;  	
@@ -87,6 +98,30 @@
     top: 15%;
     width: 37%;
     left: 8%;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    @media (max-width: 480px) {
+      top: 12%;
+      width: 75%;
+      left: 8%;
+      padding-left: 1.9375rem;
+      padding-right: 0.9375rem;
+    }
+    @media (min-width: 481px) and (max-width: 767px) {
+      top: 12%;
+      width: 75%;
+      left: 8%;
+      padding-left: 1.9375rem;
+      padding-right: 0.9375rem;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      top: 12%;
+      width: 75%;
+      left: 8%;
+      padding-left: 1.9375rem;
+      padding-right: 0.9375rem;
+    } 
+
     /* ----------- iPhone 5 and 5S ----------- */
     /* Portrait */
     @media only screen 
@@ -147,23 +182,27 @@
       and (orientation: landscape) 
       and (-webkit-min-device-pixel-ratio: 1) {
        	top: 20%;
-		    width: 18%; 
+  	    width: 18%; 
     }
     /* ----------- Non-Retina Screens ----------- */
-	@media screen and (min-width: 1025px)  
-	  and (-webkit-min-device-pixel-ratio: 1) {
-		top: 25%;
-		width: 10%;	
-    left: 15%;  	
-    position: relative;
-	  }
+  	@media screen and (min-width: 1025px)  
+  	  and (-webkit-min-device-pixel-ratio: 1) {
+  		top: 20%;
+      width: 75%;
+      left: 28%;
+      padding-left: 1.9375rem;
+      padding-right: 0.9375rem;
+	   }
 		  /* ----------- Retina Screens ----------- */
 		@media screen 
-		  and (min-device-width: 1025px) 
+		  and (min-width: 1025px) 
 		  and (-webkit-min-device-pixel-ratio: 2)
 		  and (min-resolution: 192dpi) {
-			top: 15%;
-			width: 10%;
+			top: 12%;
+      width: 75%;
+      left: 8%;
+      padding-left: 1.9375rem;
+      padding-right: 0.9375rem;
 	  	}
 	}
 }
@@ -180,33 +219,33 @@
 .video-container iframe, .video-container object, .video-container embed {
 	position:absolute;
 	top: -15%;
-    left: 8%;
-    width: 85%;
-    height: 85%;
-    z-index: 1;
-    /* ----------- iPhone 5 and 5S ----------- */
-    /* Portrait */
-    @media only screen 
-      and (min-device-width: 320px) 
-      and (max-device-width: 568px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: portrait) {
-        height: 100%;
-      }
-    /* ----------- iPhone 5 and 5S ----------- */
-    /* Landscape */
-    @media only screen 
-      and (min-device-width: 320px) 
-      and (max-device-width: 568px)
-      and (-webkit-min-device-pixel-ratio: 2)
-      and (orientation: landscape)  {
-        height: 100%;
-      }
-     /* ----------- Non-Retina Screens ----------- */
-    @media screen and (min-width: 1025px)  
-      and (-webkit-min-device-pixel-ratio: 1) {
-        height: 70%;
-      }
+  left: 8%;
+  width: 85%;
+  height: 85%;
+  z-index: 1;
+  /* ----------- iPhone 5 and 5S ----------- */
+  /* Portrait */
+  @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+      height: 100%;
+    }
+  /* ----------- iPhone 5 and 5S ----------- */
+  /* Landscape */
+  @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape)  {
+      height: 100%;
+    }
+   /* ----------- Non-Retina Screens ----------- */
+  @media screen and (min-width: 1025px)  
+    and (-webkit-min-device-pixel-ratio: 1) {
+      height: 70%;
+    }
 }
 
 
@@ -219,6 +258,15 @@
     text-align: center;
     color: $darkgray;
     background: $seashell;
+    @media (max-width: 480px) {
+      height: 58%;
+    }
+    @media (min-width: 481px) and (max-width: 767px) {
+      height: 94%;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      height: 50%;
+    }
     /* ----------- iPhone 5 and 5S ----------- */
     /* Portrait */
     @media only screen 
@@ -286,6 +334,12 @@
     .before-title {
       padding: 10px;
       color: $darkgray;
+      @media (min-width: 481px) and (max-width: 767px) {
+        font-size: 24px;
+      }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 24px;
+      }
       /* ----------- iPhone 5 and 5S ----------- */
       /* Landscape */
       @media only screen 
@@ -342,6 +396,13 @@
       transform: translate(-50%, -50%);
       color: white;
       background-color: $seashell;
+      @media (min-width: 481px) and (max-width: 767px) {
+        height: 70%;
+      }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        top: 60%;
+        height: 80%;
+      }
       /* ----------- iPhone 5 and 5S ----------- */
       /* Portrait */
       @media only screen 
@@ -436,6 +497,7 @@
             }
           }
           .overlay {
+            font-family: HelveticaNeueLTStd-Lt;
             display: none;
             bottom: 30;
             left: 0;
@@ -446,6 +508,11 @@
             margin: auto;
             position: absolute;
             background: rgba(196,154,149,0.80);
+            background: rgba(196,154,149,0.80);
+            @media (min-width: 768px) and (max-width: 1024px) {
+              height: 80%;
+
+            }
             // border-radius: 50%;
             /* ----------- iPhone 5 and 5S ----------- */
             /* Landscape */
@@ -518,8 +585,7 @@
               }
             /* ----------- Non-Retina laptop/desktop Screens ----------- */
             @media screen 
-              and (min-device-width: 1025px) 
-              and (max-device-width: 1600px) 
+              and (min-width: 1025px) 
               and (-webkit-min-device-pixel-ratio: 1) {
                 width: 100%;
                 height: 98%;
@@ -530,6 +596,10 @@
             .text_title {
               color: white;
               padding-top: 50%;
+              font-family: HelveticaNeueLTStd-Lt;
+              @media (min-width: 768px) and (max-width: 1024px) {
+                padding-top: 10%;
+                } 
               /* ----------- iPhone 5 and 5S ----------- */
               /* Landscape */
               @media only screen 
@@ -583,6 +653,7 @@
                 }
             }
             .text_box {
+              font-family: HelveticaNeueLTStd-Lt;
               color: white;
               // font-size:28px;
               line-height: 20px;
@@ -630,6 +701,12 @@
             }
             .fancypics {
               width: 100%;
+              @media (max-width: 480px) {
+                width: 100%;
+              }
+              @media (min-width: 768px) and (max-width: 1024px) {
+                width: 50%;
+              }
               /* ----------- iPhone 5 and 5S ----------- */
               /* Landscape */
               @media only screen 
@@ -677,8 +754,7 @@
                 }
                 /* ----------- Non-Retina laptop/desktop Screens ----------- */
               @media screen 
-                and (min-device-width: 1025px) 
-                and (max-device-width: 1600px) 
+                and (min-width: 1025px) 
                 and (-webkit-min-device-pixel-ratio: 1) {
                   width: 50%;
                 }

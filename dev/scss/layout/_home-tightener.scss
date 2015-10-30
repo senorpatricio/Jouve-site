@@ -5,6 +5,9 @@
     margin: 0 0 50px 0;
     padding-top: 150px;
     vertical-align: middle;
+     @media (max-width: 480px) {
+
+     }
     /* ----------- iPhone 5 and 5S ----------- */
     /* Portrait */
     @media only screen 
@@ -65,7 +68,7 @@
         } 
       /* ----------- Non-Retina laptop/desktop Screens ----------- */
       @media screen 
-        and (min-device-width: 1025px) 
+        and (min-width: 1025px) 
         and (-webkit-min-device-pixel-ratio: 1) { 
           margin: 0 0 0 0;
           height: 100%;
@@ -140,6 +143,9 @@
       color: $darkgray;
       @media (min-width: 480px) and (max-width: 767px) {
           margin-top: 30px;
+      }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        margin-top: 30px;
       }
       /* ----------- iPhone 5 and 5S ----------- */
       /* Portrait */
@@ -249,6 +255,13 @@
     
     .product-link {
       color: $darkgray !important;
+      @media (min-width: 481px) and (max-width: 767px) {
+        width: 100px;
+      }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        width: 120px;
+        margin-top: 100px;
+      }
       /* ----------- iPhone 5 and 5S ----------- */
       /* Landscape */
       @media only screen 

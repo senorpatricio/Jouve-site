@@ -8,18 +8,24 @@
 		color: $darkgray;
 		padding: 20px 10%;
 		letter-spacing: 2px;
+    @media screen and (min-width:1025px) {
+      padding: 0;
+    }
 	}
 }
 
 .rep-container {
   @media screen and (min-width:1025px) {
-    max-width: 1440px;
+    max-width: 1025px;
     margin: auto;
   }
 }
 .rep-photo {
 	width: 80%;
 	margin: 10% auto;
+  @media screen and (min-width:1025px) {
+
+  }
   /* ----------- iPhone 5 and 5S ----------- */
   /* Landscape */
   @media only screen 
@@ -81,6 +87,7 @@
 .rep-info {
 	width: 100%;
 	background-color: $seashell;
+
   /* ----------- iPhone 5 and 5S ----------- */
   /* Landscape */
   @media only screen 
@@ -112,9 +119,9 @@
       	float: left;
       }
     @media screen and (min-width:1025px) {
-      width: 60%;
+      width: 55%;
       float: left;
-      margin: 15% auto;
+      margin: 15% 15px;
     }
 	p {
 		font-size: 18px;
@@ -183,7 +190,7 @@
       	width: 80%;
       }
     @media screen and (min-width:1025px) {
-        max-width: 1440px;
+        max-width: 1025px;
         margin: 5% auto;
     }  
 
