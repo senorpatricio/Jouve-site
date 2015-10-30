@@ -624,6 +624,9 @@ nav {
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
       .tightener .product {
         max-width: 100%; } }
+    @media (min-width: 1025px) {
+      .tightener .product {
+        margin: 0 0 80px 0; } }
   .tightener .product-tag {
     font-family: HelveticaNeueLTStd-ThIt;
     font-size: 16px;
@@ -959,6 +962,8 @@ nav {
   width: 80%;
   height: 60%;
   padding: 10px;
+  max-height: 100%;
+  max-width: 100%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: white;
@@ -967,7 +972,7 @@ nav {
   /* ----------- Retina Screens ----------- */ }
   @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
     .before-after-grid {
-      height: 70%;
+      height: 100%;
       top: 35%; } }
   @media screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
     .before-after-grid {
@@ -980,7 +985,13 @@ nav {
     text-align: center; }
   .before-after-grid .before-after-grid {
     padding: 0 !important;
-    position: relative; }
+    position: relative;
+    height: 100% !important; }
+    .before-after-grid .before-after-grid .large-12 {
+      height: 100% !important; }
+    @media screen and (min-width: 1025px) {
+      .before-after-grid .before-after-grid {
+        height: 100%; } }
     .before-after-grid .before-after-grid img {
       padding: 0 !important; }
     .before-after-grid .before-after-grid .picholder:hover .overlay {
@@ -1897,7 +1908,7 @@ body {
     position: relative;
     /* left: 50%; */
     width: 80%;
-    height: 70%;
+    height: 100% !important;
     /* height: 60%; */
     padding: 10px;
     -webkit-transform: translate(-50%, -50%);

@@ -5,6 +5,8 @@
   width: 80%;
   height: 60%;
   padding: 10px;
+  max-height: 100%;
+  max-width: 100%;
   transform: translate(-50%, -50%);
   color: white;
   background-color: $seashell;
@@ -12,9 +14,10 @@
   @media screen 
     and (min-width: 1025px) 
     and (-webkit-min-device-pixel-ratio: 1) {
-     height: 70%;
+     height: 100%;
      top: 35%;
-    }
+     // overflow-y: scroll;
+    } 
   /* ----------- Retina Screens ----------- */
   @media screen 
     and (min-device-width: 1025px) 
@@ -33,6 +36,13 @@
   .before-after-grid {
     padding: 0 !important;
     position: relative;
+    height: 100% !important;
+    .large-12 {
+      height: 100% !important;
+    }
+    @media screen and (min-width: 1025px) {
+      height: 100%;
+    }
     img {
         padding: 0 !important;
     }
