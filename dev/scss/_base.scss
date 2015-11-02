@@ -63,7 +63,7 @@ body {
   @media (max-width: 480px) {
     height: 56%;
   }
-  @media (max-width: 767px) {
+  @media (min-width: 481px) and (max-width: 767px) {
     height: 60%;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -416,13 +416,13 @@ body {
     color: $darkgray;
     background: $seashell;
     @media (max-width: 480px) {
-      height: 58%;
+      height: 780px;
     }
     @media (min-width: 481px) and (max-width: 767px) {
       height: 65%;
     }
     @media (min-width: 768px) and (max-width: 1024px) {
-      height: 40%;
+      height: 70%;
     }
     /* ----------- iPhone 5 and 5S ----------- */
     /* Portrait */
@@ -539,6 +539,9 @@ body {
       @media (max-width: 480px) {
 
       }
+      @media (min-width: 481px) and (max-width: 767px) {
+        top: 54%;
+      }
       /* ----------- iPhone 5 and 5S ----------- */
       /* Portrait */
       @media only screen 
@@ -638,8 +641,11 @@ body {
             margin: auto;
             position: absolute;
             background: rgba(196,154,149,0.80);
+            @media (min-width: 481px) and (max-width: 767px) {
+              height: 67%;
+            }
             @media (min-width: 768px) and (max-width: 1024px) {
-              height: 80%;
+              height: 90%;
             }
             // border-radius: 50%;
             /* ----------- iPhone 5 and 5S ----------- */
@@ -716,6 +722,9 @@ body {
             .text_title {
               color: white;
               padding-top: 50%;
+              @media (min-width: 481px) and (max-width: 767px) {
+                padding-top: 5%;
+              }
               @media (min-width: 768px) and (max-width: 1024px) {
                 padding-top: 10%;
                 } 
@@ -832,6 +841,9 @@ body {
               @media (max-width: 480px) {
                 width: 100%;
               }
+              @media (min-width: 481px) and (max-width: 767px) {
+                width: 50%;
+              }
               @media (min-width: 768px) and (max-width: 1024px) {
                 width: 50%;
               }
@@ -918,69 +930,70 @@ body {
 // 
 
 // end before-after section styling
-@media (min-width: 1025px) {
-  .swiper-container {
-    max-width: 1440px;
-    height: 641px;
-    z-index: 1;
-  }
-  .row {
-    max-width: 1440px;
-  }
+// @media (min-width: 1025px) {
+//   .swiper-container {
+//     max-width: 1025px;
+//     height: 641px;
+//     z-index: 1;
+//     margin: 0 auto !important;
+//   }
+//   .row {
+//     max-width: 1025px;
+//   }
 
-  .before-after-grid {
-    position: relative;
-    // margin-top: 50%;
-    /* left: 50%; */
-    width: 80%;
-    height: 100% !important;
-    /* height: 60%; */
-    padding: 10px;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: #FCF4F3;
-  }
+//   .before-after-grid {
+//     position: relative;
+//     // margin-top: 50%;
+//     /* left: 50%; */
+//     width: 80%;
+//     height: 100% !important;
+//     /* height: 60%; */
+//     padding: 10px;
+//     -webkit-transform: translate(-50%, -50%);
+//     transform: translate(-50%, -50%);
+//     color: white;
+//     background-color: #FCF4F3;
+//   }
 
-  .brightener {
-    position: relative;
-    height: auto;
-    clear: both;
-  }
-  .before-after-results {
-    .fancypics img {
-      max-width: 100% !important;
-    }
+//   .brightener {
+//     position: relative;
+//     height: auto;
+//     clear: both;
+//   }
+//   .before-after-results {
+//     .fancypics img {
+//       max-width: 100% !important;
+//     }
 
-  }
-  .slide1 {
-    background-image: url("../img/jouve_home_slider.jpg");
-    background-size: cover;
-    background-position: 0px;
-  }
-  .slide2 {
-    background-image: url("../img/slider-background.png");
-    background-size: 100%;
-    background-position: 0px -360px;
+//   }
+//   .slide1 {
+//     background-image: url("../img/jouve_home_slider.jpg");
+//     background-size: cover;
+//     background-position: 0px;
+//   }
+//   .slide2 {
+//     background-image: url("../img/slider-background.png");
+//     background-size: 100%;
+//     background-position: 0px -360px;
 
-  }
-  .swiper-slide .true-you {
-    position: absolute;
-    top: 15%;
-    left: 23%;
-  }
-  .large-nav .row .large-right-nav ul .language-icon svg {
-    max-width: 3%;
-    margin-bottom: inherit;
-  }
-  // .lNavigation {
-  //   position: fixed;
-  //   z-index: 1;
-  //   top: 77px;
-  //   right: 0;
-  //   overflow: hidden;
-  //   width: 12%;
-  //   height: auto;
-  //   color: white;
-  // }
-}
+//   }
+//   .swiper-slide .true-you {
+//     position: absolute;
+//     top: 15%;
+//     left: 23%;
+//   }
+//   .large-nav .row .large-right-nav ul .language-icon svg {
+//     max-width: 3%;
+//     margin-bottom: inherit;
+//   }
+//   // .lNavigation {
+//   //   position: fixed;
+//   //   z-index: 1;
+//   //   top: 77px;
+//   //   right: 0;
+//   //   overflow: hidden;
+//   //   width: 12%;
+//   //   height: auto;
+//   //   color: white;
+//   // }
+// }

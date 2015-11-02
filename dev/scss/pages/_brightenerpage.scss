@@ -75,6 +75,7 @@
 	  and (-webkit-min-device-pixel-ratio: 1) { 
        max-width: 1025px;
        margin: 0 auto; 
+       height: 400px; 
     }
 }
 
@@ -155,7 +156,7 @@
         }   
 	@media screen 
 	  and (min-width: 1025px) {
-	  	height: 35%;
+	  	height: 150px;
 	  }
 
 	.product-section {
@@ -257,7 +258,8 @@
 		    @media screen 
 	          and (min-width: 1025px) {
 	          	top: -225%;
-    			left: 20%;	
+				left: 34%;	
+				width: 210px;	
 	          }       
 		}
 		h4 {
@@ -428,7 +430,7 @@
       and (min-width: 1025px) {
   	    max-width: 1025px;
 		margin: 0 auto;
-		height: 30%;
+		height: 380px;
       }            
 
 	p {
@@ -564,7 +566,7 @@
       }
   	@media screen 
 	  and (min-width: 1025px) {
-		height: 30%;
+		height: 235px;
 		max-width: 1025px;
 		margin: 40px auto;
 	  }
