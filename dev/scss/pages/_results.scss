@@ -189,25 +189,21 @@
     }
     /* ----------- Non-Retina Screens ----------- */
   	@media screen and (min-width: 1025px) {
-  		top: 15%;
+      top: auto;
+      left: auto;
       width: 75%;
-      left: 4%;
+      margin: 230px 0 0 100px !important;
 	   }
-		  /* ----------- Retina Screens ----------- */
-		// @media screen 
-		//   and (min-width: 1025px) 
-		//   and (-webkit-min-device-pixel-ratio: 2)
-		//   and (min-resolution: 192dpi) {
-		// 	top: 12%;
-  //     width: 75%;
-  //     left: 8%;
-  //     padding-left: 1.9375rem;
-  //     padding-right: 0.9375rem;
-	 //  	}
+		
 	}
 }
 
-
+#large-container {
+  @media screen and (min-width: 1025px) {
+    width: 950px;
+    margin: auto;
+  }
+}
 .video-container {
 	position:relative;
 	padding-bottom:35%;
@@ -245,7 +241,7 @@
     }
    /* ----------- Non-Retina Screens ----------- */
   @media screen and (min-width: 1025px) {
-      height: 70%;
+      height: 95%;
       max-width: 950px !important;
     }
 }
