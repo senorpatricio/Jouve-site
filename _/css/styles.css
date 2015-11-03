@@ -110,6 +110,43 @@ nav {
           padding: 10px 30px !important;
           margin: -30px 0 -20px 30px !important;
           width: 80%; } }
+      nav .row > .small-2 .language-icon svg {
+        /* ----------- iPhone 5 and 5S ----------- */
+        /* Landscape */
+        /* ----------- iPhone 6 ----------- */
+        /* Landscape */
+        /* ----------- iPhone 6+ ----------- */
+        /* Landscape */
+        /* ----------- iPad mini ----------- */
+        /* Portrait */
+        /* ----------- iPad mini ----------- */
+        /* Landscape */ }
+        @media (max-width: 480px) {
+          nav .row > .small-2 .language-icon svg {
+            width: 25px; } }
+        @media (min-width: 481px) and (max-width: 767px) {
+          nav .row > .small-2 .language-icon svg {
+            width: 25px; } }
+        @media (min-width: 768px) and (max-width: 1024px) {
+          nav .row > .small-2 .language-icon svg {
+            width: 25px; } }
+        @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+          nav .row > .small-2 .language-icon svg {
+            width: 25px;
+            margin-top: 20px; } }
+        @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+          nav .row > .small-2 .language-icon svg {
+            width: 25px;
+            margin-top: 20px; } }
+        @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+          nav .row > .small-2 .language-icon svg {
+            width: 25px; } }
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+          nav .row > .small-2 .language-icon svg {
+            width: 25px; } }
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+          nav .row > .small-2 .language-icon svg {
+            width: 25px; } }
   nav .row > .medium-8 {
     /* ----------- iPad mini ----------- */
     /* Portrait */ }
@@ -171,7 +208,7 @@ nav {
         margin: 5px 0 0 20%; } }
 
 .large-nav {
-  font-family: HelveticaNeueLTStd-Lt; }
+  font-family: HelveticaNeueLTStd-ThIt; }
   .large-nav .row {
     margin: 0 !important;
     max-width: 100% !important;
@@ -224,10 +261,10 @@ nav {
               text-align: left; }
         .large-nav .row .large-right-nav ul .language-icon {
           max-width: 15%;
-          margin: -15px;
+          margin: -9px;
           padding: 21px; }
           .large-nav .row .large-right-nav ul .language-icon svg {
-            max-width: 7%;
+            width: 30px;
             margin-bottom: inherit; }
 
 .menuWrapper {
@@ -547,6 +584,86 @@ nav {
     .custom-dropdown--small .custom-dropdown__select {
       padding-right: .5em; } } }
 
+.pMenuWrapper {
+  width: 250px;
+  height: 300px;
+  right: 29%;
+  position: absolute; }
+  @media (min-width: 300px) and (max-width: 1024px) {
+    .pMenuWrapper {
+      width: 99px;
+      height: 300px;
+      right: 0%; } }
+
+.pNavigation {
+  position: absolute;
+  z-index: 10;
+  top: 5px;
+  right: 0;
+  overflow: hidden;
+  width: 70%;
+  /* the container's height will determine the height of its slider  */
+  height: auto;
+  color: white; }
+  @media (min-width: 1025px) {
+    .pNavigation {
+      position: fixed;
+      top: 77px;
+      right: 400px;
+      overflow: hidden;
+      width: 225px;
+      height: auto;
+      color: white;
+      z-index: 200; } }
+
+.pNavigation:before {
+  -webkit-filter: blur(10px);
+          filter: blur(10px); }
+
+.pSlider {
+  overflow-y: scroll;
+  /* complete liquid height based on the parent's height!! */
+  height: 100%;
+  /* only transition on transform properties which are hardware accelerated = way better performances */
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease; }
+  .pSlider ul {
+    margin: 0 0 20px 0 !important; }
+    .pSlider ul li {
+      padding: 10px 0px;
+      list-style: none;
+      border-bottom: 1px solid white; }
+      .pSlider ul li a {
+        color: white;
+        font-weight: 100;
+        font-family: HelveticaNeueLTStd-Lt; }
+
+.pSlider.opened {
+  height: 100%;
+  /* visible */
+  -webkit-transform: translate(0, 0%);
+  transform: translate(0, 0%);
+  opacity: .8; }
+
+.pSlider.opened:after {
+  transition: 700ms 900ms cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  transition-property: filter, -webkit-filter, opacity, -webkit-transform;
+  opacity: .5;
+  -webkit-filter: blur(10px);
+  padding: 5px 15px 0 15px; }
+
+.pSlider.closed {
+  /* completely offscreen */
+  -webkit-transform: translate(0, -100%);
+  transform: translate(0, -100%); }
+
+.pSlider {
+  box-sizing: border-box;
+  padding: 20px;
+  color: #fff;
+  background: #A47872;
+  -ms-box-sizing: border-box; }
+
 .tightener {
   height: 80%;
   background-color: #fff;
@@ -749,9 +866,9 @@ nav {
       .tightener .product-link {
         margin: 40px;
         padding-top: 60px; } }
-    @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+    @media screen and (min-width: 1025px) {
       .tightener .product-link {
-        max-width: 50%; } }
+        width: 120px; } }
     .tightener .product-link a {
       text-decoration: none;
       color: #979797 !important; }
@@ -950,9 +1067,9 @@ nav {
       .brightener .product-link {
         margin: 40px;
         padding-top: 60px; } }
-    @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+    @media screen and (min-width: 1025px) {
       .brightener .product-link {
-        max-width: 50%; } }
+        width: 120px; } }
     .brightener .product-link a {
       text-decoration: none;
       color: #979797 !important; }
@@ -977,30 +1094,25 @@ nav {
           transform: translate(-50%, -50%);
   color: white;
   background-color: #FCF4F3;
-  /* ----------- Non-Retina Screens ----------- */
-  /* ----------- Retina Screens ----------- */ }
-  @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+  /* ----------- Non-Retina Screens ----------- */ }
+  @media screen and (min-width: 1025px) {
     .before-after-grid {
-      height: 100%;
+      height: 850px;
       top: 35%; } }
-  @media screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-    .before-after-grid {
-      height: 100%;
-      top: 35%;
-      margin-bottom: -80px; } }
   .before-after-grid h3 {
     color: #979797;
     font-family: HelveticaNeueLTStd-ThIt;
-    text-align: center; }
+    text-align: center;
+    font-size: 16px; }
+  .before-after-grid .grid-title {
+    color: #979797;
+    font-family: HelveticaNeueLTStd-ThIt;
+    text-align: center;
+    font-size: 16px;
+    margin: 25px auto; }
   .before-after-grid .before-after-grid {
     padding: 0 !important;
-    position: relative;
-    height: 100% !important; }
-    .before-after-grid .before-after-grid .large-12 {
-      height: 100% !important; }
-    @media screen and (min-width: 1025px) {
-      .before-after-grid .before-after-grid {
-        height: 100%; } }
+    position: relative; }
     .before-after-grid .before-after-grid img {
       padding: 0 !important; }
     .before-after-grid .before-after-grid .picholder:hover .overlay {
@@ -1026,7 +1138,7 @@ nav {
           background: rgba(196, 154, 149, 0.8); } }
     .before-after-grid .before-after-grid .fancypics {
       /* ----------- Non-Retina laptop/desktop Screens ----------- */ }
-      @media screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+      @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
         .before-after-grid .before-after-grid .fancypics {
           width: 49%; } }
 
@@ -1055,7 +1167,7 @@ nav {
     background: rgba(196, 154, 149, 0.8);
     opacity: 0;
     /* ----------- Non-Retina laptop/desktop Screens ----------- */ }
-    @media screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+    @media screen and (min-width: 1025px) {
       .before-after-results .overlay {
         width: 92%;
         height: 101%;
@@ -1074,7 +1186,7 @@ nav {
   .before-after-results .fancypics {
     width: 100%;
     /* ----------- Non-Retina laptop/desktop Screens ----------- */ }
-    @media screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+    @media screen and (min-width: 1025px) {
       .before-after-results .fancypics {
         width: 50%; } }
 
@@ -1121,8 +1233,7 @@ footer {
   /* Portrait */
   /* ----------- iPad mini ----------- */
   /* Landscape */
-  /* ----------- Non-Retina laptop/desktop Screens ----------- */
-  /* ----------- Retina Screens ----------- */ }
+  /* ----------- Non-Retina laptop/desktop Screens ----------- */ }
   @media (max-width: 480px) {
     footer {
       height: 410px; } }
@@ -1131,10 +1242,10 @@ footer {
       height: 435px; } }
   @media (min-width: 768px) and (max-width: 1024px) {
     footer {
-      height: 330px; } }
+      height: 410px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     footer {
-      height: 75%; } }
+      height: 90%; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     footer {
       height: 200%; } }
@@ -1143,7 +1254,7 @@ footer {
       height: 80%; } }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     footer {
-      height: 100%; } }
+      height: 110%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
     footer {
       height: 40%; } }
@@ -1152,38 +1263,23 @@ footer {
       height: 80%; } }
   @media screen and (min-width: 1025px) {
     footer {
-      height: 40%; } }
-  @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-    footer {
-      height: 50%; } }
+      height: 310px; } }
   footer .footer-padding {
     /* ----------- Non-Retina laptop/desktop Screens ----------- */ }
     @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
       footer .footer-padding {
         padding-top: 60px; } }
-  footer #foot-menu ul {
+  footer #foot-menu {
     margin: 40px 0;
     list-style: none;
     font-family: HelveticaNeueLTStd-Lt;
     color: #fff;
-    font-weight: 100;
-    /* ----------- Non-Retina laptop/desktop Screens ----------- */ }
-    @media screen and (min-device-width: 1025px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-      footer #foot-menu ul {
-        margin: 40px 25px; } }
+    font-weight: 100; }
+    footer #foot-menu h4 {
+      color: #fff; }
     @media screen and (min-device-width: 1025px) {
-      footer #foot-menu ul {
+      footer #foot-menu {
         margin: 40px 25px; } }
-    footer #foot-menu ul li a {
-      text-decoration: none;
-      color: #fff !important; }
-      footer #foot-menu ul li a:link {
-        text-decoration: none;
-        color: #fff !important; }
-      footer #foot-menu ul li a:hover {
-        color: #A47872; }
-      footer #foot-menu ul li a:visited {
-        color: #C59B96; }
   footer #social-buttons {
     /* ----------- iPhone 5 and 5S ----------- */
     /* Portrait */
@@ -1192,8 +1288,7 @@ footer {
     /* ----------- iPad mini ----------- */
     /* Portrait */
     /* ----------- iPad mini ----------- */
-    /* Landscape */
-    /* ----------- Non-Retina laptop/desktop Screens ----------- */ }
+    /* Landscape */ }
     @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
       footer #social-buttons {
         margin-top: 60px; } }
@@ -1209,10 +1304,7 @@ footer {
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
       footer #social-buttons {
         margin: 40px 0; } }
-    @media screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
-      footer #social-buttons {
-        margin: 40px 0 20px 0; } }
-    @media screen and (min-device-width: 1025px) {
+    @media screen and (min-width: 1025px) {
       footer #social-buttons {
         margin: 40px 0 20px 0; } }
     footer #social-buttons ul {
@@ -1224,7 +1316,7 @@ footer {
         display: inline;
         margin: 0 12px 0 0; }
         footer #social-buttons ul li a img {
-          max-width: 15%; }
+          width: 43px; }
   footer #foot-logo {
     float: none;
     /* ----------- iPad mini ----------- */
@@ -1346,6 +1438,10 @@ body {
   height: 90%;
   position: absolute;
   z-index: 10;
+  /* ----------- iPhone 5 and 5S ----------- */
+  /* Landscape */
+  /* ----------- iPhone 6 ----------- */
+  /* Landscape */
   /* ----------- iPad mini ----------- */
   /* Portrait */
   /* ----------- iPad mini ----------- */
@@ -1361,6 +1457,12 @@ body {
   @media (min-width: 768px) and (max-width: 1024px) {
     .swiper-container {
       height: 80%; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .swiper-container {
+      height: 90%; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .swiper-container {
+      height: 90%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
     .swiper-container {
       height: 92%; } }
@@ -1433,11 +1535,11 @@ body {
       .swiper-slide .true-you {
         top: 10%;
         left: 0%; } }
-    @media (max-width: 767px) {
+    @media (min-width: 481px) and (max-width: 767px) {
       .swiper-slide .true-you {
-        top: 8%;
-        left: 10%;
-        width: 80%; } }
+        top: 5%;
+        left: 22%;
+        width: 55%; } }
     @media (min-width: 768px) and (max-width: 1024px) {
       .swiper-slide .true-you {
         top: 8%;
@@ -1448,18 +1550,18 @@ body {
         top: 13%; } }
     @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
       .swiper-slide .true-you {
-        max-width: 75%;
-        left: 12% !important;
+        max-width: 58%;
+        left: 22% !important;
         top: 5%; } }
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
       .swiper-slide .true-you {
-        max-width: 75%;
-        left: 12% !important;
+        max-width: 55%;
+        left: 22% !important;
         top: 5%; } }
     @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
       .swiper-slide .true-you {
-        max-width: 75%;
-        left: 12% !important;
+        max-width: 55%;
+        left: 22% !important;
         top: 5%; } }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
       .swiper-slide .true-you {
@@ -1479,7 +1581,7 @@ body {
         max-width: 60%; } }
 
 .slide1 {
-  background-image: url("../img/jouve_home_slider.jpg");
+  background-image: url("../img/slider1.jpg");
   background-size: cover;
   background-position: -250px;
   /* ----------- iPhone 5 and 5S ----------- */
@@ -1513,12 +1615,10 @@ body {
       background-position: 0; } }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .slide1 {
-      background-image: url("../img/jouve_home_slider.jpg");
       background-size: cover;
       background-position: 0; } }
   @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
     .slide1 {
-      background-image: url("../img/jouve_home_slider.jpg");
       background-size: cover;
       background-position: 0; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
@@ -1529,13 +1629,13 @@ body {
     .slide1 {
       background-size: cover;
       background-position: 0; } }
-  @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+  @media screen and (min-width: 1025px) {
     .slide1 {
       background-size: cover;
       background-position: 0; } }
 
 .slide2 {
-  background-image: url("../img/slider-background.png");
+  background-image: url("../img/slider2.jpg");
   background-size: 115%;
   /* ----------- iPhone 5 and 5S ----------- */
   /* Landscape */
@@ -1550,17 +1650,14 @@ body {
   /* ----------- Non-Retina laptop/desktop Screens ----------- */ }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .slide2 {
-      background-image: url("../img/jouve_home_slider.jpg");
       background-size: 100%;
       background-position: 0; } }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .slide2 {
-      background-image: url("../img/jouve_home_slider.jpg");
       background-size: 100%;
       background-position: 0; } }
   @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
     .slide2 {
-      background-image: url("../img/jouve_home_slider.jpg");
       background-size: cover;
       background-position: 0; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
@@ -1568,12 +1665,64 @@ body {
       background-size: 115%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
     .slide2 {
-      background-image: url("../img/jouve_home_slider.jpg");
       background-size: cover; } }
-  @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+  @media screen and (min-width: 1025px) {
     .slide2 {
       background-size: cover;
-      background-image: url("../img/jouve_home_slider.jpg");
+      background-position: 0; } }
+
+.slide3 {
+  background-image: url("../img/slider3.jpg");
+  background-size: cover;
+  background-position: -250px;
+  /* ----------- iPhone 5 and 5S ----------- */
+  /* Portrait */
+  /* ----------- iPhone 5 and 5S ----------- */
+  /* Landscape */
+  /* ----------- iPhone 6 ----------- */
+  /* Landscape */
+  /* ----------- iPhone 6+ ----------- */
+  /* Landscape */
+  /* ----------- iPad mini ----------- */
+  /* Portrait */
+  /* ----------- iPad mini ----------- */
+  /* Landscape */
+  /* ----------- Non-Retina laptop/desktop Screens ----------- */ }
+  @media (max-width: 480px) {
+    .slide3 {
+      background-position: 0; } }
+  @media (min-width: 481px) and (max-width: 767px) {
+    .slide3 {
+      background-position: 0; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .slide3 {
+      background-position: 0; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .slide3 {
+      background-position: 0; } }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .slide3 {
+      background-size: cover;
+      background-position: 0; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .slide3 {
+      background-size: cover;
+      background-position: 0; } }
+  @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    .slide3 {
+      background-size: cover;
+      background-position: 0; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .slide3 {
+      background-size: cover;
+      background-position: 0; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    .slide3 {
+      background-size: cover;
+      background-position: 0; } }
+  @media screen and (min-width: 1025px) {
+    .slide3 {
+      background-size: cover;
       background-position: 0; } }
 
 .clear:after {
@@ -1892,7 +2041,7 @@ body {
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
           .big-slider .before-after .swiper-wrapper .swiper-slide .fancypics {
             width: 50%; } }
-        @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+        @media screen and (min-width: 1025px) {
           .big-slider .before-after .swiper-wrapper .swiper-slide .fancypics {
             width: 50%; } }
   .big-slider .before_arrow_left {
@@ -1924,7 +2073,7 @@ body {
 
 .results-bar {
   height: 50%;
-  background-image: url("../img/resultsbg.png");
+  background-image: url("../img/resultsbg.jpg");
   background-size: cover;
   /* ----------- iPhone 5 and 5S ----------- */
   /* Portrait */
@@ -1955,8 +2104,7 @@ body {
       background-position-y: 30%; } }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .results-bar {
-      height: 100%;
-      background-position-y: 30%; } }
+      height: 60%; } }
   @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
     .results-bar {
       height: 100%; } }
@@ -1967,8 +2115,7 @@ body {
     .results-bar {
       height: 400px;
       max-width: 1025px;
-      margin: 0 auto;
-      background-position-y: -100px; } }
+      margin: 0 auto; } }
   .results-bar .quote {
     color: #fff;
     font-family: HelveticaNeueLTStd-ThIt;
@@ -2016,8 +2163,8 @@ body {
         padding-right: 0.9375rem; } }
     @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
       .results-bar .quote {
-        top: 27%;
-        width: 42%;
+        top: 15%;
+        width: 88%;
         font-size: 14px; } }
     @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
       .results-bar .quote {
@@ -2026,22 +2173,22 @@ body {
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
       .results-bar .quote {
         top: 30%;
-        width: 20%; } }
+        width: 75%; } }
     @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
       .results-bar .quote {
-        top: 35%;
-        width: 20%; } }
+        top: 30%;
+        width: 75%; } }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
       .results-bar .quote {
-        top: 20%;
-        width: 18%; } }
+        top: 30%;
+        width: 75%; } }
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
       .results-bar .quote {
-        top: 20%;
-        width: 18%; } }
-    @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+        top: 30%;
+        width: 75%; } }
+    @media screen and (min-width: 1025px) {
       .results-bar .quote {
-        top: 20%;
+        top: 15%;
         width: 75%;
         left: 28%;
         padding-left: 1.9375rem;
@@ -2071,7 +2218,7 @@ body {
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .video-container iframe, .video-container object, .video-container embed {
       height: 100%; } }
-  @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+  @media screen and (min-width: 1025px) {
     .video-container iframe, .video-container object, .video-container embed {
       height: 70%; } }
 
@@ -2292,7 +2439,7 @@ body {
             width: 100%;
             height: 103%;
             padding: 30px; } }
-        @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+        @media screen and (min-width: 1025px) {
           .big-slider2 .before-after .swiper-wrapper .swiper-slide .overlay {
             width: 100%;
             height: 98%;
@@ -2404,7 +2551,7 @@ body {
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
           .big-slider2 .before-after .swiper-wrapper .swiper-slide .fancypics {
             width: 50%; } }
-        @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+        @media screen and (min-width: 1025px) {
           .big-slider2 .before-after .swiper-wrapper .swiper-slide .fancypics {
             width: 50%; } }
   .big-slider2 .before_arrow_left {
@@ -2432,7 +2579,7 @@ body {
 
 .banner {
   height: 35%;
-  background-image: url(../../_/img/tightenerbannercrop.jpg);
+  background-image: url(../../_/img/tightenerbanner.jpg);
   background-size: cover;
   background-position-y: -32px;
   /* ----------- iPhone 5 and 5S ----------- */
@@ -2458,7 +2605,7 @@ body {
       background-position: 0; } }
   @media (min-width: 768px) and (max-width: 1024px) {
     .banner {
-      height: 25%;
+      height: 400px;
       background-position: 0; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .banner {
@@ -2478,7 +2625,7 @@ body {
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
     .banner {
       height: 60%; } }
-  @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+  @media screen and (min-width: 1025px) {
     .banner {
       max-width: 1025px;
       margin: 0 auto;
@@ -2507,7 +2654,7 @@ body {
       height: 20%; } }
   @media (min-width: 768px) and (max-width: 1024px) {
     .tightener-page {
-      height: 20%; } }
+      height: 160px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .tightener-page {
       height: 30%; } }
@@ -2563,7 +2710,7 @@ body {
         width: 165px; } }
     @media (min-width: 768px) and (max-width: 1024px) {
       .tightener-page .product-section img {
-        top: -128px;
+        top: -225px;
         left: 37%;
         width: 165px; } }
     @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
@@ -2695,7 +2842,7 @@ body {
       height: 50%; } }
   @media (min-width: 768px) and (max-width: 1024px) {
     .product-description {
-      height: 35%; } }
+      height: 405px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .product-description {
       height: 120%; } }
@@ -2791,7 +2938,7 @@ body {
       height: 25%; } }
   @media (min-width: 768px) and (max-width: 1024px) {
     .more-section {
-      height: 20%; } }
+      height: 210px; } }
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .more-section {
       height: 75%; } }
@@ -2939,7 +3086,7 @@ body {
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
     .bright-banner {
       height: 60%; } }
-  @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+  @media screen and (min-width: 1025px) {
     .bright-banner {
       max-width: 1025px;
       margin: 0 auto;
@@ -2981,7 +3128,7 @@ body {
       height: 45%; } }
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .brightener-page {
-      height: 20%; } }
+      height: 35%; } }
   @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
     .brightener-page {
       height: 25%; } }
@@ -3047,7 +3194,7 @@ body {
     @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
       .brightener-page .product-section img {
         max-width: 20%;
-        top: -190px; } }
+        top: -120px; } }
     @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
       .brightener-page .product-section img {
         max-width: 20%;
@@ -3140,6 +3287,8 @@ body {
   /* Landscape */
   /* ----------- iPhone 6 ----------- */
   /* Portrait */
+  /* ----------- iPhone 6 ----------- */
+  /* Landscape */
   /* ----------- iPhone 6+ ----------- */
   /* Landscape */
   /* ----------- iPad mini ----------- */
@@ -3164,6 +3313,9 @@ body {
   @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .bright-product-description {
       height: 90%; } }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .bright-product-description {
+      height: 125%; } }
   @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
     .bright-product-description {
       height: 80%; } }
@@ -3208,7 +3360,7 @@ body {
         padding-left: 35px;
         padding-right: 35px;
         font-size: 18px; } }
-    @media screen and (min-device-width: 1025px) {
+    @media screen and (min-width: 1025px) {
       .bright-product-description p {
         font-size: 18px;
         line-height: 30px; } }
@@ -3307,7 +3459,7 @@ body {
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
       .bright-more-section a img {
         max-width: 50%; } }
-    @media screen and (min-device-width: 1025px) {
+    @media screen and (min-width: 1025px) {
       .bright-more-section a img {
         max-width: 30%; } }
   .bright-more-section .transformation-section {
@@ -3445,8 +3597,9 @@ body {
         top: 27%; } }
     @media screen and (min-width: 1025px) {
       .difference-banner .difference-type {
-        left: 35%;
-        width: 380px; } }
+        left: 40%;
+        width: 380px;
+        top: 7%; } }
 
 .difference-products .product-image {
   margin: 50px auto;
@@ -4381,25 +4534,18 @@ body {
   .before-after-grid {
     position: relative;
     width: 80%;
-    height: 850px !important;
     padding: 10px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: white;
-    background-color: #FCF4F3; }
+    background-color: #FCF4F3;
+    margin-top: 400px;
+    margin-bottom: -426px; }
   .brightener {
     position: relative;
     clear: both; }
   .before-after-results .fancypics img {
     max-width: 100% !important; }
-  .slide1 {
-    background-image: url("../img/jouve_home_slider.jpg");
-    background-size: cover;
-    background-position: 0px; }
-  .slide2 {
-    background-image: url("../img/slider-background.png");
-    background-size: 100%;
-    background-position: 0px -360px; }
   .swiper-slide .true-you {
     position: absolute;
     top: 15%;

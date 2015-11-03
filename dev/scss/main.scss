@@ -66,12 +66,14 @@
   .before-after-grid {
     position: relative;
     width: 80%;
-    height: 850px !important;
+    // height: 850px !important;
     padding: 10px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: white;
     background-color: $seashell;
+    margin-top: 400px;
+    margin-bottom: -426px;
   }
 
   .brightener {
@@ -84,17 +86,17 @@
     }
 
   }
-  .slide1 {
-    background-image: url("../img/jouve_home_slider.jpg");
-    background-size: cover;
-    background-position: 0px;
-  }
-  .slide2 {
-    background-image: url("../img/slider-background.png");
-    background-size: 100%;
-    background-position: 0px -360px;
+  // .slide1 {
+  //   background-image: url("../img/jouve_home_slider.jpg");
+  //   background-size: cover;
+  //   background-position: 0px;
+  // }
+  // .slide2 {
+  //   background-image: url("../img/slider-background.png");
+  //   background-size: 100%;
+  //   background-position: 0px -360px;
 
-  }
+  // }
   .swiper-slide .true-you {
     position: absolute;
     top: 15%;

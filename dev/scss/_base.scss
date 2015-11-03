@@ -69,6 +69,24 @@ body {
   @media (min-width: 768px) and (max-width: 1024px) {
     height: 80%;
   }
+  /* ----------- iPhone 5 and 5S ----------- */
+  /* Landscape */
+  @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+      height: 90%;
+  }
+  /* ----------- iPhone 6 ----------- */
+  /* Landscape */
+  @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) { 
+      height: 90%;
+  }
 
   /* ----------- iPad mini ----------- */
   /* Portrait */
@@ -155,16 +173,17 @@ body {
         top: 10%;
         left: 0%;
       }
-      @media (max-width: 767px) {
-        top: 8%;
-        left: 10%;
-        width: 80%;
+      @media (min-width: 481px) and (max-width: 767px) {
+        top: 5%;
+        left: 22%;
+        width: 55%;
       }   
       @media (min-width: 768px) and (max-width: 1024px) {
         top: 8%;
         left: 13%;
         width: 75%;      
       }
+
       /* ----------- iPhone 5 and 5S ----------- */
       /* Portrait */
       @media only screen 
@@ -181,8 +200,8 @@ body {
         and (max-device-width: 568px)
         and (-webkit-min-device-pixel-ratio: 2)
         and (orientation: landscape) {
-          max-width: 75%;
-          left: 12% !important;
+          max-width: 58%;
+          left: 22% !important;
           top: 5%;
         }
       /* ----------- iPhone 6 ----------- */
@@ -192,8 +211,8 @@ body {
         and (max-device-width: 667px) 
         and (-webkit-min-device-pixel-ratio: 2)
         and (orientation: landscape) {
-          max-width: 75%;
-          left: 12% !important;
+          max-width: 55%;
+          left: 22% !important;
           top: 5%;
         }
       /* ----------- iPhone 6+ ----------- */
@@ -203,8 +222,8 @@ body {
         and (max-device-width: 736px) 
         and (-webkit-min-device-pixel-ratio: 3)
         and (orientation: landscape) { 
-          max-width: 75%;
-          left: 12% !important;
+          max-width: 55%;
+          left: 22% !important;
           top: 5%;
       }  
       /* ----------- iPad mini ----------- */
@@ -240,10 +259,13 @@ body {
             max-width: 60%;
         }
     }
+    // #absolutely_you {
+    //   left: 15%;
+    // }
 }
 
 .slide1 {
-  background-image: url('../img/jouve_home_slider.jpg');
+  background-image: url('../img/slider1.jpg');
   background-size: cover;
   background-position: -250px;
   @media (max-width: 480px) {
@@ -281,7 +303,6 @@ body {
     and (max-device-width: 667px) 
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: landscape) {
-      background-image: url('../img/jouve_home_slider.jpg');
       background-size: cover;
       background-position: 0;
     }
@@ -292,7 +313,6 @@ body {
     and (max-device-width: 736px) 
     and (-webkit-min-device-pixel-ratio: 3)
     and (orientation: landscape) {
-      background-image: url('../img/jouve_home_slider.jpg');
       background-size: cover;
       background-position: 0;
   }
@@ -319,15 +339,14 @@ body {
     }
   /* ----------- Non-Retina laptop/desktop Screens ----------- */
   @media screen 
-    and (min-width: 1025px)  
-    and (-webkit-min-device-pixel-ratio: 1) {
+    and (min-width: 1025px) {
       background-size: cover;
       background-position: 0;
     }
 }
 
 .slide2 {
-  background-image: url('../img/slider-background.png');
+  background-image: url('../img/slider2.jpg');
   background-size: 115%;
   /* ----------- iPhone 5 and 5S ----------- */
   /* Landscape */
@@ -336,7 +355,6 @@ body {
     and (max-device-width: 568px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: landscape) {
-      background-image: url('../img/jouve_home_slider.jpg');
       background-size: 100%;
       background-position: 0;
     }
@@ -347,7 +365,6 @@ body {
       and (max-device-width: 667px) 
       and (-webkit-min-device-pixel-ratio: 2)
       and (orientation: landscape) {
-        background-image: url('../img/jouve_home_slider.jpg');
         background-size: 100%;
         background-position: 0;
       }
@@ -358,7 +375,6 @@ body {
       and (max-device-width: 736px) 
       and (-webkit-min-device-pixel-ratio: 3)
       and (orientation: landscape) {
-        background-image: url('../img/jouve_home_slider.jpg');
         background-size: cover;
         background-position: 0;
     }
@@ -378,20 +394,96 @@ body {
       and (max-device-width: 1024px) 
       and (orientation: landscape) 
       and (-webkit-min-device-pixel-ratio: 1) {
-        background-image: url('../img/jouve_home_slider.jpg');
         background-size: cover;
         // background-position: -262px;
       }
     /* ----------- Non-Retina laptop/desktop Screens ----------- */
     @media screen 
-      and (min-width: 1025px)  
-      and (-webkit-min-device-pixel-ratio: 1) {
+      and (min-width: 1025px) {
         background-size: cover;
-        background-image: url('../img/jouve_home_slider.jpg');
         background-position: 0;
       }
 }
+.slide3 {
+  background-image: url('../img/slider3.jpg');
+  background-size: cover;
+  background-position: -250px;
+  @media (max-width: 480px) {
+    background-position: 0;
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+    background-position: 0;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    background-position: 0;
+  }
+  /* ----------- iPhone 5 and 5S ----------- */
+  /* Portrait */
+  @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+      background-position: 0;
+  }
+  /* ----------- iPhone 5 and 5S ----------- */
+  /* Landscape */
+  @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+      background-size: cover;
+      background-position: 0;
+    }
+  /* ----------- iPhone 6 ----------- */
+          /* Landscape */
+  @media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+      background-size: cover;
+      background-position: 0;
+    }
+  /* ----------- iPhone 6+ ----------- */
+  /* Landscape */
+  @media only screen 
+    and (min-device-width: 414px) 
+    and (max-device-width: 736px) 
+    and (-webkit-min-device-pixel-ratio: 3)
+    and (orientation: landscape) {
+      background-size: cover;
+      background-position: 0;
+  }
 
+  /* ----------- iPad mini ----------- */
+  /* Portrait */
+  @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (orientation: portrait) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+      background-size: cover;   
+      background-position: 0;     
+  }
+  /* ----------- iPad mini ----------- */
+    /* Landscape */
+  @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (orientation: landscape) 
+    and (-webkit-min-device-pixel-ratio: 1)  {
+      background-size: cover;
+      background-position: 0;
+    }
+  /* ----------- Non-Retina laptop/desktop Screens ----------- */
+  @media screen 
+    and (min-width: 1025px) {
+      background-size: cover;
+      background-position: 0;
+    }
+}
 // end swiper styling
 
 
@@ -894,8 +986,7 @@ body {
                 }
                 /* ----------- Non-Retina laptop/desktop Screens ----------- */
               @media screen 
-                and (min-width: 1025px) 
-                and (-webkit-min-device-pixel-ratio: 1) {
+                and (min-width: 1025px) {
                   width: 50%;
                 }
             }

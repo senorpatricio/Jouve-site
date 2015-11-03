@@ -295,9 +295,8 @@
         }
       /* ----------- Non-Retina laptop/desktop Screens ----------- */
       @media screen 
-        and (min-width: 1025px) 
-        and (-webkit-min-device-pixel-ratio: 1) {
-          max-width: 50%;   
+        and (min-width: 1025px) {
+          width: 120px;   
         }
 
       a {

@@ -111,12 +111,7 @@ S-265.5,409.6-260,409.6z" />
                 </div>
                 <div class="large-right-nav large-8 columns">
                     <ul>
-                        <li id="products-toggle">
-                        <a href="#">Products</a>
-                        <ul id="hidden-products">
-                          <li class="sub-prod"><a href="tightener.html">Tightening Serum</a></li>
-                          <li class="sub-prod"><a href="brightener.html">Brightening Cream</a></li>
-                        </ul>
+                      <li id="prod-toggle"><a>Products</a></li>
                       </li>
                       <li><a href="results.html">Results</a></li>
                       <li><a href="difference.html">Jouv&#233 Difference</a></li>
@@ -246,7 +241,20 @@ S-265.5,409.6-260,409.6z" />
         </div>
       </div>
       <!-- end hidden language select menu -->
+      <!-- hidden product menu -->
+      <div class="pMenuWrapper">
+        
+        <div class="pNavigation">
+          <div class="pSlider closed">
+             <ul>
+               <li><a href="tightener.html">Tightening Serum</a></li>
+               <li><a href="brightener.html">Brightening Cream</a></li>
+             </ul>
 
+          </div>
+        </div>
+      </div>
+      <!-- end hidden product menu -->
       <div class="clear"></div>
 
       <div class="bright-banner">
@@ -298,18 +306,17 @@ S-265.5,409.6-260,409.6z" />
 
       <!-- begin Footer -->
       <footer>
-        <div class="row HelveticaNeueLTStd-Lt">
+        <div class="row HelveticaNeueLTStd-Lt footer-padding">
           <div class="small-offset-2 small-10 medium-offset-1 medium-5 large-offset-0 large-6 columns" id="foot-menu">
-            <!-- <ul>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Return Policy</a></li>
-              <li><a href="#">News & Events</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Customer Service</a></li>
-              <li><a href="#">Scientific Advisory Board</a></li>
-            </ul> -->
+            <h4 class="HelveticaNeueLTStd-ThIt">CONTACT ME</h4>
+            <address class="HelveticaNeueLTStd-Lt">
+              Name
+              <br /> Phone
+              <br /> Email
+            </address>
+
           </div>
-          <div class="small-offset-2 small-10 columns medium-offset-0 medium-5 large-offset-3 large-3" id="social-buttons">
+          <div class="small-offset-2 small-10 columns medium-offset-0 medium-5" id="social-buttons">
             <ul>
               <li>
                 <a href="https://www.facebook.com/Jouvé-687439744695806/?ref=br_rs"><img src="_/icons/FB.png" alt=""></a>
@@ -325,16 +332,8 @@ S-265.5,409.6-260,409.6z" />
               </li>
             </ul>
           </div>
-          <div class="small-offset-2 small-8 medium-offset-0 medium-5 large-offset-3 large-3 columns" id="foot-logo">
+          <div class="small-offset-2 small-8 medium-offset-0 medium-5 columns" id="foot-logo">
             <img src="_/img/jouve_footer_mobile.png" alt="">
-          </div>
-          <div class="small-offset-2 small-10 medium-offset-0 medium-5 large-offset-0 large-3 columns" id="contact">
-            <h4 class="HelveticaNeueLTStd-ThIt">CONTACT ME</h4>
-            <address class="HelveticaNeueLTStd-Lt">
-              Name
-              <br /> Phone
-              <br /> Email
-            </address>
           </div>
         </div>
       </footer>
@@ -371,25 +370,39 @@ S-265.5,409.6-260,409.6z" />
 
       toggle.addEventListener('click', toggleSlider, false);
 
+      // large-screen product drop-down menu 
+      function productSlider() {
+        if (pSlider.classList.contains('opened')) {
+          pSlider.classList.remove('opened');
+          pSlider.classList.add('closed');
+        } else {
+          pSlider.classList.remove('closed');
+          pSlider.classList.add('opened');
+        }
+      }
+      var product = document.getElementById('prod-toggle');
+      var pSlider = document.querySelector('.pSlider');
+
+      product.addEventListener('click', productSlider, false);
+
+
       // product drop expansion
-      var product_btn = document.querySelector('#products-toggle'),
-          hidden_products = document.querySelector('#hide-products'),
-          m_products = document.querySelector('.m_products'),
+      var m_products = document.querySelector('.m_products'),
           hide_products = document.querySelector('.hide-products');
 
-      // desktop menu
-      product_btn.addEventListener("click", function () {
-        if(hasClass(hidden_products, "hide")) {
-          removeClass(hidden_products, "hide");
-          addClass(hidden_products, "show");
-        }
-        else {
-          hasClass(hidden_products, "show");
-          removeClass(hidden_products, "show");
-          addClass(hidden_products, "hide");
-        }
-        return false;
-      });
+      // // desktop menu
+      // product_btn.addEventListener("click", function () {
+      //   if(hasClass(hidden_products, "hide")) {
+      //     removeClass(hidden_products, "hide");
+      //     addClass(hidden_products, "show");
+      //   }
+      //   else {
+      //     hasClass(hidden_products, "show");
+      //     removeClass(hidden_products, "show");
+      //     addClass(hidden_products, "hide");
+      //   }
+      //   return false;
+      // });
 
       //mobile menu
       m_products.addEventListener("click", function () {

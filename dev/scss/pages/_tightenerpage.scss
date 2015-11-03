@@ -1,6 +1,6 @@
 .banner {
 	height: 35%;
-	background-image: url(../../_/img/tightenerbannercrop.jpg);
+	background-image: url(../../_/img/tightenerbanner.jpg);
 	background-size: cover;
     background-position-y: -32px;
 	@media (max-width: 480px) {
@@ -12,7 +12,7 @@
     background-position: 0;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-    height: 25%;
+    height: 400px;
     background-position: 0;
   }  
 	/* ----------- iPhone 5 and 5S ----------- */
@@ -72,8 +72,7 @@
 
   /* ----------- Non-Retina laptop/desktop Screens ----------- */
   @media screen 
-    and (min-width: 1025px) 
-    and (-webkit-min-device-pixel-ratio: 1) { 
+    and (min-width: 1025px) { 
       max-width: 1025px;
       margin: 0 auto;
       height: 400px; 
@@ -90,7 +89,7 @@
 		height: 20%;
 	}
 	@media (min-width: 768px) and (max-width: 1024px) {
-		height: 20%;
+		height: 160px;
 	}
 	/* ----------- iPhone 5 and 5S ----------- */
 	/* Portrait */
@@ -168,18 +167,18 @@
 		max-width: 35%;
 		z-index: 2;
 		top: -35%;
-    	left: 35%;
+  	left: 35%;
 		@media (max-width: 480px) {
 			top: -88%;
-    		left: 37%;
+  		left: 37%;
 		}
 		@media (min-width: 481px) and (max-width: 767px) {
 			top: -88%;
-    		left: 37%;
-    		width: 165px;
+  		left: 37%;
+  		width: 165px;
 		}
 		@media (min-width: 768px) and (max-width: 1024px) {
-			top: -128px;
+			top: -225px;
 			left: 37%;
 			width: 165px;
 		}
@@ -372,7 +371,7 @@
 		height: 50%;
 	}
 	@media (min-width: 768px) and (max-width: 1024px) {
-		height: 35%;
+		height: 405px;
 	}
 	/* ----------- iPhone 5 and 5S ----------- */
 	/* Portrait */
@@ -498,7 +497,7 @@
 		padding-bottom: 40px;
 	}
 }
-
+ 
 .more-section {
 	height: 60%;
 	background-color: $white;
@@ -513,7 +512,7 @@
   	height: 25%;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-  	height: 20%;
+  	height: 210px;
   }
     /* ----------- iPhone 5 and 5S ----------- */
 	/* Portrait */

@@ -75,7 +75,7 @@
             <g id="Page-1" sketch:type="MSPage">
               <g id="Language-Selector" transform="translate(-661.000000, -25.000000)" sketch:type="MSArtboardGroup">
                 <g id="PageContent" transform="translate(-8.000000, -48.000000)" sketch:type="MSLayerGroup" class="st0">
-                  <image style="overflow:visible;enable-background:new    ;" width="1245" height="1895" id="Bitmap-Copy" xlink:href="D77F7F47CC2308A0.jpg" sketch:type="MSBitmapLayer" transform="matrix(0.6145 0 0 0.6142 -279 371.565)">
+                  <image style="overflow:visible;enable-background:new    ;" width="1245" height="1895" id="Bitmap-Copy" sketch:type="MSBitmapLayer" transform="matrix(0.6145 0 0 0.6142 -279 371.565)">
                   </image>
                 </g>
                 <g id="header" sketch:type="MSLayerGroup">
@@ -113,13 +113,7 @@ S-265.5,409.6-260,409.6z" />
                 </div>
                 <div class="large-right-nav large-8 columns">
                     <ul>
-                        <li id="products-toggle">
-                        <a href="#">Products</a>
-                        <ul id="hidden-products">
-                          <li class="sub-prod"><a href="tightener.html">Tightening Serum</a></li>
-                          <li class="sub-prod"><a href="brightener.html">Brightening Cream</a></li>
-                        </ul>
-                      </li>
+                      <li id="prod-toggle"><a>Products</a></li>
                       <li><a href="results.html">Results</a></li>
                       <li><a href="difference.html">Jouv&#233 Difference</a></li>
                       <li><a href="meet_the_rep.html">Meet Your Rep</a></li>
@@ -177,7 +171,7 @@ S-265.5,409.6-260,409.6z" />
                             <g id="Page-1" sketch:type="MSPage">
                               <g id="Language-Selector" transform="translate(-661.000000, -25.000000)" sketch:type="MSArtboardGroup">
                                 <g id="PageContent" transform="translate(-8.000000, -48.000000)" sketch:type="MSLayerGroup" class="st0">
-                                  <image style="overflow:visible;enable-background:new    ;" width="1245" height="1895" id="Bitmap-Copy" xlink:href="D77F7F47CC2308A0.jpg" sketch:type="MSBitmapLayer" transform="matrix(0.6145 0 0 0.6142 -279 371.565)">
+                                  <image style="overflow:visible;enable-background:new    ;" width="1245" height="1895" id="Bitmap-Copy"  sketch:type="MSBitmapLayer" transform="matrix(0.6145 0 0 0.6142 -279 371.565)">
                                   </image>
                                 </g>
                                 <g id="header" sketch:type="MSLayerGroup">
@@ -248,16 +242,34 @@ S-265.5,409.6-260,409.6z" />
         </div>
       </div>
       <!-- end hidden language select menu -->
+      <!-- hidden product menu -->
+      <div class="pMenuWrapper hide-for-small-only hide-for-medium-only">
+        
+        <div class="pNavigation">
+          <div class="pSlider closed">
+             <ul>
+               <li><a href="tightener.html">Tightening Serum</a></li>
+               <li><a href="brightener.html">Brightening Cream</a></li>
+             </ul>
+
+          </div>
+        </div>
+      </div>
+      <!-- end hidden product menu -->
       <div class="clear"></div>
         <!-- Swiper -->
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide slide1">
-            <img src="_/img/the_true_you.svg" class="true-you" alt="">
+            <img src="_/img/true_you.svg" class="true-you" alt="">
           </div>
           <div class="swiper-slide slide2">
-            <img src="_/img/the_true_you.svg" class="true-you" alt="">
+            <img src="_/img/bold_you.svg" class="true-you" alt="">
           </div>
+          <div class="swiper-slide slide3">
+            <img src="_/img/absolutely_you.svg" class="true-you" id="absolutely_you" alt="">
+          </div>
+
         </div>
         
         <!-- Add Arrows -->
@@ -317,7 +329,7 @@ S-265.5,409.6-260,409.6z" />
     <!-- end brightener div -->
     <div class="clear"></div>
     <!-- Swiper -->
-    <div class="big-slider hide-for-large-up" id="before-top">
+    <div class="big-slider hide-for-large-up" id="before-overlay">
       <p class="HelveticaNeueLTStd-ThIt before-title">BEFORE & AFTER</p>
       <!-- SMALL to Medium Swiper -->
       <div class="swiper-container before-after">
@@ -326,7 +338,7 @@ S-265.5,409.6-260,409.6z" />
             <div class="picholder">
               <img src="_/img/before_phone.jpg" alt="" class="small-12 medium-6 columns fancypics picleft">
               <img src="_/img/after_phone.jpg" alt="" class="small-12 medium-6 columns fancypics picright">
-              <a href="#before-top" class="plus1"><img src="_/icons/enlarge_circle.png" alt=""></a>
+              <a href="#before-overlay" class="plus1"><img src="_/icons/enlarge_circle.png" alt=""></a>
               <div class="overlay">
                 <h3 class="HelveticaNeueLTStd-ThIt text_title">Sarah</h3>
                 <p class="HelveticaNeueLTStd-Lt text_box">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
@@ -337,7 +349,7 @@ S-265.5,409.6-260,409.6z" />
             <div class="picholder">
               <img src="_/img/before_phone.jpg" alt="" class="small-12 medium-6 columns fancypics picleft">
               <img src="_/img/after_phone.jpg" alt="" class="small-12 medium-6 columns fancypics picright">
-              <a href="#before-top" class="plus1"><img src="_/icons/enlarge_circle.png" alt=""></a>
+              <a href="#before-overlay" class="plus1"><img src="_/icons/enlarge_circle.png" alt=""></a>
               <div class="overlay">
                 <h3 class="HelveticaNeueLTStd-ThIt text_title">Sarah</h3>
                 <p class="HelveticaNeueLTStd-Lt text_box">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
@@ -348,7 +360,7 @@ S-265.5,409.6-260,409.6z" />
             <div class="picholder">
               <img src="_/img/before_phone.jpg" alt="" class="small-12 medium-6 columns fancypics picleft">
               <img src="_/img/after_phone.jpg" alt="" class="small-12 medium-6 columns fancypics picright">
-              <a href="#before-top" class="plus1"><img src="_/icons/enlarge_circle.png" alt=""></a>
+              <a href="#before-overlay" class="plus1"><img src="_/icons/enlarge_circle.png" alt=""></a>
               <div class="overlay">
                 <h3 class="HelveticaNeueLTStd-ThIt text_title">Sarah</h3>
                 <p class="HelveticaNeueLTStd-Lt text_box">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
@@ -359,7 +371,7 @@ S-265.5,409.6-260,409.6z" />
             <div class="picholder">
               <img src="_/img/before_phone.jpg" alt="" class="small-12 medium-6 columns fancypics picleft">
               <img src="_/img/after_phone.jpg" alt="" class="small-12 medium-6 columns fancypics picright">
-              <a href="#before-top" class="plus1"><img src="_/icons/enlarge_circle.png" alt=""></a>
+              <a href="#before-overlay" class="plus1"><img src="_/icons/enlarge_circle.png" alt=""></a>
               <div class="overlay">
                 <h3 class="HelveticaNeueLTStd-ThIt text_title">Sarah</h3>
                 <p class="HelveticaNeueLTStd-Lt text_box">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
@@ -373,9 +385,12 @@ S-265.5,409.6-260,409.6z" />
       <div class="swiper-button-prev before_arrow_left"></div>
     </div>
     <!-- end Swiper -->
+    <div class="clear"></div>
     <!-- LARGE and up photo grid -->
-    <div class="before-after-grid large-offset-0 large-12 hide-for-small-only hide-for-medium-only columns" id="before-top">
-			<h3>BEFORE & AFTER</h3>
+    <div id="before-top">
+
+    <div class="before-after-grid large-offset-0 large-12 hide-for-small-only hide-for-medium-only columns">
+			<p class="grid-title">BEFORE & AFTER</p>
 			<div class="row before-after-results"> <!-- Row 1 -->
         <!-- column 1 -->
 				<div class="large-4 columns picholder"> 
@@ -571,7 +586,7 @@ S-265.5,409.6-260,409.6z" />
   
 
   </div>   <!-- end photo grid -->
-
+  </div>
 
     <div class="clear"></div>
     <!-- scroll to top button -->
@@ -583,17 +598,16 @@ S-265.5,409.6-260,409.6z" />
     <!-- begin Footer -->
     <footer>
         <div class="row HelveticaNeueLTStd-Lt footer-padding">
-         <!--  <div class="small-offset-2 small-10 medium-offset-1 medium-5 large-offset-0 large-6 columns" id="foot-menu">
-            <ul>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Return Policy</a></li>
-              <li><a href="#">News & Events</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Customer Service</a></li>
-              <li><a href="#">Scientific Advisory Board</a></li>
-            </ul>
-          </div> -->
-          <div class="small-offset-2 small-10 columns medium-offset-0 medium-5 large-offset-3 large-3" id="social-buttons">
+          <div class="small-offset-2 small-10 medium-offset-1 medium-5 large-offset-0 large-6 columns" id="foot-menu">
+            <h4 class="HelveticaNeueLTStd-ThIt">CONTACT ME</h4>
+            <address class="HelveticaNeueLTStd-Lt">
+              Name
+              <br /> Phone
+              <br /> Email
+            </address>
+
+          </div>
+          <div class="small-offset-2 small-10 columns medium-offset-0 medium-5" id="social-buttons">
             <ul>
               <li>
                 <a href="https://www.facebook.com/Jouvé-687439744695806/?ref=br_rs"><img src="_/icons/FB.png" alt=""></a>
@@ -609,16 +623,8 @@ S-265.5,409.6-260,409.6z" />
               </li>
             </ul>
           </div>
-          <div class="small-offset-2 small-8 medium-offset-0 medium-5 large-offset-3 large-3 columns" id="foot-logo">
+          <div class="small-offset-2 small-8 medium-offset-0 medium-5 columns" id="foot-logo">
             <img src="_/img/jouve_footer_mobile.png" alt="">
-          </div>
-          <div class="small-offset-2 small-10 medium-offset-0 medium-5 large-offset-0 large-3 columns" id="contact">
-            <h4 class="HelveticaNeueLTStd-ThIt">CONTACT ME</h4>
-            <address class="HelveticaNeueLTStd-Lt">
-              Name
-              <br /> Phone
-              <br /> Email
-            </address>
           </div>
         </div>
     </footer>
@@ -648,7 +654,12 @@ S-265.5,409.6-260,409.6z" />
          }
         });
 
-      });
+
+      }
+
+
+
+      );
 
       
 
@@ -681,26 +692,40 @@ S-265.5,409.6-260,409.6z" />
 
     toggle.addEventListener('click', toggleSlider, false);
 
+    // large-screen product drop-down menu 
+    function productSlider() {
+      if (pSlider.classList.contains('opened')) {
+        pSlider.classList.remove('opened');
+        pSlider.classList.add('closed');
+      } else {
+        pSlider.classList.remove('closed');
+        pSlider.classList.add('opened');
+      }
+    }
+    var product = document.getElementById('prod-toggle');
+    var pSlider = document.querySelector('.pSlider');
+
+    product.addEventListener('click', productSlider, false);
+
+
     // product drop expansion
-    var product_btn = document.querySelector('#products-toggle'),
-        hidden_products = document.querySelector('#hide-products'),
-        m_products = document.querySelector('.m_products'),
-        hide_products = document.querySelector('.hide-products');
+      var m_products = document.querySelector('.m_products'),
+          hide_products = document.querySelector('.hide-products');
 
 
-    // desktop menu
-    product_btn.addEventListener("click", function () {
-      if(hasClass(hidden_products, "hide")) {
-        removeClass(hidden_products, "hide");
-        addClass(hidden_products, "show");
-      }
-      else {
-        hasClass(hidden_products, "show");
-        removeClass(hidden_products, "show");
-        addClass(hidden_products, "hide");
-      }
-      return false;
-    });
+    // // desktop menu
+    // product_btn.removeEventListener("click", function () {
+    //   if(hasClass(hidden_products, "hide")) {
+    //     removeClass(hidden_products, "hide");
+    //     addClass(hidden_products, "show");
+    //   }
+    //   else {
+    //     hasClass(hidden_products, "show");
+    //     removeClass(hidden_products, "show");
+    //     addClass(hidden_products, "hide");
+    //   }
+    //   return false;
+    // });
 
     //mobile menu
     m_products.addEventListener("click", function () {
@@ -771,6 +796,7 @@ S-265.5,409.6-260,409.6z" />
           scrollTop: offsetTop
       }, 500, 'linear');
     }
+
     // opens large image on grid
     window.document.onkeydown = function (e)
     {
