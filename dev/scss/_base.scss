@@ -262,7 +262,7 @@ body {
         }
     }
     #absolutely_you {
-      left: 15%;
+      // left: 15%;
       /* ----------- iPhone 5 and 5S ----------- */
       /* Portrait */
       @media only screen 
@@ -306,6 +306,10 @@ body {
           top: 7%;
           left: 15%;
           width: 725px;
+        }
+      @media screen 
+        and (min-width: 1025px) {
+          left: 23%;
         }
     }
 }

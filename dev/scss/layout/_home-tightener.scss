@@ -133,9 +133,10 @@
       and (-webkit-min-device-pixel-ratio: 1) {
         max-width: 100%;       
       }
-    @media (min-width: 1025px) {
-        margin: 0 0 80px 0;   
-      }
+    @media screen 
+        and (min-width: 1025px) {
+          margin: 19px 0 80px -54px;
+        }
     }
     .product-tag {
       font-family: HelveticaNeueLTStd-ThIt;
@@ -190,11 +191,12 @@
         }
       /* ----------- Non-Retina laptop/desktop Screens ----------- */
       @media screen 
-        and (min-device-width: 1025px) 
-        and (-webkit-min-device-pixel-ratio: 1) {
-          font-size: 18px;
-          margin-top: 5px;
-        }  
+        and (min-width: 1025px) {
+          font-size: 28px;
+          margin: 8px 0 13px -7px;
+          letter-spacing: 3px;
+          font-weight: 100;
+        } 
     }
     .row>.left-description {
       float: left !important;
@@ -251,7 +253,9 @@
         @media screen 
           and (min-width: 1025px) 
           and (-webkit-min-device-pixel-ratio: 1) {
-            font-size: 14px;
+            font-size: 16px;
+            margin: 12px 0 0 -7px;
+            letter-spacing: 2px;
           }   
       }
     }
@@ -259,13 +263,13 @@
     .product-link {
       color: $darkgray !important;
       @media (max-width: 480px) {
-        width: 100px;
+        width: 131px;
       }
       @media (min-width: 481px) and (max-width: 767px) {
-        width: 100px;
+        width: 131px;
       }
       @media (min-width: 768px) and (max-width: 1024px) {
-        width: 120px;
+        width: 131px;
         margin-top: 100px;
       }
       /* ----------- iPhone 5 and 5S ----------- */
@@ -328,7 +332,7 @@
       /* ----------- Non-Retina laptop/desktop Screens ----------- */
       @media screen 
         and (min-width: 1025px) {
-          width: 120px;   
+          width: 131px;   
         }
       a {
         text-decoration: none;

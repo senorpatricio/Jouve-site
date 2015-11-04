@@ -191,17 +191,20 @@
   	@media screen and (min-width: 1025px) {
       top: auto;
       left: auto;
-      width: 75%;
-      margin: 230px 0 0 100px !important;
+      width: 795px;
+      margin: 120px 0 0 15px !important;
+      letter-spacing: 2.96px;
+      font-size: 28px;
 	   }
 		
-	}
+	} 
 }
 
 #large-container {
   @media screen and (min-width: 1025px) {
-    width: 950px;
-    margin: auto;
+    width: 1122px;
+    height: 600px;
+    margin: 0 auto;
   }
 }
 .video-container {
@@ -210,13 +213,13 @@
 	height:0;
 	// overflow:hidden;
 	background-color: $white;
-  max-width: 950px !important;
+  max-width: 970px !important;
   margin: 0 auto;
 }
 
 .video-container iframe, .video-container object, .video-container embed {
 	position:absolute;
-	top: -15%;
+	top: -30%;
   left: 8%;
   width: 85%;
   height: 85%;
@@ -241,8 +244,10 @@
     }
    /* ----------- Non-Retina Screens ----------- */
   @media screen and (min-width: 1025px) {
-      height: 95%;
-      max-width: 950px !important;
+    height: 546px;    
+    width: 970px;
+    left: auto;
+    margin-left: 0;
     }
 }
 

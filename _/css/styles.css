@@ -225,7 +225,7 @@ nav {
     .large-nav .row .header-image {
       margin: 11px;
       padding: 5px;
-      max-width: 45%; }
+      width: 225px; }
     .large-nav .row .large-right-nav {
       display: inline-block;
       text-align: right; }
@@ -233,9 +233,9 @@ nav {
         margin: 20px 0 0 0; }
         .large-nav .row .large-right-nav ul li {
           display: inline;
-          font-size: 14px;
+          font-size: 18px;
           color: #C59B96;
-          margin-right: 15px; }
+          margin-right: 14px; }
           .large-nav .row .large-right-nav ul li a {
             color: #C59B96; }
         .large-nav .row .large-right-nav ul #products-toggle {
@@ -614,7 +614,7 @@ nav {
     .pNavigation {
       position: fixed;
       top: 77px;
-      right: 400px;
+      right: 517px;
       overflow: hidden;
       width: 225px;
       height: auto;
@@ -749,9 +749,9 @@ nav {
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
       .tightener .product {
         max-width: 100%; } }
-    @media (min-width: 1025px) {
+    @media screen and (min-width: 1025px) {
       .tightener .product {
-        margin: 0 0 80px 0; } }
+        margin: 19px 0 80px -54px; } }
   .tightener .product-tag {
     font-family: HelveticaNeueLTStd-ThIt;
     font-size: 16px;
@@ -788,10 +788,12 @@ nav {
       .tightener .product-tag {
         margin-top: 15px;
         font-size: 20px; } }
-    @media screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+    @media screen and (min-width: 1025px) {
       .tightener .product-tag {
-        font-size: 18px;
-        margin-top: 5px; } }
+        font-size: 28px;
+        margin: 8px 0 13px -7px;
+        letter-spacing: 3px;
+        font-weight: 100; } }
   .tightener .row > .left-description {
     float: left !important; }
   .tightener .tighten-desc {
@@ -829,7 +831,9 @@ nav {
           font-size: 14px; } }
       @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
         .tightener .tighten-desc .description {
-          font-size: 14px; } }
+          font-size: 16px;
+          margin: 12px 0 0 -7px;
+          letter-spacing: 2px; } }
   .tightener .product-link {
     color: #979797 !important;
     /* ----------- iPhone 5 and 5S ----------- */
@@ -847,13 +851,13 @@ nav {
     /* ----------- Non-Retina laptop/desktop Screens ----------- */ }
     @media (max-width: 480px) {
       .tightener .product-link {
-        width: 100px; } }
+        width: 131px; } }
     @media (min-width: 481px) and (max-width: 767px) {
       .tightener .product-link {
-        width: 100px; } }
+        width: 131px; } }
     @media (min-width: 768px) and (max-width: 1024px) {
       .tightener .product-link {
-        width: 120px;
+        width: 131px;
         margin-top: 100px; } }
     @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
       .tightener .product-link {
@@ -878,7 +882,7 @@ nav {
         padding-top: 60px; } }
     @media screen and (min-width: 1025px) {
       .tightener .product-link {
-        width: 120px; } }
+        width: 131px; } }
     .tightener .product-link a {
       text-decoration: none;
       color: #979797 !important; }
@@ -962,6 +966,9 @@ nav {
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
       .brightener .product {
         max-width: 100%; } }
+    @media screen and (min-width: 1025px) {
+      .brightener .product {
+        margin: 19px 0 80px -54px; } }
   .brightener .product-tag {
     font-family: HelveticaNeueLTStd-ThIt;
     font-size: 16px;
@@ -996,10 +1003,12 @@ nav {
       .brightener .product-tag {
         margin-top: 15px;
         font-size: 20px; } }
-    @media screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+    @media screen and (min-width: 1025px) {
       .brightener .product-tag {
-        font-size: 18px;
-        margin-top: 5px; } }
+        font-size: 28px;
+        margin: 8px 0 13px -7px;
+        letter-spacing: 2.6px;
+        font-weight: 100; } }
   .brightener .brighten-desc {
     /* ----------- iPhone 5 and 5S ----------- */
     /* Landscape */ }
@@ -1035,7 +1044,9 @@ nav {
           font-size: 14px; } }
       @media screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
         .brightener .brighten-desc .description {
-          font-size: 14px; } }
+          font-size: 16px;
+          margin: 12px 0 0 -7px;
+          letter-spacing: 2px; } }
   .brightener .product-link {
     color: #979797 !important;
     /* ----------- iPhone 5 and 5S ----------- */
@@ -1053,17 +1064,17 @@ nav {
     /* ----------- Non-Retina laptop/desktop Screens ----------- */ }
     @media (max-width: 480px) {
       .brightener .product-link {
-        width: 100px; } }
+        width: 131px; } }
     @media (min-width: 481px) and (max-width: 767px) {
       .brightener .product-link {
-        width: 100px; } }
+        width: 131px; } }
     @media (min-width: 768px) and (max-width: 1024px) {
       .brightener .product-link {
-        width: 120px;
+        width: 131px;
         margin-top: 100px; } }
     @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
       .brightener .product-link {
-        width: 82px; } }
+        width: 131px; } }
     @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
       .brightener .product-link {
         margin: -80px 30px 70px 30px; } }
@@ -1084,7 +1095,7 @@ nav {
         padding-top: 60px; } }
     @media screen and (min-width: 1025px) {
       .brightener .product-link {
-        width: 120px; } }
+        width: 131px; } }
     .brightener .product-link a {
       text-decoration: none;
       color: #979797 !important; }
@@ -1118,12 +1129,12 @@ nav {
     color: #979797;
     font-family: HelveticaNeueLTStd-ThIt;
     text-align: center;
-    font-size: 18px; }
+    font-size: 28px; }
   .before-after-grid .grid-title {
     color: #979797;
     font-family: HelveticaNeueLTStd-ThIt;
     text-align: center;
-    font-size: 18px;
+    font-size: 28px;
     margin: 25px auto; }
   .before-after-grid .before-after-grid {
     padding: 0 !important;
@@ -1140,7 +1151,7 @@ nav {
       height: 100%; }
     .before-after-grid .before-after-grid .overlay {
       /* ----------- Non-Retina laptop/desktop Screens ----------- */ }
-      @media screen and (min-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+      @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
         .before-after-grid .before-after-grid .overlay {
           bottom: 30;
           left: 0;
@@ -1150,7 +1161,7 @@ nav {
           width: 100%;
           margin: auto;
           position: absolute;
-          background: rgba(196, 154, 149, 0.8); } }
+          background: rgba(164, 120, 114, 0.8); } }
     .before-after-grid .before-after-grid .fancypics {
       /* ----------- Non-Retina laptop/desktop Screens ----------- */ }
       @media screen and (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -1179,7 +1190,7 @@ nav {
     width: 100%;
     margin: auto;
     position: absolute;
-    background: rgba(196, 154, 149, 0.8);
+    background: rgba(164, 120, 114, 0.8);
     opacity: 0;
     /* ----------- Non-Retina laptop/desktop Screens ----------- */ }
     @media screen and (min-width: 1025px) {
@@ -1597,7 +1608,6 @@ body {
         max-height: 70%;
         max-width: 60%; } }
   .swiper-slide #absolutely_you {
-    left: 15%;
     /* ----------- iPhone 5 and 5S ----------- */
     /* Portrait */
     /* ----------- iPhone 5 and 5S ----------- */
@@ -1626,6 +1636,9 @@ body {
         top: 7%;
         left: 15%;
         width: 725px; } }
+    @media screen and (min-width: 1025px) {
+      .swiper-slide #absolutely_you {
+        left: 23%; } }
 
 .slide1 {
   background-image: url("../img/slider1.jpg");
@@ -2242,25 +2255,28 @@ body {
       .results-bar .quote {
         top: auto;
         left: auto;
-        width: 75%;
-        margin: 230px 0 0 100px !important; } }
+        width: 795px;
+        margin: 120px 0 0 15px !important;
+        letter-spacing: 2.96px;
+        font-size: 28px; } }
 
 @media screen and (min-width: 1025px) {
   #large-container {
-    width: 950px;
-    margin: auto; } }
+    width: 1122px;
+    height: 600px;
+    margin: 0 auto; } }
 
 .video-container {
   position: relative;
   padding-bottom: 35%;
   height: 0;
   background-color: #fff;
-  max-width: 950px !important;
+  max-width: 970px !important;
   margin: 0 auto; }
 
 .video-container iframe, .video-container object, .video-container embed {
   position: absolute;
-  top: -15%;
+  top: -30%;
   left: 8%;
   width: 85%;
   height: 85%;
@@ -2278,8 +2294,10 @@ body {
       height: 100%; } }
   @media screen and (min-width: 1025px) {
     .video-container iframe, .video-container object, .video-container embed {
-      height: 95%;
-      max-width: 950px !important; } }
+      height: 546px;
+      width: 970px;
+      left: auto;
+      margin-left: 0; } }
 
 .big-slider2 {
   position: relative;

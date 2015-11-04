@@ -387,7 +387,7 @@ nav {
     .header-image {
       margin: 11px;
       padding: 5px; 
-      max-width: 45%;        
+      width: 225px;        
     }
     .large-right-nav {
       display: inline-block;
@@ -396,9 +396,9 @@ nav {
         margin: 20px 0 0 0;
         li {
           display: inline;
-          font-size: 14px;
+          font-size: 18px;
           color: $peach;
-          margin-right: 15px;
+          margin-right: 14px;
           a {
             color: $peach;
           }
@@ -959,7 +959,7 @@ nav {
     @media (min-width: 1025px) { 
       position: fixed;
       top: 77px;
-      right: 400px;
+      right: 517px;
       overflow: hidden;
       width: 225px;
       height: auto;
