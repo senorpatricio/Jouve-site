@@ -2,7 +2,8 @@
 
 nav {
     width: 100%;
-    height: 10%;
+    // height: 10%;
+    position: relative;
     background-color: $white;
     font-family: HelveticaNeueLTStd-Lt;
 
@@ -586,7 +587,7 @@ nav {
 }
 
 .slider {
-  overflow-y: scroll;
+  // overflow-y: scroll;
   /* complete liquid height based on the parent's height!! */
   height: 100%;
   /* only transition on transform properties which are hardware accelerated = way better performances */
@@ -760,7 +761,7 @@ nav {
 }
 
 .lSlider {
-    overflow-y: scroll;
+    // overflow-y: scroll;
     /* complete liquid height based on the parent's height!! */
     height: 100%;
     /* only transition on transform properties which are hardware accelerated = way better performances */
@@ -973,7 +974,7 @@ nav {
 }
 
 .pSlider {
-    overflow-y: scroll;
+    // overflow-y: scroll;
     /* complete liquid height based on the parent's height!! */
     height: 100%;
     /* only transition on transform properties which are hardware accelerated = way better performances */

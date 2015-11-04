@@ -125,13 +125,17 @@
     }
     .product-tag {
       font-family: HelveticaNeueLTStd-ThIt;
-      font-size: 16px;
+      font-size: 18px;
       float: left;
       margin-top: 127px;
       vertical-align: bottom;
       color: $darkgray;
       @media (min-width: 480px) and (max-width: 767px) {
-          margin-top: 30px;
+        margin-top: 30px;
+        font-size: 18px;
+      }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 18px;
       }
       /* ----------- iPhone 5 and 5S ----------- */
       /* Portrait */
@@ -140,7 +144,7 @@
         and (max-device-width: 568px)
         and (-webkit-min-device-pixel-ratio: 2)
         and (orientation: portrait) {
-          font-size: 14px;
+          font-size: 16px;
           margin-top: 160px;
         }
       /* ----------- iPhone 5 and 5S ----------- */
@@ -259,7 +263,7 @@
         and (max-device-width: 568px)
         and (-webkit-min-device-pixel-ratio: 2)
         and (orientation: portrait) {
-          width: 131px;
+          width: 81px;
         }
       /* ----------- iPhone 5 and 5S ----------- */
       /* Landscape */
@@ -270,6 +274,15 @@
         and (orientation: landscape) {
           margin: -80px 30px 70px 30px;
 
+        }
+      /* ----------- iPhone 6 ----------- */
+        /* Portrait */
+      @media only screen 
+        and (min-device-width: 375px) 
+        and (max-device-width: 667px) 
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (orientation: portrait) {
+          width: 81px;
         }
       /* ----------- iPhone 6 ----------- */
           /* Landscape */

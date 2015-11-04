@@ -55,7 +55,7 @@
 @media (min-width: 1025px) {
   .swiper-container {
     max-width: 1025px;
-    height: 641px;
+    height: 768px;
     z-index: 1;
     margin: 0 auto !important;
   }
@@ -97,11 +97,11 @@
   //   background-position: 0px -360px;
 
   // }
-  .swiper-slide .true-you {
-    position: absolute;
-    top: 15%;
-    left: 23%;
-  }
+  // .swiper-slide .true-you {
+  //   position: absolute;
+  //   top: 15%;
+  //   left: 23%;
+  // }
   .large-nav .row .large-right-nav ul .language-icon svg {
     max-width: 3%;
     margin-bottom: inherit;
